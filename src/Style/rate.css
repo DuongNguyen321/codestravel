@@ -1,0 +1,125 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+  root {
+  --orange: #ffa500;
+}
+.rate {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 0 2rem rgb(0 0 0 / 5%);
+}
+.rate h2 {
+  font-size: 3em;
+  font-weight: 600;
+  color: var(--orange);
+}
+.rate .skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.rate:hover .skills {
+  filter: blur(0);
+  opacity: 1;
+}
+.rate .skills .rating {
+  position: relative;
+  display: flex;
+  margin: 10px 0;
+  flex-direction: row-reverse;
+}
+.rate .skills .rating input {
+  position: relative;
+  width: 20px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  overflow: hidden;
+}
+.rate .skills .rating input::before {
+  content: "\f005";
+  position: absolute;
+  font-family: fontAwesome;
+  font-size: 34px;
+  position: absolute;
+  left: 4px;
+  color: #cacaca;
+  transition: 0.5s;
+}
+.rate .skills .rating input:nth-child(2n + 1):before {
+  right: 4px;
+  left: initial;
+}
+.rate .skills .rating input:checked::before,
+.rate .skills .rating input:checked ~ input::before,
+.rate .skills .rating input:hover::before,
+.rate .skills .rating input:hover ~ input::before {
+  color: var(--orange);
+}
+.ratestar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rate .row {
+  width: 100%;
+  max-width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.rate .row form {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1 1 40rem;
+  padding: 1rem;
+  box-shadow: 0 0 2rem rgb(0 0 0 / 3%);
+  border-radius: 0.5rem;
+}
+.rate .row form .inputBox {
+  padding: 0.5rem 0;
+}
+.rate .row form .inputBox textarea {
+  font-size: 2em;
+  padding: 1em;
+  font-weight: 500;
+  height: 15rem;
+  resize: none;
+  width: 100%;
+}
+@media (max-width: 430px) {
+  .rate {
+    width: 100%;
+  }
+  .rate:hover .skills {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@media (max-width: 375px) {
+  .rate h2 {
+    margin-top: 1em;
+    font-size: 2em;
+  }
+}
+@media (max-width: 330px) {
+  .rate .skills .rating input::before {
+    font-size: 30px;
+    left: 8px;
+  }
+}

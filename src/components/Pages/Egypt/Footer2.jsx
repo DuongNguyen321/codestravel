@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import "../../Style/pages/night.css"
-import "../../Style/pages/style.css"
+import "../../../Style/pages/night.css"
+import "../../../Style/pages/style.css"
 
 export default function Footer() {
   return (
@@ -13,7 +13,6 @@ export default function Footer() {
           Mỗi chuyến đi đều là một kỷ niệm đẹp. Hãy cùng STravel ghi lại kỷ niệm
           này !
         </p>
-        <a href="#book-form" class="btn">Đặt Ngay</a>
       </div>
     </div>
       <section className="footer">

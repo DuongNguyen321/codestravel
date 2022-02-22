@@ -1,5 +1,6 @@
 import "../../Style/style.css";
 import "../../Style/night.css";
+import { Link } from "react-router-dom";
 const navbarItems = [
   {
     id: 1,
@@ -48,13 +49,23 @@ const navbarItems = [
 function Header(props) {
   return (
     <header>
-      <div id="menu-bar">
+      <div
+        id="menu-bar"
+        className="fas"
+        data-aos="zoom-in-left"
+        data-aos-delay="100"
+      >
         <i className="fas fa-bars"></i>
       </div>
-      <a href="#home" className="logo">
+      <Link
+        to="/"
+        className="logo"
+        data-aos="zoom-in-left"
+        data-aos-delay="200"
+      >
         <span>S</span>Travel
-      </a>
-      <nav className="navbar">
+      </Link>
+      <nav className="navbar" data-aos="zoom-in-left" data-aos-delay="300">
         {navbarItems.map((navbarItems) => {
           return (
             <a key={navbarItems.id} href={navbarItems.href}>
@@ -63,7 +74,7 @@ function Header(props) {
           );
         })}
       </nav>
-      <div className="icons">
+      <div className="icons" data-aos="zoom-in-left" data-aos-delay="400">
         <i className="far fa-moon btn-toggle" />
         <i className="fas fa-search" id="search-btn" />
         <i className="fas fa-user" id="login-btn" />

@@ -153,7 +153,6 @@ html::-webkit-scrollbar-thumb {
 }
 .dark .Pages .destination .box-container .box .content p {
   color: #aaa;
-  margin-bottom: 2em;
   padding: 1rem 0;
   font-size: 1.4em;
   line-height: 2;
@@ -167,7 +166,7 @@ html::-webkit-scrollbar-thumb {
 }
 .dark .Pages .services .box-container .box:hover {
   border: 0.2rem solid var(--orange);
-  background: rgba(255, 255, 255, 0.8);
+  background: #333;
 }
 .dark .Pages .services .box-container .box h3 {
   font-size: 2rem;

@@ -1,8 +1,9 @@
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "../Header";
+import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import "../../Style/pages/Egypt/style.css";
-import "../../Style/pages/Egypt/night.css";
+import { useEffect } from "react";
+import "../../../Style/pages/Egypt/style.css";
+import "../../../Style/pages/Egypt/night.css";
 
 const Home = () => {
   return (
@@ -43,7 +44,7 @@ const Bookform = () => {
           </span>
         </div>
 
-        <div data-aos="zoom-in" data-aos-delay="150" className="inputBox">
+        <div data-aos="zoom-in" data-aos-delay="100" className="inputBox">
           <span>
             <Link className="btn btn-book" to="/egypt/book">
               Đặt ngay
@@ -91,74 +92,66 @@ const About = () => {
 };
 const destinationBox = [
   {
-    aosDelay: "50",
     id: 1,
-    src: "./images/Egypt/des-1.jpg",
+    src: "../../images/Egypt/des-1.jpg",
     h3: "Kim tự tháp Giza",
-    more: "Đọc thêm",
+
     icon: "fas fa-angle-right",
     p: "Kim tự tháp Giza là một trong Bảy kỳ quan thế giới cổ đại",
   },
   {
-    aosDelay: "100",
     id: 2,
     src: "./images/Egypt/des-2.jpg",
     h3: "Đền karnak của Luxor",
-    more: "Đọc thêm",
+
     icon: "fas fa-angle-right",
     p: "Thung lũng của các vị vua, Đền Karnak, và Đền tưởng niệm Hatshepsut",
   },
   {
-    aosDelay: "150",
     id: 3,
     src: "./images/Egypt/des-3.jpg",
     h3: "Hồi giáo Cario",
-    more: "Đọc thêm",
+
     icon: "fas fa-angle-right",
     p: "đầy đủ các nhà thờ Hồi giáo,trường học Hồi giáo và các di tích cổ đại",
   },
   {
-    aosDelay: "200",
     id: 4,
     src: "./images/Egypt/des-4.jpg",
     h3: "Aswan",
-    more: "Đọc thêm",
+
     icon: "fas fa-angle-right",
     p: "Thị trấn yên bình nhất của Ai Cập, đặt trên những đường cong của sông Nile",
   },
   {
-    aosDelay: "250",
     id: 5,
     src: "./images/Egypt/des-5.jpg",
     h3: "Abu simbel",
-    more: "Đọc thêm",
+
     icon: "fas fa-angle-right",
     p: "Nổi tiếng với tỷ lệ megalithic và được biết đến với ngôi đền của Ramses II",
   },
   {
-    aosDelay: "300",
     id: 6,
     src: "./images/Egypt/des-6.jpg",
     h3: "Bảo tàng Egyptian",
-    more: "Đọc thêm",
+
     icon: "fas fa-angle-right",
     p: "Bảo tàng Ai Cập của Cairo là một trong những bộ sưu tập bảo tàng tuyệt vời của thế giới",
   },
   {
-    aosDelay: "350",
     id: 7,
     src: "./images/Egypt/des-7.jpg",
     h3: "Sa mạc trắng",
-    more: "Đọc thêm",
+
     icon: "fas fa-angle-right",
     p: "Kỳ quan tự nhiên Sa mạc Trắng trông giống như một vùng đất hoang tuyết ở giữa cát khô cằn",
   },
   {
-    aosDelay: "400",
     id: 8,
     src: "./images/Egypt/des-8.jpg",
     h3: "Siwa Oasis",
-    more: "Đọc thêm",
+
     icon: "fas fa-angle-right",
     p: "Siwa là loại thuốc bổ yên tĩnh đến sự hối hả của các thành phố Ai Cập và là một trong những địa điểm đẹp nhất của Tây Sa mạc",
   },
@@ -173,23 +166,15 @@ const Destination = () => {
       <div className="box-container">
         {destinationBox.map((destinationBox) => {
           return (
-            <div
-              key={destinationBox.id}
-              className="box"
-              data-aos="fade-up"
-              data-aos-delay={destinationBox.aosDelay}
-            >
+            <Link to="/egypt/more" key={destinationBox.id} className="box">
               <div className="image">
-                <img sr={destinationBox.src} alt={destinationBox.h3} />
+                <img src={destinationBox.src} alt={destinationBox.h3} />
               </div>
               <div className="content">
                 <h3>{destinationBox.h3}</h3>
                 <p>{destinationBox.p}</p>
-                <Link to="/egypt/more">
-                  {destinationBox.more} <i className={destinationBox.icon} />
-                </Link>
               </div>
-            </div>
+            </Link>
           );
         })}
       </div>
@@ -201,37 +186,31 @@ const servicesBox = [
     id: 1,
     icon: "fas fa-globe",
     h3: "Rộng khắp thế giới",
-    aosDelay: "150",
   },
   {
     id: 2,
     icon: "fas fa-hiking",
     h3: "Những cuộc phiêu lưu",
-    aosDelay: "200",
   },
   {
     id: 3,
     icon: "fas fa-utensils",
     h3: "Dịch vụ ăn uống",
-    aosDelay: "250",
   },
   {
     id: 4,
     icon: "fas fa-hotel",
     h3: "Nghỉ dưỡng cao cấp",
-    aosDelay: "300",
   },
   {
     id: 5,
     icon: "fas fa-wallet",
     h3: "Mức giá tốt nhất",
-    aosDelay: "350",
   },
   {
     id: 6,
     icon: "fas fa-headset",
     h3: "Hỗ trợ 24/7",
-    aosDelay: "400",
   },
 ];
 const Services = () => {
@@ -244,13 +223,8 @@ const Services = () => {
       <div className="box-container">
         {servicesBox.map((servicesBox) => {
           return (
-            <div
-              key={servicesBox.id}
-              className="box"
-              data-aos="zoom-in-up"
-              data-aos-delay={servicesBox.aosDelay}
-            >
-              <i class={servicesBox.icon}></i>
+            <div key={servicesBox.id} className="box">
+              <i className={servicesBox.icon}></i>
               <h3>{servicesBox.h3}</h3>
               <p>Some text...</p>
             </div>
@@ -260,75 +234,167 @@ const Services = () => {
     </section>
   );
 };
-const Gallery =()=>{
+
+const galleryBox = [
+  {
+    id: 1,
+
+    src: "./images/Egypt/gallery-img-1.jpg",
+    span: "Thị trấn Dusty Abydos",
+    h3: "Đền Abydos",
+  },
+  {
+    id: 2,
+
+    src: "./images/Egypt/gallery-img-2.jpg",
+    span: "Trung tâm Ai Cập",
+    h3: "Nam Sinai",
+  },
+  {
+    id: 3,
+
+    src: "./images/Egypt/gallery-img-3.jpg",
+    span: "Chân núi Sinai",
+    h3: "Nam Sinai",
+  },
+  {
+    id: 4,
+
+    src: "./images/Egypt/gallery-img-4.jpg",
+    span: "Alexandria",
+    h3: "Thành phố Alexandria",
+  },
+  {
+    id: 5,
+    src: "./images/Egypt/gallery-img-5.jpg",
+    span: "Tây sa mạc",
+    h3: "Siwa Oasis",
+  },
+  {
+    id: 6,
+    src: "./images/Egypt/gallery-img-6.jpg",
+    span: "Bắc Farafra Oasis",
+    h3: "Sa mạc trắng",
+  },
+  {
+    id: 7,
+    src: "./images/Egypt/gallery-img-7.jpg",
+    span: "Cario",
+    h3: "Bảo tàng Egyptian",
+  },
+  {
+    id: 8,
+    src: "./images/Egypt/gallery-img-8.jpg",
+    span: "Nam Ai Cập",
+    h3: "Abu simbel",
+  },
+  {
+    id: 9,
+    src: "./images/Egypt/gallery-img-9.jpg",
+    span: "Quận hồi giáo",
+    h3: "Hổi Giáo Cario",
+  },
+];
+const Gallery = () => {
   return (
-    <section clasName="gallery" id="gallery">
-      <div clasName="heading">
+    <section className="gallery" id="gallery">
+      <div className="heading">
         <span>
           <h2>những bức Ảnh về Egypt</h2>
         </span>
       </div>
-      <div clasName="box-container">
-        <div clasName="box" data-aos="zoom-in-up" data-aos-delay="100">
-          <img src="images/gallery-img-1.jpg" alt="" />
-          <span>Thị trấn Dusty Abydos</span>
-          <h3>Đền Abydos</h3>
-        </div>
-        <div clasName="box" data-aos="zoom-in-up" data-aos-delay="150">
-          <img src="images/gallery-img-2.jpg" alt="" />
-          <span>Trung tâm Ai Cập</span>
-          <h3>Nam Sinai</h3>
-        </div>
-        <div clasName="box" data-aos="zoom-in-up" data-aos-delay="200">
-          <img src="images/gallery-img-3.jpg" alt="" />
-          <span>chân Núi Sinai</span>
-          <h3>Tu viện Thánh Catherine</h3>
-        </div>
-        <div clasName="box" data-aos="zoom-in-up" data-aos-delay="250">
-          <img src="images/gallery-img-4.jpg" alt="" />
-          <span>Alexandria</span>
-          <h3>thành phố Alexandria</h3>
-        </div>
-        <div clasName="box" data-aos="zoom-in-up" data-aos-delay="300">
-          <img src="images/gallery-img-5.jpg" alt="" />
-          <span>Tây Sa mạc</span>
-          <h3>Siwa Oasis</h3>
-        </div>
-        <div clasName="box" data-aos="zoom-in-up" data-aos-delay="350">
-          <img src="images/gallery-img-6.jpg" alt="" />
-          <span>Bắc Farafra Oasis</span>
-          <h3>Sa mạc trắng</h3>
-        </div>
-        <div clasName="box" data-aos="zoom-in-up" data-aos-delay="400">
-          <img src="images/gallery-img-7.jpg" alt="" />
-          <span>Cairo</span>
-          <h3>Bảo tàng egyptian</h3>
-        </div>
-        <div clasName="box" data-aos="zoom-in-up" data-aos-delay="450">
-          <img src="images/gallery-img-8.jpg" alt="" />
-          <span>Nam Ai Cập</span>
-          <h3>Abu simbel</h3>
-        </div>
-        <div clasName="box" data-aos="zoom-in-up" data-aos-delay="500">
-          <img src="images/gallery-img-9.jpg" alt="" />
-          <span>quận hồi giáo, Cairo</span>
-          <h3>Hồi giáo Cairo</h3>
-        </div>
+      <div className="box-container">
+        {galleryBox.map((galleryBox) => {
+          return (
+            <div className="box" key={galleryBox.id}>
+              <img src={galleryBox.src} alt={galleryBox.h3} />
+              <span>{galleryBox.span}</span>
+              <h3>{galleryBox.h3}</h3>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
-}
+};
+
+const blogBox = [
+  {
+    id: 1,
+    src: "./images/Egypt/blog-1.jpg",
+    a :"Mang những gì khi đi Egypt",
+    p:"Giấy tờ tuỳ thân, giấy xác minh tài chính, visa, Vé máy bay, trang phục, đồ dùng cá nhân, balo, túi đựng đồ..."
+  },
+  {
+    id: 2,
+    src: "./images/Egypt/blog-2.jpg",
+    a :"Xin visa đi Egypt",
+    p:"Visa Ai Cập không khó xin, thủ tục đơn giản gồm đơn tải từ trang web chính thức của Đại sứ quán..."
+  },
+  {
+    id: 3,
+    src: "./images/Egypt/blog-3.jpg",
+    a :"Phương tiện di chuyển",
+    p:"bạn có thể đi xe bus, tàu lửa, tàu thủy hoặc thú vị hơn có thể cưỡi lạc đà hoặc ngựa đều được..."
+  },
+];
+
+const Blog = () => {
+  return (
+    <section className="blogs" id="blogs">
+      <div className="heading">
+        <span>blogs & posts</span>
+        <h1>Tìm hiểu thêm về Egypt</h1>
+      </div>
+      <div className="box-container">
+        {blogBox.map((blogBox)=>{
+          return (
+            <Link to="/egypt/blog" className="box" key={blogBox.id}>
+              <div className="image">
+                <img src={blogBox.src} alt={blogBox.a} />
+              </div>
+              <div className="content">
+                <Link to="/egypt/blog" className="link">
+                  {blogBox.a}
+                </Link>
+                <p>{blogBox.p}</p>
+                <div className="icon">
+                  <Link to="/egypt/blog">
+                    <i className="fas fa-clock"></i> 21st may, 2021
+                  </Link>
+                  <Link to="/egypt/blog">
+                    <i className="fas fa-user"></i> by admin
+                  </Link>
+                </div>
+              </div>
+            </Link>
+          );
+        })}
+      
+      </div>
+    </section>
+  );
+};
+
 export default function Egypt() {
+  useEffect(() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <div className="Pages">
-      <Header />
+      <Header  />
       <div className="container">
         <Home />
         <Bookform />
         <About />
         <Destination />
         <Services />
-        <Gallery/>
+        <Gallery />
+        <Blog />
       </div>
       <Footer />
     </div>

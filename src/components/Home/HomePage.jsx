@@ -197,7 +197,7 @@ function Book(props) {
         <div className="image">
           <img src="../../images/Home/book-img.svg" alt="" />
         </div>
-        <form>
+        <form action="">
           <div className="inputBox">
             <h3>Hãy liên hệ với tôi bằng :</h3>
             <input type="text" placeholder="Email hoặc số điện thoại" />
@@ -222,15 +222,15 @@ function Book(props) {
 
           <div className="inputBox">
             <h3>Chúng tôi có :</h3>
-            <input type="number" placeholder="Số người" />
+            <input type="number" placeholder="Số người" min={2} />
           </div>
           <div className="inputBox">
             <h3>bắt đầu từ :</h3>
-            <input type="date" />
+            <input type="datetime-local" />
           </div>
           <div className="inputBox">
             <h3>Kết thúc vào :</h3>
-            <input type="date" />
+            <input type="datetime-local" />
           </div>
           <input type="submit" className="btn" value="Tìm Ngay" />
         </form>
@@ -308,7 +308,7 @@ const packagesBox = [
     src: "./images/Home/p-5.jpg",
     h3: " tokyo",
     p1: "tokyo-thủ đô có sư giao thoa hài hoà giữa truyền thống và hiện đại",
-    p2: "chuyến đi có kinh phí thấp nhất",
+    p2: "chuyến đi có giá thấp nhất",
     price: "6.500.000 ",
     spanPrice: "10.000.000",
     href: "/Tokyo",
@@ -471,55 +471,55 @@ const galleryBox = [
   {
     id: 1,
     h3: "Ảnh chụp",
-    p: " những bức ảnh đẹp nhất về chuyến du lịch của bạn sẽ được chia sẻ lên đây",
+    p: " những bức ảnh đẹp nhất về chuyến du lịch sẽ được chia sẻ lên đây",
     src: "./images/Home/g-1.jpg",
   },
   {
     id: 2,
     h3: "Ảnh chụp",
-    p: " những bức ảnh đẹp nhất về chuyến du lịch của bạn sẽ được chia sẻ lên đây",
+    p: " những bức ảnh đẹp nhất về chuyến du lịch sẽ được chia sẻ lên đây",
     src: "./images/Home/g-2.jpg",
   },
   {
     id: 3,
     h3: "Ảnh chụp",
-    p: " những bức ảnh đẹp nhất về chuyến du lịch của bạn sẽ được chia sẻ lên đây",
+    p: " những bức ảnh đẹp nhất về chuyến du lịch sẽ được chia sẻ lên đây",
     src: "./images/Home/g-3.jpg",
   },
   {
     id: 4,
     h3: "Ảnh chụp",
-    p: " những bức ảnh đẹp nhất về chuyến du lịch của bạn sẽ được chia sẻ lên đây",
+    p: " những bức ảnh đẹp nhất về chuyến du lịch sẽ được chia sẻ lên đây",
     src: "./images/Home/g-4.jpg",
   },
   {
     id: 5,
     h3: "Ảnh chụp",
-    p: " những bức ảnh đẹp nhất về chuyến du lịch của bạn sẽ được chia sẻ lên đây",
+    p: " những bức ảnh đẹp nhất về chuyến du lịch được chia sẻ lên đây",
     src: "./images/Home/g-5.jpg",
   },
   {
     id: 6,
     h3: "Ảnh chụp",
-    p: " những bức ảnh đẹp nhất về chuyến du lịch của bạn sẽ được chia sẻ lên đây",
+    p: " những bức ảnh đẹp nhất về chuyến du lịch sẽ được chia sẻ lên đây",
     src: "./images/Home/g-6.jpg",
   },
   {
     id: 7,
     h3: "Ảnh chụp",
-    p: " những bức ảnh đẹp nhất về chuyến du lịch của bạn sẽ được chia sẻ lên đây",
+    p: " những bức ảnh đẹp nhất về chuyến du lịch sẽ được chia sẻ lên đây",
     src: "./images/Home/g-7.jpg",
   },
   {
     id: 8,
     h3: "Ảnh chụp",
-    p: " những bức ảnh đẹp nhất về chuyến du lịch của bạn sẽ được chia sẻ lên đây",
+    p: " những bức ảnh đẹp nhất về chuyến du lịch sẽ được chia sẻ lên đây",
     src: "./images/Home/g-8.jpg",
   },
   {
     id: 9,
     h3: "Ảnh chụp",
-    p: " những bức ảnh đẹp nhất về chuyến du lịch của bạn sẽ được chia sẻ lên đây",
+    p: " những bức ảnh đẹp nhất về chuyến du lịch sẽ được chia sẻ lên đây",
     src: "./images/Home/g-9.jpg",
   },
 ];
@@ -544,9 +544,9 @@ const Gallery = () => {
               <div className="content">
                 <h3>{galleryBox.h3}</h3>
                 <p>{galleryBox.p}</p>
-                <a href="#home" className="btn">
+                <Link to="/images" className="btn">
                   Xem thêm
-                </a>
+                </Link>
               </div>
             </div>
           );
@@ -728,16 +728,16 @@ const Contact = () => {
             <input type="text" placeholder="Tên của bạn" />
             <input type="email" placeholder="Email liên hệ" />
           </div>
-          <div className="inputBox">
-            <input type="number" placeholder="Số điện thoại" />
-            <input type="text" placeholder="Chủ đề" />
+          <div className="inputBox"> 
+            <input type="text" placeholder="Số điện thoại" minLength={9} maxLength={11} />
+            <input type="text" placeholder="Vấn đề bạn cần trao đổi" />
           </div>
           <textarea
             placeholder="Viết lời nhắn của bạn"
             name="contact"
             cols="30"
             rows="10"
-          ></textarea>
+            ></textarea>
           <input
             type="submit"
             className="btn"

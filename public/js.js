@@ -47,12 +47,12 @@ videoBtn.forEach((btn) => {
     console.log("đổi video");
   });
 });
-menuBtn.onclick = () => {
-  Navbar.classList.toggle("active");
-};
-window.onscroll = () => {
-  Navbar.classList.remove("active");
-};
+// menuBtn.onclick = () => {
+//   Navbar.classList.toggle("active");
+// };
+// window.onscroll = () => {
+//   Navbar.classList.remove("active");
+// };
 document
   .querySelectorAll(".about .video-container .controls .control-btn")
   .forEach((btn) => {

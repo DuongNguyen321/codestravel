@@ -626,6 +626,7 @@ html {
   }
 .light .HomePages header .navbar {
     position: absolute;
+    transition: 0.3s;
     top: 100%;
     right: 0;
     left: 0;
@@ -635,6 +636,7 @@ html {
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
 .light .HomePages header .navbar.active {
+  transition: 0.3s;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 .light .HomePages header .navbar a {

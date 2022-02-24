@@ -1,9 +1,9 @@
 import Header from "./Header2";
 import Footer from "./Footer2";
 import { useEffect } from "react";
-import "../../../Style/pages/Egypt/night.css"
-import "../../../Style/pages/Egypt/style.css"
- export default function EgyptMore(){
+import "../../../Style/pages/Hawaii/night.css"
+import "../../../Style/pages/Hawaii/style.css"
+ export default function HawaiiMore(){
        useEffect(() => {
          window.scroll({
            top: 0,
@@ -12,7 +12,7 @@ import "../../../Style/pages/Egypt/style.css"
          });
        }, []);
      return(
-         <div className="Pages Egypt">
+         <div className="Pages Hawaii">
              <Header/>
              <div className="container" style={{marginTop:80}}>
                  More

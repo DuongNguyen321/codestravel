@@ -3,8 +3,8 @@ import Footer from "./Footer2";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
-import "../../../Style/pages/Egypt/night.css";
-import "../../../Style/pages/Egypt/style.css";
+import "../../../Style/pages/Mumbai/night.css";
+import "../../../Style/pages/Mumbai/style.css";
 
 const Home = () => {
     useEffect(() => {
@@ -18,13 +18,13 @@ const Home = () => {
     <section className="home" id="home">
       <div className="content">
         <span data-aos="fade-up" data-aos-delay="100">
-          Egypt
+          Mumbai
         </span>
         <h3 data-aos="fade-up" data-aos-delay="200">
           vùng đất của Pharaohs
         </h3>
         <p data-aos="fade-up" data-aos-delay="400">
-          Egypt là một trong những quốc gia lâu đời nhất trên thế giới. Đây là
+          Mumbai là một trong những quốc gia lâu đời nhất trên thế giới. Đây là
           nơi người Ai Cập cổ đại đã xây dựng một nền văn minh vĩ đại trong
           thung lũng sông Nile, với rất nhiều đền thờ, cổ vật và những tàn tích
           ngoạn mục đáng để bạn khám phá
@@ -32,7 +32,7 @@ const Home = () => {
         <Link
           data-aos="fade-up"
           data-aos-delay="500"
-          to="/egypt"
+          to="/Mumbai"
           className="btn"
         >
           Tìm hiểu thêm
@@ -89,12 +89,12 @@ const Book = () => {
   );
 };
 
-export default function EgyptBook() {
+export default function MumbaiBook() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="Pages Egypt">
+    <div className="Pages Mumbai">
       <Header />
       <div className="container">
         <Home />

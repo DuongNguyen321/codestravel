@@ -2,24 +2,28 @@ import Header from "../Header";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import "../../../Style/pages/Egypt/night.css"
-import "../../../Style/pages/Egypt/style.css"
+import "../../../Style/pages/Hawaii/style.css";
+import "../../../Style/pages/Hawaii/night.css";
+
 
 const Home = () => {
   return (
     <section className="home" id="home">
       <div className="content">
         <span data-aos="fade-up" data-aos-delay="100">
-          Egypt
+          Hawaii
         </span>
         <h3 data-aos="fade-up" data-aos-delay="200">
-          vùng đất của Pharaohs
+          Hòn ngọc của <br />
+          thái bình dương
         </h3>
         <p data-aos="fade-up" data-aos-delay="300">
-          Egypt là một trong những quốc gia lâu đời nhất trên thế giới. Đây là
-          nơi người Ai Cập cổ đại đã xây dựng một nền văn minh vĩ đại trong
-          thung lũng sông Nile, với rất nhiều đền thờ, cổ vật và những tàn tích
-          ngoạn mục đáng để bạn khám phá
+          Địa danh này là một quần thể các đảo hoang sơ giữa Thái Bình Dương mà
+          nổi bật nhất là các đảo Oahu, Maui, Big island…trong đó đảo Oahu là
+          nơi có nhiều người sinh sống nhất và cũng là trung tâm du lịch. Hawaii
+          nổi tiếng nhờ các bãi tắm dài và đẹp với nước biển trong xanh. Du
+          khách đến Hawaii là để nghỉ dưỡng, xem mặt trời mọc, mặt trời lặn và
+          văn hóa của các thổ dân đa đảo
         </p>
         <a
           data-aos="fade-up"
@@ -40,13 +44,13 @@ const Bookform = () => {
       <form action="">
         <div data-aos="zoom-in" data-aos-delay="50" className="inputBox">
           <span style={{ fontSize: 2.5 + "em" }}>
-            <h1>chuyến đi được bình chọn tốt nhất</h1>
+            <h1>kỳ nghỉ dưỡng được đánh giá cao nhất</h1>
           </span>
         </div>
 
         <div data-aos="zoom-in" data-aos-delay="100" className="inputBox">
           <span>
-            <Link className="btn btn-book" to="/egypt/book">
+            <Link className="btn btn-book" to="/Hawaii/book">
               Đặt ngay
             </Link>
           </span>
@@ -60,7 +64,7 @@ const About = () => {
     <section className="about" id="about">
       <div
         className="video-container"
-        data-aos="fade-right"
+        
         data-aos-delay="150"
       >
         <video
@@ -93,80 +97,64 @@ const About = () => {
 const destinationBox = [
   {
     id: 1,
-    src: "../../images/Egypt/des-1.jpg",
-    h3: "Kim tự tháp Giza",
-
-    icon: "fas fa-angle-right",
-    p: "Kim tự tháp Giza là một trong Bảy kỳ quan thế giới cổ đại",
+    src: "../../images/Hawaii/des-1.jpg",
+    h3: "Bãi biển Waikiki",
+    p: "lý tưởng cho những hoạt động dưới nước như: surfing, stand-up paddle, boogie board, chèo ca-nô đồng đội...",
   },
   {
     id: 2,
-    src: "./images/Egypt/des-2.jpg",
-    h3: "Đền karnak của Luxor",
-
-    icon: "fas fa-angle-right",
-    p: "Thung lũng của các vị vua, Đền Karnak, và Đền tưởng niệm Hatshepsut",
+    src: "./images/Hawaii/des-2.jpg",
+    h3: "đảo Oahu",
+    p: "cực kỳ đáng tiếc nếu tới Oahu mà không ngâm mình dưới nước thư giãn và khám phá thế giới đại dương bao la rực rỡ",
   },
   {
     id: 3,
-    src: "./images/Egypt/des-3.jpg",
-    h3: "Hồi giáo Cario",
-
-    icon: "fas fa-angle-right",
-    p: "đầy đủ các nhà thờ Hồi giáo,trường học Hồi giáo và các di tích cổ đại",
+    src: "./images/Hawaii/des-3.jpg",
+    h3: "Trân Châu Cảng",
+    p: "di tích lịch sử cấp Quốc gia, thu hút hơn 2 triệu lượt khách du khách đến tham quan mỗi năm.",
   },
   {
     id: 4,
-    src: "./images/Egypt/des-4.jpg",
-    h3: "Aswan",
-
-    icon: "fas fa-angle-right",
-    p: "Thị trấn yên bình nhất của Ai Cập, đặt trên những đường cong của sông Nile",
+    src: "./images/Hawaii/des-4.jpg",
+    h3: "Công viên Na Pali Coast",
+    p: "Nếu đã xem bộ phim Jurassic Park, bạn sẽ nhận ra vách đá hình từng xuất hiện trong cảnh quay của phim",
   },
   {
     id: 5,
-    src: "./images/Egypt/des-5.jpg",
-    h3: "Abu simbel",
-
-    icon: "fas fa-angle-right",
-    p: "Nổi tiếng với tỷ lệ megalithic và được biết đến với ngôi đền của Ramses II",
+    src: "./images/Hawaii/des-5.jpg",
+    h3: "Công viên núi lửa Hawaii",
+    p: "cùng chiêm ngưỡng hai trong số những ngọn núi lửa lớn nhất hành tinh vẫn còn đang hoạt động",
   },
   {
     id: 6,
-    src: "./images/Egypt/des-6.jpg",
-    h3: "Bảo tàng Egyptian",
-
-    icon: "fas fa-angle-right",
-    p: "Bảo tàng Ai Cập của Cairo là một trong những bộ sưu tập bảo tàng tuyệt vời của thế giới",
+    src: "./images/Hawaii/des-6.jpg",
+    h3: "Vườn quốc gia Haleakala",
+    p: "Tâm điểm của vườn quốc gia chính là ngọn núi lửa Haleakala cao 3048 mét đã ngừng hoạt động",
   },
   {
     id: 7,
-    src: "./images/Egypt/des-7.jpg",
-    h3: "Sa mạc trắng",
-
-    icon: "fas fa-angle-right",
-    p: "Kỳ quan tự nhiên Sa mạc Trắng trông giống như một vùng đất hoang tuyết ở giữa cát khô cằn",
+    src: "./images/Hawaii/des-7.jpg",
+    h3: "kona Coffee Farms",
+    p: "trải nghiệm tự tay thu hoạch, chế biến cafe và thưởng thức hương vị của loại cafe hảo hạng nhất thế giới",
   },
   {
     id: 8,
-    src: "./images/Egypt/des-8.jpg",
-    h3: "Siwa Oasis",
-
-    icon: "fas fa-angle-right",
-    p: "Siwa là loại thuốc bổ yên tĩnh đến sự hối hả của các thành phố Ai Cập và là một trong những địa điểm đẹp nhất của Tây Sa mạc",
+    src: "./images/Hawaii/des-8.jpg",
+    h3: "Cung điện Iolani",
+    p: "Nơi đâu được xem là một trong những cung điện đẹp nhất trên thế giới. Cũng là cung điện Hoàng Gia duy nhất của Hawaii",
   },
 ];
 const Destination = () => {
   return (
     <section className="destination" id="destination">
       <div className="heading">
-        <span>Những điểm đến ở Egypt</span>
+        <span>Những điểm đến ở Hawaii</span>
         <h1>Những điểm du lịch bậc nhất</h1>
       </div>
       <div className="box-container">
         {destinationBox.map((destinationBox) => {
           return (
-            <Link to="/egypt/more" key={destinationBox.id} className="box">
+            <Link to="/Hawaii/more" key={destinationBox.id} className="box">
               <div className="image">
                 <img src={destinationBox.src} alt={destinationBox.h3} />
               </div>
@@ -239,60 +227,60 @@ const galleryBox = [
   {
     id: 1,
 
-    src: "./images/Egypt/gallery-img-1.jpg",
-    span: "Thị trấn Dusty Abydos",
-    h3: "Đền Abydos",
+    src: "./images/Hawaii/gallery-img-1.jpg",
+    span: "Kailua",
+    h3: "Bờ biển Kailua",
   },
   {
     id: 2,
 
-    src: "./images/Egypt/gallery-img-2.jpg",
-    span: "Trung tâm Ai Cập",
-    h3: "Nam Sinai",
+    src: "./images/Hawaii/gallery-img-2.jpg",
+    span: "Paradise Cove.",
+    h3: "trình diễn múa lửa",
   },
   {
     id: 3,
 
-    src: "./images/Egypt/gallery-img-3.jpg",
-    span: "Chân núi Sinai",
-    h3: "Nam Sinai",
+    src: "./images/Hawaii/gallery-img-3.jpg",
+    span: "Hawaii",
+    h3: "Công viên quốc gia",
   },
   {
     id: 4,
 
-    src: "./images/Egypt/gallery-img-4.jpg",
-    span: "Alexandria",
-    h3: "Thành phố Alexandria",
+    src: "./images/Hawaii/gallery-img-4.jpg",
+    span: "Oahu",
+    h3: "North shore",
   },
   {
     id: 5,
-    src: "./images/Egypt/gallery-img-5.jpg",
-    span: "Tây sa mạc",
-    h3: "Siwa Oasis",
+    src: "./images/Hawaii/gallery-img-5.jpg",
+    span: "Hawaii",
+    h3: "Bãi biển Waikiki",
   },
   {
     id: 6,
-    src: "./images/Egypt/gallery-img-6.jpg",
-    span: "Bắc Farafra Oasis",
-    h3: "Sa mạc trắng",
+    src: "./images/Hawaii/gallery-img-6.jpg",
+    span: "Hawaii",
+    h3: "vườn quốc gia Haleakala",
   },
   {
     id: 7,
-    src: "./images/Egypt/gallery-img-7.jpg",
-    span: "Cario",
-    h3: "Bảo tàng Egyptian",
+    src: "./images/Hawaii/gallery-img-7.jpg",
+    span: "dọc bờ biển Hamakua",
+    h3: "Hành lang di sản Hamakua",
   },
   {
     id: 8,
-    src: "./images/Egypt/gallery-img-8.jpg",
-    span: "Nam Ai Cập",
-    h3: "Abu simbel",
+    src: "./images/Hawaii/gallery-img-8.jpg",
+    span: "phía đông thành phố Hawaii",
+    h3: "Mauna kea",
   },
   {
     id: 9,
-    src: "./images/Egypt/gallery-img-9.jpg",
-    span: "Quận hồi giáo",
-    h3: "Hổi Giáo Cario",
+    src: "./images/Hawaii/gallery-img-9.jpg",
+    span: "đảo Oahu",
+    h3: "Thác nước",
   },
 ];
 const Gallery = () => {
@@ -300,7 +288,7 @@ const Gallery = () => {
     <section className="gallery" id="gallery">
       <div className="heading">
         <span>
-          <h2>những bức Ảnh về Egypt</h2>
+          <h2>những bức Ảnh về Hawaii</h2>
         </span>
       </div>
       <div className="box-container">
@@ -321,21 +309,21 @@ const Gallery = () => {
 const blogBox = [
   {
     id: 1,
-    src: "./images/Egypt/blog-1.jpg",
-    a :"Mang những gì khi đi Egypt",
+    src: "./images/Hawaii/blog-1.jpg",
+    a :"Mang những gì khi đi Hawaii",
     p:"Giấy tờ tuỳ thân, giấy xác minh tài chính, visa, Vé máy bay, trang phục, đồ dùng cá nhân, balo, túi đựng đồ..."
   },
   {
     id: 2,
-    src: "./images/Egypt/blog-2.jpg",
-    a :"Xin visa đi Egypt",
+    src: "./images/Hawaii/blog-2.jpg",
+    a :"Xin visa đi Hawaii",
     p:"Visa Ai Cập không khó xin, thủ tục đơn giản gồm đơn tải từ trang web chính thức của Đại sứ quán..."
   },
   {
     id: 3,
-    src: "./images/Egypt/blog-3.jpg",
+    src: "./images/Hawaii/blog-3.jpg",
     a :"Phương tiện di chuyển",
-    p:"bạn có thể đi xe bus, tàu lửa, tàu thủy hoặc thú vị hơn có thể cưỡi lạc đà hoặc ngựa đều được..."
+    p:"bạn có thể đi xe bus, tàu lửa, tàu thủy hoặc bất cứ phương tiện nào có thể di chuyển đều được..."
   },
 ];
 
@@ -344,25 +332,25 @@ const Blog = () => {
     <section className="blogs" id="blogs">
       <div className="heading">
         <span>blogs & posts</span>
-        <h1>Tìm hiểu thêm về Egypt</h1>
+        <h1>Tìm hiểu thêm về Hawaii</h1>
       </div>
       <div className="box-container">
         {blogBox.map((blogBox)=>{
           return (
-            <Link to="/egypt/blog" className="box" key={blogBox.id}>
+            <Link to="/Hawaii/blog" className="box" key={blogBox.id}>
               <div className="image">
                 <img src={blogBox.src} alt={blogBox.a} />
               </div>
               <div className="content">
-                <Link to="/egypt/blog" className="link">
+                <Link to="/Hawaii/blog" className="link">
                   {blogBox.a}
                 </Link>
                 <p>{blogBox.p}</p>
                 <div className="icon">
-                  <Link to="/egypt/blog">
+                  <Link to="/Hawaii/blog">
                     <i className="fas fa-clock"></i> 21st may, 2021
                   </Link>
-                  <Link to="/egypt/blog">
+                  <Link to="/Hawaii/blog">
                     <i className="fas fa-user"></i> by admin
                   </Link>
                 </div>
@@ -376,63 +364,64 @@ const Blog = () => {
   );
 };
 
-const Review =()=> {
-      return(
-        <section className="review">
-        <div className="content" data-aos="fade-right" data-aos-delay="250">
-          <span>Đánh giá</span>
-          <h3>Những lời đánh giá tốt nhất</h3>
-          <p>
-            Tất cả những lời đánh giá chúng tôi đều ghi nhận và tiếp thu để phát
-            triển. đây là những đánh giá tốt nhất về chuyến đi Egypt này.
-          </p>
-        </div>
+const Review = ()=>{
+  return (
+    <section className="review">
+      <div className="content">
+        <span>Đánh giá</span>
+        <h3>Những lời đánh giá tốt nhất</h3>
+        <p>
+          Tất cả những lời đánh giá chúng tôi đều ghi nhận và tiếp thu để phát
+          triển. đây là những đánh giá tốt nhất về chuyến đi Hawaii này.
+        </p>
+      </div>
 
-        <div className="box-container" data-aos="fade-left" data-aos-delay="350">
-          <div className="box">
-            <p>Some test</p>
-            <div className="user">
-              <img src="./images/Egypt/pic-1.png" alt="" />
-              <div className="info">
-                <h3>Some test</h3>
-                <span>...</span>
-              </div>
-            </div>
-          </div>
-          <div className="box">
-            <p>Some test</p>
-            <div className="user">
-              <img src="./images/Egypt/pic-2.png" alt="" />
-              <div className="info">
-                <h3>Some test</h3>
-                <span>...</span>
-              </div>
-            </div>
-          </div>
-          <div className="box">
-            <p>Some test</p>
-            <div className="user">
-              <img src="./images/Egypt/pic-3.png" alt="" />
-              <div className="info">
-                <h3>Some test</h3>
-                <span>...</span>
-              </div>
-            </div>
-          </div>
-          <div className="box">
-            <p>Some test</p>
-            <div className="user">
-              <img src="./images/Egypt/pic-4.png" alt="" />
-              <div className="info">
-                <h3>Some test</h3>
-                <span>...</span>
-              </div>
+      <div className="box-container">
+        <div className="box">
+          <p>Some text</p>
+          <div className="user">
+            <img src="./images/Hawaii/pic-1.png" alt="" />
+            <div className="info">
+              <h3>Some text</h3>
+              <span>...</span>
             </div>
           </div>
         </div>
-      </section>
-      )
+        <div className="box">
+          <p>Some text</p>
+          <div className="user">
+            <img src="./images/Hawaii/pic-2.png" alt="" />
+            <div className="info">
+              <h3>Some text</h3>
+              <span>...</span>
+            </div>
+          </div>
+        </div>
+        <div className="box">
+          <p>Some text</p>
+          <div className="user">
+            <img src="./images/Hawaii/pic-3.png" alt="" />
+            <div className="info">
+              <h3>Some text</h3>
+              <span>...</span>
+            </div>
+          </div>
+        </div>
+        <div className="box">
+          <p>Some text</p>
+          <div className="user">
+            <img src="./images/Hawaii/pic-4.png" alt="" />
+            <div className="info">
+              <h3>Some text</h3>
+              <span>...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
+
 const Banner =()=>{
   return (
     <div className="banner">
@@ -443,14 +432,14 @@ const Banner =()=>{
           Mỗi chuyến đi đều là một kỷ niệm đẹp. Hãy cùng STravel ghi lại kỷ niệm
           này !
         </p>
-        <Link to="/egypt/book" className="btn">
+        <Link to="/Hawaii/book" className="btn">
           Đặt Ngay
         </Link>
       </div>
     </div>
   );
-}
-export default function Egypt() {
+} 
+export default function Hawaii() {
 
 
   useEffect(() => {
@@ -461,7 +450,7 @@ export default function Egypt() {
     });
   }, []);
   return (
-    <div className="Pages Egypt">
+    <div className="Pages Hawaii">
       <Header  />
       <div className="container">
         <Home />

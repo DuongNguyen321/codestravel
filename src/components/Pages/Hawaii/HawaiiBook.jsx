@@ -3,8 +3,8 @@ import Footer from "./Footer2";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
-import "../../../Style/pages/Egypt/night.css";
-import "../../../Style/pages/Egypt/style.css";
+import "../../../Style/pages/Hawaii/night.css";
+import "../../../Style/pages/Hawaii/style.css";
 
 const Home = () => {
     useEffect(() => {
@@ -18,21 +18,23 @@ const Home = () => {
     <section className="home" id="home">
       <div className="content">
         <span data-aos="fade-up" data-aos-delay="100">
-          Egypt
+          Hawaii
         </span>
         <h3 data-aos="fade-up" data-aos-delay="200">
           vùng đất của Pharaohs
         </h3>
         <p data-aos="fade-up" data-aos-delay="400">
-          Egypt là một trong những quốc gia lâu đời nhất trên thế giới. Đây là
-          nơi người Ai Cập cổ đại đã xây dựng một nền văn minh vĩ đại trong
-          thung lũng sông Nile, với rất nhiều đền thờ, cổ vật và những tàn tích
-          ngoạn mục đáng để bạn khám phá
+          Địa danh này là một quần thể các đảo hoang sơ giữa Thái Bình Dương mà
+          nổi bật nhất là các đảo Oahu, Maui, Big island…trong đó đảo Oahu là
+          nơi có nhiều người sinh sống nhất và cũng là trung tâm du lịch. Hawaii
+          nổi tiếng nhờ các bãi tắm dài và đẹp với nước biển trong xanh. Du
+          khách đến Hawaii là để nghỉ dưỡng, xem mặt trời mọc, mặt trời lặn và
+          văn hóa của các thổ dân đa đảo
         </p>
         <Link
           data-aos="fade-up"
           data-aos-delay="500"
-          to="/egypt"
+          to="/hawaii"
           className="btn"
         >
           Tìm hiểu thêm
@@ -48,7 +50,7 @@ const Book = () => {
       <form action="">
         <div data-aos="zoom-in" data-aos-delay="50" className="inputBox">
           <span>
-            <h1>chuyến đi được bình chọn tốt nhất</h1>
+            <h1>kỳ nghỉ dưỡng được đánh giá cao nhất</h1>
           </span>
         </div>
         <div data-aos="zoom-in" data-aos-delay="100" className="inputBox">
@@ -65,7 +67,7 @@ const Book = () => {
         </div>
         <div data-aos="zoom-in" data-aos-delay="250" className="inputBox">
           <span>Tôi có</span>
-          <input type="number"  min={2} max={8} placeholder="Từ 2-8 người" />
+          <input type="number" min={2} max={8} placeholder="Từ 2-8 người" />
         </div>
         <div data-aos="zoom-in" data-aos-delay="300" className="inputBox">
           <span>Tôi thanh toán bằng</span>
@@ -89,12 +91,12 @@ const Book = () => {
   );
 };
 
-export default function EgyptBook() {
+export default function HawaiiBook() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="Pages Egypt">
+    <div className="Pages Hawaii">
       <Header />
       <div className="container">
         <Home />

@@ -11,7 +11,8 @@ let formClose = document.getElementById("form-close");
 let menuBtn = document.getElementById("menu-btn");
 var Theme = localStorage.getItem("theme");
 let body = document.body;
-
+let HomePages = document.querySelector("HomePages");
+let Pages = document.querySelector("Pages")
 window.onscroll = () => {
   searchBtn.classList.remove("fa-times");
   searchBar.classList.remove("active");

@@ -5,17 +5,7 @@ import "../../Style/pages/style.css"
 export default function Footer() {
   return (
     <footer className="footer">
-        <div class="banner">
-      <div class="content" data-aos="zoom-in-up" data-aos-delay="250">
-        <span>Cùng STravel</span>
-        <h3>Bắt đầu chuyến đi của bạn</h3>
-        <p>
-          Mỗi chuyến đi đều là một kỷ niệm đẹp. Hãy cùng STravel ghi lại kỷ niệm
-          này !
-        </p>
-        <a href="#book-form" class="btn">Đặt Ngay</a>
-      </div>
-    </div>
+      
       <section className="footer">
         <div className="box-container">
           <div className="box">

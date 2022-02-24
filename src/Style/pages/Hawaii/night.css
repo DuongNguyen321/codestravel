@@ -35,15 +35,15 @@ html::-webkit-scrollbar-thumb {
   background: var(--orange);
   border-radius: 5rem;
 }
-.dark .Pages.Egypt {
+.dark .Pages.Hawaii {
   background: #111;
   overflow: hidden;
 }
-.dark .Pages.Egypt .heading h1 {
+.dark .Pages.Hawaii .heading h1 {
   color: #fff;
   font-size: 4rem;
 }
-.dark .Pages.Egypt .btn {
+.dark .Pages.Hawaii .btn {
   color: #111;
   display: inline-block;
   margin-top: 1rem;
@@ -55,11 +55,11 @@ html::-webkit-scrollbar-thumb {
   font-size: 2rem;
   transition: 0.3s;
 }
-.dark .Pages.Egypt .btn:hover {
+.dark .Pages.Hawaii .btn:hover {
   color: var(--orange);
   background: rgba(114, 74, 0, 0.2);
 }
-.dark .Pages.Egypt .btn-toggle {
+.dark .Pages.Hawaii .btn-toggle {
   position: absolute;
   right: 20%;
   display: flex;
@@ -78,20 +78,20 @@ html::-webkit-scrollbar-thumb {
   align-content: center;
   bottom: 1.7rem;
 }
-.dark .Pages.Egypt .header .navbar a {
+.dark .Pages.Hawaii .header .navbar a {
   color: #aaa;
   font-size: 1.7rem;
   display: inline-block;
   margin: 0 1rem;
 }
-.dark .Pages.Egypt .home .content p {
+.dark .Pages.Hawaii .home .content p {
   color: #aaa;
   max-width: 60rem;
   margin: 1rem auto;
   font-size: 1.5em;
   line-height: 2;
 }
-.dark .Pages.Egypt .book-form {
+.dark .Pages.Hawaii .book-form {
   background: #222;
   width: 80%;
   margin: 1rem auto;
@@ -101,15 +101,15 @@ html::-webkit-scrollbar-thumb {
   box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.3);
   padding: 3rem 2rem;
 }
-.dark .Pages.Egypt .book-form form .inputBox span {
+.dark .Pages.Hawaii .book-form form .inputBox span {
   display: block;
   font-size: 2em;
   font-weight: 600;
   text-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
   color: #aaa;
 }
-.dark .Pages.Egypt .book-form form .inputBox input,
-.dark .Pages.Egypt select {
+.dark .Pages.Hawaii .book-form form .inputBox input,
+.dark .Pages.Hawaii select {
   width: 100%;
   padding: 1.2rem 1.4rem;
   border-radius: 5rem;
@@ -120,7 +120,7 @@ html::-webkit-scrollbar-thumb {
   margin-top: 1rem;
   color: #aaa;
 }
-.dark .Pages.Egypt .about .video-container .controls span {
+.dark .Pages.Hawaii .about .video-container .controls span {
   background: #fff;
   display: inline-block;
   height: 2rem;
@@ -131,76 +131,76 @@ html::-webkit-scrollbar-thumb {
   cursor: pointer;
   margin: 0.7rem;
 }
-.dark .Pages.Egypt .about .content h3 {
+.dark .Pages.Hawaii .about .content h3 {
   color: #fff;
   font-size: 4em;
   margin-top: 0.5rem;
 }
-.dark .Pages.Egypt .about .content p {
+.dark .Pages.Hawaii .about .content p {
   color: #aaa;
   padding: 1rem 0;
   font-size: 1.7em;
   line-height: 2;
 }
-.dark .Pages.Egypt .destination .box-container .box {
+.dark .Pages.Hawaii .destination .box-container .box {
   background: #222;
   border-radius: 1rem;
   overflow: hidden;
 }
-.dark .Pages.Egypt .destination .box-container .box .content h3 {
+.dark .Pages.Hawaii .destination .box-container .box .content h3 {
   color: #fff;
   font-size: 2rem;
 }
-.dark .Pages.Egypt .destination .box-container .box .content p {
+.dark .Pages.Hawaii .destination .box-container .box .content p {
   color: #aaa;
   padding: 1rem 0;
   font-size: 1.4em;
   line-height: 2;
 }
-.dark .Pages.Egypt .services .box-container .box {
+.dark .Pages.Hawaii .services .box-container .box {
   background: #222;
   border: 0.2rem solid #111;
   border-radius: 1rem;
   padding: 3rem;
   text-align: center;
 }
-.dark .Pages.Egypt .services .box-container .box:hover {
+.dark .Pages.Hawaii .services .box-container .box:hover {
   border: 0.2rem solid var(--orange);
   background: #333;
 }
-.dark .Pages.Egypt .services .box-container .box h3 {
+.dark .Pages.Hawaii .services .box-container .box h3 {
   font-size: 2rem;
   color: #fff;
 }
-.dark .Pages.Egypt .services .box-container .box p {
+.dark .Pages.Hawaii .services .box-container .box p {
   padding: 1rem 0;
   font-size: 1.4em;
   font-weight: 600;
   line-height: 2;
   color: #aaa;
 }
-.dark .Pages.Egypt .gallery .box-container .box span {
+.dark .Pages.Hawaii .gallery .box-container .box span {
   color: var(--orange);
   font-size: 1.4em;
   font-weight: 600;
 }
-.dark .Pages.Egypt .gallery .box-container .box h3 {
+.dark .Pages.Hawaii .gallery .box-container .box h3 {
   color: #fff;
   margin-top: 0.5rem;
   font-size: 2rem;
 }
-.dark .Pages.Egypt .review .content h3 {
+.dark .Pages.Hawaii .review .content h3 {
   font-size: 3rem;
   color: #fff;
 }
-.dark .Pages.Egypt .review .content p {
+.dark .Pages.Hawaii .review .content p {
   color: #aaa;
   font-size: 1.4em;
   font-weight: 600;
   padding: 1rem 0;
   line-height: 2;
 }
-.dark .Pages.Egypt .review .box-container .box {
+.dark .Pages.Hawaii .review .box-container .box {
   background: #222;
   border: 0.2rem solid #111;
   -webkit-box-flex: 1;
@@ -209,27 +209,27 @@ html::-webkit-scrollbar-thumb {
   border-radius: 1rem;
   padding: 2rem;
 }
-.dark .Pages.Egypt .review .box-container .box:hover {
+.dark .Pages.Hawaii .review .box-container .box:hover {
   background: rgba(255, 255, 255, 0.8);
   border: 0.2rem solid var(--orange);
 }
-.dark .Pages.Egypt .review .box-container .box p {
+.dark .Pages.Hawaii .review .box-container .box p {
   color: #aaa;
   font-size: 1.4em;
   font-weight: 600;
   padding-bottom: 1rem;
   line-height: 2;
 }
-.dark .Pages.Egypt .review .box-container .box .user h3 {
+.dark .Pages.Hawaii .review .box-container .box .user h3 {
   font-size: 1.7rem;
   color: #fff;
 }
-.dark .Pages.Egypt .review .box-container .box .user span {
+.dark .Pages.Hawaii .review .box-container .box .user span {
   font-size: 1.5em;
   color: #aaa;
 }
-.dark .Pages.Egypt .contact .row form .inputBox input,
-.dark .Pages.Egypt .contact .row form textarea {
+.dark .Pages.Hawaii .contact .row form .inputBox input,
+.dark .Pages.Hawaii .contact .row form textarea {
   width: 49%;
   margin: 1rem 0;
   padding: 1rem;
@@ -239,56 +239,56 @@ html::-webkit-scrollbar-thumb {
   background: #333;
   border: 0.1rem solid var(--orange);
 }
-.dark .Pages.Egypt .blogs .box-container .box {
+.dark .Pages.Hawaii .blogs .box-container .box {
   overflow: hidden;
   border-radius: 1rem;
   background: #222;
   box-shadow: 0 1em 2em rgba(0, 0, 0, 0.5);
 }
-.dark .Pages.Egypt .blogs .box-container .box .content .link {
+.dark .Pages.Hawaii .blogs .box-container .box .content .link {
   color: #fff;
   font-size: 2em;
   font-weight: 600;
 }
-.dark .Pages.Egypt .blogs .box-container .box .content p {
+.dark .Pages.Hawaii .blogs .box-container .box .content p {
   color: #aaa;
   padding: 1rem 0;
   font-size: 1.4em;
   line-height: 2;
   margin-bottom: 1em;
 }
-.dark .Pages.Egypt .blogs .box-container .box .content .icon a {
+.dark .Pages.Hawaii .blogs .box-container .box .content .icon a {
   color: #aaa;
   font-size: 1.4em;
   max-width: 60rem;
   margin: 1rem auto;
   line-height: 2;
 }
-.dark .Pages.Egypt .banner .content p {
+.dark .Pages.Hawaii .banner .content p {
   color: #aaa;
   max-width: 60rem;
   margin: 1rem auto;
   line-height: 2;
   font-size: 1.4em;
 }
-.dark .Pages.Egypt .footer .box-container .box h3 {
+.dark .Pages.Hawaii .footer .box-container .box h3 {
   color: #fff;
   font-size: 2.2rem;
   padding: 1rem 0;
 }
-.dark .Pages.Egypt .footer .box-container .box p {
+.dark .Pages.Hawaii .footer .box-container .box p {
   color: #aaa;
   font-size: 1.4em;
   padding: 1rem 0;
   line-height: 2;
 }
-.dark .Pages.Egypt .footer .box-container .box .links {
+.dark .Pages.Hawaii .footer .box-container .box .links {
   color: #aaa;
   font-size: 1.4em;
   padding: 1rem 0;
   display: block;
 }
-.dark .Pages.Egypt .footer .box-container .box form .email {
+.dark .Pages.Hawaii .footer .box-container .box form .email {
   color: #aaa;
   width: 100%;
   border-radius: 5rem;
@@ -299,7 +299,7 @@ html::-webkit-scrollbar-thumb {
   margin-bottom: 1rem;
   padding: 1.2rem 1.4rem;
 }
-.dark .Pages.Egypt .credit {
+.dark .Pages.Hawaii .credit {
   color: #aaa;
   background: #222;
   text-align: center;
@@ -311,19 +311,19 @@ html::-webkit-scrollbar-thumb {
 /* abc text nồ */
 
 
-.dark .Pages.Egypt section {
+.dark .Pages.Hawaii section {
   padding: 3rem 9%;
 }
-.dark .Pages.Egypt .heading {
+.dark .Pages.Hawaii .heading {
   text-align: center;
   margin-bottom: 2rem;
 }
-.dark .Pages.Egypt .heading span {
+.dark .Pages.Hawaii .heading span {
   color: var(--orange);
   font-weight: 600;
   font-size: 2em;
 }
-.dark .Pages.Egypt .header {
+.dark .Pages.Hawaii .header {
   position: fixed;
   top: 0;
   left: 0;
@@ -341,32 +341,32 @@ html::-webkit-scrollbar-thumb {
   justify-content: space-between;
   padding: 1.5rem 9%;
 }
-.dark .Pages.Egypt .header .navbar a:hover {
+.dark .Pages.Hawaii .header .navbar a:hover {
   color: var(--orange);
 }
-.dark .Pages.Egypt .header .btn {
+.dark .Pages.Hawaii .header .btn {
   margin-top: 0;
   padding: 0.5rem 1rem;
   color: #333;
 }
-.dark .Pages.Egypt .header .btn:hover {
+.dark .Pages.Hawaii .header .btn:hover {
   color: #efefef;
 }
-.dark .Pages.Egypt .logo {
+.dark .Pages.Hawaii .logo {
   font-size: 2.5rem;
   color: #fff;
   font-weight: bolder;
 }
-.dark .Pages.Egypt .logo span {
+.dark .Pages.Hawaii .logo span {
   color: var(--orange);
 }
-.dark .Pages.Egypt #menu-btn {
+.dark .Pages.Hawaii #menu-btn {
   font-size: 2.5rem;
   color: #fff;
   cursor: pointer;
   display: none;
 }
-.dark .Pages.Egypt .home {
+.dark .Pages.Hawaii .home {
   margin: 0 auto;
   margin-top: 9rem;
   width: 90%;
@@ -378,9 +378,9 @@ html::-webkit-scrollbar-thumb {
       from(rgba(17, 17, 17, 0.7)),
       to(rgba(17, 17, 17, 0.7))
     ),
-    url(../../../images/Egypt/home-bg.jpg) no-repeat;
+    url(../../../images/Mumbai/home-bg.jpg) no-repeat;
   background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
-    url(../../../images/Egypt/home-bg.jpg) no-repeat;
+    url(../../../images/Mumbai/home-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   display: -webkit-box;
@@ -396,27 +396,27 @@ html::-webkit-scrollbar-thumb {
   justify-content: center;
   padding-bottom: 5rem;
 }
-.dark .Pages.Egypt .home .btn {
+.dark .Pages.Hawaii .home .btn {
   color: #333;
 }
-.dark .Pages.Egypt .home .btn:hover {
+.dark .Pages.Hawaii .home .btn:hover {
   color: #efefef;
 }
-.dark .Pages.Egypt .home .content {
+.dark .Pages.Hawaii .home .content {
   text-align: center;
 }
-.dark .Pages.Egypt .home .content span {
+.dark .Pages.Hawaii .home .content span {
   font-weight: bolder;
   color: transparent;
   -webkit-text-stroke: 0.1rem var(--orange);
   font-size: 4vw;
   display: block;
 }
-.dark .Pages.Egypt .home .content h3 {
+.dark .Pages.Hawaii .home .content h3 {
   font-size: 5vw;
   color: #fff;
 }
-.dark .Pages.Egypt .book-form form {
+.dark .Pages.Hawaii .book-form form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -427,31 +427,31 @@ html::-webkit-scrollbar-thumb {
   flex-wrap: wrap;
   gap: 1.5rem;
 }
-.dark .Pages.Egypt .book-form form .inputBox {
+.dark .Pages.Hawaii .book-form form .inputBox {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 25rem;
   flex: 1 1 25rem;
 }
-.dark .Pages.Egypt .book-form form span h1 {
+.dark .Pages.Hawaii .book-form form span h1 {
   display: block;
   font-size: 1.5em;
   font-weight: 600;
   color: var(--orange);
   text-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
-.dark .Pages.Egypt .btn-book {
+.dark .Pages.Hawaii .btn-book {
   padding: 1.2rem 1.4rem;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.dark .Pages.Egypt .book-form form .btn {
+.dark .Pages.Hawaii .book-form form .btn {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 15rem;
   flex: 1 1 15rem;
 }
-.dark .Pages.Egypt .about {
+.dark .Pages.Hawaii .about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,62 +463,62 @@ html::-webkit-scrollbar-thumb {
   gap: 2rem;
   margin-top: 5rem;
 }
-.dark .Pages.Egypt .about .video-container {
+.dark .Pages.Hawaii .about .video-container {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 42rem;
   flex: 1 1 42rem;
 }
-.dark .Pages.Egypt .about .video-container video {
+.dark .Pages.Hawaii .about .video-container video {
   border-radius: 1rem;
   width: 100%;
 }
-.dark .Pages.Egypt .about .video-container .controls {
+.dark .Pages.Hawaii .about .video-container .controls {
   text-align: center;
   padding: 2rem 0;
 }
-.dark .Pages.Egypt .about .video-container .controls span:hover {
+.dark .Pages.Hawaii .about .video-container .controls span:hover {
   background: var(--orange);
 }
-.dark .Pages.Egypt .about .content {
+.dark .Pages.Hawaii .about .content {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 42rem;
   flex: 1 1 42rem;
   margin-bottom: 5rem;
 }
-.dark .Pages.Egypt .about .content span {
+.dark .Pages.Hawaii .about .content span {
   color: var(--orange);
   font-size: 2rem;
 }
-.dark .Pages.Egypt .destination .box-container {
+.dark .Pages.Hawaii .destination .box-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(27rem, 1fr)) [auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
   gap: 1.5rem;
 }
-.dark .Pages.Egypt .destination .box-container .box:hover {
+.dark .Pages.Hawaii .destination .box-container .box:hover {
   box-shadow: 0 1em 2em rgba(0, 0, 0, 0.05);
 }
-.dark .Pages.Egypt .destination .box-container .box:hover img {
+.dark .Pages.Hawaii .destination .box-container .box:hover img {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-.dark .Pages.Egypt .destination .box-container .box .image {
+.dark .Pages.Hawaii .destination .box-container .box .image {
   height: 20rem;
   overflow: hidden;
   width: 100%;
 }
-.dark .Pages.Egypt .destination .box-container .box .image img {
+.dark .Pages.Hawaii .destination .box-container .box .image img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
-.dark .Pages.Egypt .destination .box-container .box .content {
+.dark .Pages.Hawaii .destination .box-container .box .content {
   padding: 2rem;
   text-align: center;
 }
-.dark .Pages.Egypt .destination .box-container .box .content a {
+.dark .Pages.Hawaii .destination .box-container .box .content a {
   position: absolute;
   bottom: 1em;
   right: 1em;
@@ -528,42 +528,42 @@ html::-webkit-scrollbar-thumb {
   font-size: 1.7rem;
   color: var(--orange);
 }
-.dark .Pages.Egypt .destination .box-container .box .content a:hover i {
+.dark .Pages.Hawaii .destination .box-container .box .content a:hover i {
   padding-left: 1rem;
 }
-.dark .Pages.Egypt .destination .box-container .box .content a i {
+.dark .Pages.Hawaii .destination .box-container .box .content a i {
   padding-top: 0.2em;
   padding-right: 0.5rem;
 }
-.dark .Pages.Egypt .services .box-container {
+.dark .Pages.Hawaii .services .box-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(32rem, 1fr)) [auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
   gap: 1.5rem;
 }
-.dark .Pages.Egypt .services .box-container .box i {
+.dark .Pages.Hawaii .services .box-container .box i {
   font-size: 4rem;
   color: var(--orange);
   margin-bottom: 2rem;
 }
-.dark .Pages.Egypt .gallery .box-container {
+.dark .Pages.Hawaii .gallery .box-container {
   -webkit-columns: 3 25rem;
   columns: 3 25rem;
   -webkit-column-gap: 1.5rem;
   column-gap: 1.5rem;
 }
-.dark .Pages.Egypt .gallery .box-container .box {
+.dark .Pages.Hawaii .gallery .box-container .box {
   margin-bottom: 1rem;
   -webkit-column-break-inside: avoid;
   break-inside: avoid;
 }
-.dark .Pages.Egypt .gallery .box-container .box img {
+.dark .Pages.Hawaii .gallery .box-container .box img {
   width: 100%;
   border-radius: 1rem;
   margin-bottom: 1rem;
 }
-.dark .Pages.Egypt .review {
+.dark .Pages.Hawaii .review {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -574,16 +574,16 @@ html::-webkit-scrollbar-thumb {
   flex-wrap: wrap;
   gap: 2rem;
 }
-.dark .Pages.Egypt .review .content {
+.dark .Pages.Hawaii .review .content {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 42rem;
   flex: 1 1 42rem;
 }
-.dark .Pages.Egypt .review .content span {
+.dark .Pages.Hawaii .review .content span {
   font-size: 2rem;
   color: var(--orange);
 }
-.dark .Pages.Egypt .review .box-container {
+.dark .Pages.Hawaii .review .box-container {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 42rem;
   flex: 1 1 42rem;
@@ -594,7 +594,7 @@ html::-webkit-scrollbar-thumb {
   flex-wrap: wrap;
   gap: 1.5rem;
 }
-.dark .Pages.Egypt .review .box-container .box .user {
+.dark .Pages.Hawaii .review .box-container .box .user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -603,69 +603,69 @@ html::-webkit-scrollbar-thumb {
   align-items: center;
   gap: 1rem;
 }
-.dark .Pages.Egypt .review .box-container .box .user img {
+.dark .Pages.Hawaii .review .box-container .box .user img {
   height: 5rem;
   width: 5rem;
   border-radius: 50%;
 }
-.dark .Pages.Egypt .contact .row {
+.dark .Pages.Hawaii .contact .row {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
   align-items: center;
 }
-.dark .Pages.Egypt .contact .row .image {
+.dark .Pages.Hawaii .contact .row .image {
   flex: 1 1 35rem;
 }
-.dark .Pages.Egypt .contact .row .image img {
+.dark .Pages.Hawaii .contact .row .image img {
   width: 100%;
 }
-.dark .Pages.Egypt .contact .row form {
+.dark .Pages.Hawaii .contact .row form {
   flex: 1 1 50rem;
   padding: 2rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   background: #fefefe;
   border-radius: 0.5rem;
 }
-.dark .Pages.Egypt .contact .row form .inputBox {
+.dark .Pages.Hawaii .contact .row form .inputBox {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.dark .Pages.Egypt .contact .row form textarea {
+.dark .Pages.Hawaii .contact .row form textarea {
   height: 15rem;
   resize: none;
   width: 100%;
 }
-.dark .Pages.Egypt .blogs .box-container {
+.dark .Pages.Hawaii .blogs .box-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(32rem, 1fr)) [auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
   gap: 1.5rem;
 }
-.dark .Pages.Egypt .blogs .box-container .box:hover .image img {
+.dark .Pages.Hawaii .blogs .box-container .box:hover .image img {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-.dark .Pages.Egypt .blogs .box-container .box .image {
+.dark .Pages.Hawaii .blogs .box-container .box .image {
   height: 25rem;
   overflow: hidden;
   width: 100%;
 }
-.dark .Pages.Egypt .blogs .box-container .box .image img {
+.dark .Pages.Hawaii .blogs .box-container .box .image img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
-.dark .Pages.Egypt .blogs .box-container .box .content {
+.dark .Pages.Hawaii .blogs .box-container .box .content {
   padding: 2rem;
 }
-.dark .Pages.Egypt .blogs .box-container .box .content .link:hover {
+.dark .Pages.Hawaii .blogs .box-container .box .content .link:hover {
   color: var(--orange);
 }
-.dark .Pages.Egypt .blogs .box-container .box .content .icon {
+.dark .Pages.Hawaii .blogs .box-container .box .content .icon {
   padding-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -677,14 +677,14 @@ html::-webkit-scrollbar-thumb {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-.dark .Pages.Egypt .blogs .box-container .box .content .icon a:hover {
+.dark .Pages.Hawaii .blogs .box-container .box .content .icon a:hover {
   color: var(--orange);
 }
-.dark .Pages.Egypt .blogs .box-container .box .content .icon a i {
+.dark .Pages.Hawaii .blogs .box-container .box .content .icon a i {
   padding-right: 0.5rem;
   color: var(--orange);
 }
-.dark .Pages.Egypt .banner {
+.dark .Pages.Hawaii .banner {
   background: -webkit-gradient(
       linear,
       left top,
@@ -692,53 +692,53 @@ html::-webkit-scrollbar-thumb {
       from(rgba(17, 17, 17, 0.7)),
       to(rgba(17, 17, 17, 0.7))
     ),
-    url(../../../images/Egypt/banner-bg.jpg) no-repeat;
+    url(../../../images/Mumbai/banner-bg.jpg) no-repeat;
   background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
-    url(../../../images/Egypt/banner-bg.jpg) no-repeat;
+    url(../../../images/Mumbai/banner-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   padding: 3rem 2rem;
   background-attachment: fixed;
   text-align: center;
 }
-.dark .Pages.Egypt .banner .content span {
+.dark .Pages.Hawaii .banner .content span {
   font-size: 2rem;
   color: var(--orange);
 }
-.dark .Pages.Egypt .banner .content h3 {
+.dark .Pages.Hawaii .banner .content h3 {
   font-size: 4rem;
   color: #fff;
   margin-top: 1rem;
 }
-.dark .Pages.Egypt .footer {
+.dark .Pages.Hawaii .footer {
   background: #222;
 }
-.dark .Pages.Egypt .lower{
+.dark .Pages.Hawaii .lower{
   text-transform: none;
 }
-.dark .Pages.Egypt .footer .box-container {
+.dark .Pages.Hawaii .footer .box-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(25rem, 1fr)) [auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 1.5rem;
 }
-.dark .Pages.Egypt .footer .box-container .box {
+.dark .Pages.Hawaii .footer .box-container .box {
   padding: 1rem 0;
 }
-.dark .Pages.Egypt .footer .box-container .box .logo {
+.dark .Pages.Hawaii .footer .box-container .box .logo {
   padding-bottom: 1rem;
 }
-.dark .Pages.Egypt .footer .box-container .box p i {
+.dark .Pages.Hawaii .footer .box-container .box p i {
   padding-right: 0.5rem;
   color: var(--orange);
 }
-.dark .Pages.Egypt .footer .box-container .box .share {
+.dark .Pages.Hawaii .footer .box-container .box .share {
   padding-top: 1rem;
   display: flex;
   flex-direction: row;
 }
-.dark .Pages.Egypt .footer .box-container .box .share a {
+.dark .Pages.Hawaii .footer .box-container .box .share a {
   height: 4.5rem;
   width: 4.5rem;
   line-height: 4rem;
@@ -754,59 +754,59 @@ html::-webkit-scrollbar-thumb {
   align-items: center;
   justify-content: center;
 }
-.dark .Pages.Egypt .footer .box-container .box .share a:hover {
+.dark .Pages.Hawaii .footer .box-container .box .share a:hover {
   background: var(--orange);
   color: #111;
 }
-.dark .Pages.Egypt .footer .box-container .box .links:hover {
+.dark .Pages.Hawaii .footer .box-container .box .links:hover {
   color: var(--orange);
 }
-.dark .Pages.Egypt .footer .box-container .box .links:hover i {
+.dark .Pages.Hawaii .footer .box-container .box .links:hover i {
   padding-right: 2rem;
 }
-.dark .Pages.Egypt .footer .box-container .box .links i {
+.dark .Pages.Hawaii .footer .box-container .box .links i {
   padding-right: 0.5rem;
   color: var(--orange);
 }
-.dark .Pages.Egypt .footer .btn {
+.dark .Pages.Hawaii .footer .btn {
   color: #333;
 }
-.dark .Pages.Egypt .footer .btn:hover {
+.dark .Pages.Hawaii .footer .btn:hover {
   color: var(--orange);
 }
-.dark .Pages.Egypt .credit span {
+.dark .Pages.Hawaii .credit span {
   color: var(--orange);
 }
 @media (max-width: 1030px) {
-  .dark .Pages.Egypt .btn-toggle {
+  .dark .Pages.Hawaii .btn-toggle {
     right: 22%;
   }
 }
 @media (max-width: 991px) {
-  .dark .Pages.Egypt .btn-toggle {
+  .dark .Pages.Hawaii .btn-toggle {
     right: 18%;
   }
   html {
     font-size: 55%;
   }
-  .dark .Pages.Egypt .header {
+  .dark .Pages.Hawaii .header {
     padding: 1.5rem 2rem;
   }
-  .dark .Pages.Egypt section {
+  .dark .Pages.Hawaii section {
     padding: 3rem 2rem;
   }
 }
 @media (max-width: 768px) {
-  .dark .Pages.Egypt .book-form form span h1 {
+  .dark .Pages.Hawaii .book-form form span h1 {
     font-size: 1.2em;
   }
-  .dark .Pages.Egypt .btn-toggle {
+  .dark .Pages.Hawaii .btn-toggle {
     right: 30%;
   }
-  .dark .Pages.Egypt #menu-btn {
+  .dark .Pages.Hawaii #menu-btn {
     display: inline-block;
   }
-  .dark .Pages.Egypt .header .navbar {
+  .dark .Pages.Hawaii .header .navbar {
     position: absolute;
     top: 99%;
     left: 0;
@@ -815,44 +815,44 @@ html::-webkit-scrollbar-thumb {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
-  .dark .Pages.Egypt .header .navbar.active {
+  .dark .Pages.Hawaii .header .navbar.active {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
-  .dark .Pages.Egypt .home {
+  .dark .Pages.Hawaii .home {
     margin-top: 10rem;
   }
- .dark .Pages.Egypt .home .content span {
+ .dark .Pages.Hawaii .home .content span {
     font-size: 8vw;
   }
-  .dark .Pages.Egypt .home .content h3 {
+  .dark .Pages.Hawaii .home .content h3 {
     font-size: 9vw;
   }
 }
 @media (max-width: 450px) {
-  .dark .Pages.Egypt .contact .row form .inputBox input {
+  .dark .Pages.Hawaii .contact .row form .inputBox input {
     width: 100%;
   }
-  .dark .Pages.Egypt .btn-toggle {
+  .dark .Pages.Hawaii .btn-toggle {
     right: 30%;
   }
   html {
     font-size: 50%;
   }
-  .dark .Pages.Egypt .about .content h3 {
+  .dark .Pages.Hawaii .about .content h3 {
     font-size: 3.5rem;
   }
-  .dark .Pages.Egypt .banner .content h3 {
+  .dark .Pages.Hawaii .banner .content h3 {
     font-size: 2.7rem;
   }
 }
 @media (max-width: 350px) {
-  .dark .Pages.Egypt .btn-toggle {
+  .dark .Pages.Hawaii .btn-toggle {
     right: 35%;
   }
 }
 @media (max-width: 300px) {
-  .dark .Pages.Egypt .btn-toggle {
+  .dark .Pages.Hawaii .btn-toggle {
     right: 38%;
     font-size: 1.5em;
   }

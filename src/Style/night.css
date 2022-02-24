@@ -643,6 +643,7 @@ html::-webkit-scrollbar-thumb {
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
   .dark .HomePages header .navbar.active {
+    transition: 0.3s;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
   .dark .HomePages header .navbar a {

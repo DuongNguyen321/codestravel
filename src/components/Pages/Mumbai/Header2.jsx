@@ -1,8 +1,7 @@
-import "../../Style/pages/style.css"
-import "../../Style/pages/night.css"
+import "../../../Style/pages/style.css";
+import "../../../Style/pages/night.css";
 import { Link } from "react-router-dom";
 export default function Header() {
-  
   return (
     <header className="header">
       <div id="menu-btn" className="fas fa-bars"></div>
@@ -41,14 +40,14 @@ export default function Header() {
         data-aos="zoom-in-left"
         data-aos-delay="450"
       ></i>
-      <a
+      <Link
         data-aos="zoom-in-left"
         data-aos-delay="500"
-        href="#book-form"
+        to="/mumbai"
         className="btn"
       >
-        Đặt Ngay
-      </a>
+        Trở Lại
+      </Link>
     </header>
   );
 }

@@ -35,27 +35,27 @@ html::-webkit-scrollbar-thumb {
   background: var(--orange);
   border-radius: 5rem;
 }
-.light .Pages.Egypt {
+.light .Pages.Mumbai {
   background: #efefef;
   overflow: hidden;
 }
-.light .Pages.Egypt section {
+.light .Pages.Mumbai section {
   padding: 3rem 9%;
 }
-.light .Pages.Egypt .heading {
+.light .Pages.Mumbai .heading {
   text-align: center;
   margin-bottom: 2rem;
 }
-.light .Pages.Egypt .heading span {
+.light .Pages.Mumbai .heading span {
   color: var(--orange);
   font-weight: 600;
   font-size: 2em;
 }
-.light .Pages.Egypt .heading h1 {
+.light .Pages.Mumbai .heading h1 {
   font-size: 4rem;
   color: #333;
 }
-.light .Pages.Egypt .btn {
+.light .Pages.Mumbai .btn {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
@@ -68,11 +68,11 @@ html::-webkit-scrollbar-thumb {
   font-size: 2rem;
   transition: 0.3s;
 }
-.light .Pages.Egypt .btn:hover {
+.light .Pages.Mumbai .btn:hover {
   background: rgba(255, 165, 0, 0.2);
   color: var(--orange);
 }
-.light .Pages.Egypt .btn-toggle {
+.light .Pages.Mumbai .btn-toggle {
   position: absolute;
   right: 20%;
   display: flex;
@@ -90,7 +90,7 @@ html::-webkit-scrollbar-thumb {
   align-content: center;
   bottom: 1.7rem;
 }
-.light .Pages.Egypt .header {
+.light .Pages.Mumbai .header {
   position: fixed;
   top: 0;
   left: 0;
@@ -108,38 +108,38 @@ html::-webkit-scrollbar-thumb {
   justify-content: space-between;
   padding: 1.5rem 9%;
 }
-.light .Pages.Egypt .header .navbar a {
+.light .Pages.Mumbai .header .navbar a {
   color: #efefef;
   font-size: 1.7rem;
   display: inline-block;
   margin: 0 1rem;
 }
-.light .Pages.Egypt .header .navbar a:hover {
+.light .Pages.Mumbai .header .navbar a:hover {
   color: var(--orange);
 }
-.light .Pages.Egypt .header .btn {
+.light .Pages.Mumbai .header .btn {
   margin-top: 0;
   padding: 0.5rem 1rem;
   color: #333;
 }
-.light .Pages.Egypt .header .btn:hover {
+.light .Pages.Mumbai .header .btn:hover {
   color: #efefef;
 }
-.light .Pages.Egypt .logo {
+.light .Pages.Mumbai .logo {
   font-size: 2.5rem;
   color: #fff;
   font-weight: bolder;
 }
-.light .Pages.Egypt .logo span {
+.light .Pages.Mumbai .logo span {
   color: var(--orange);
 }
-.light .Pages.Egypt #menu-btn {
+.light .Pages.Mumbai #menu-btn {
   font-size: 2.5rem;
   color: #fff;
   cursor: pointer;
   display: none;
 }
-.light .Pages.Egypt .home {
+.light .Pages.Mumbai .home {
   margin: 0 auto;
   margin-top: 9rem;
   width: 90%;
@@ -151,9 +151,9 @@ html::-webkit-scrollbar-thumb {
       from(rgba(17, 17, 17, 0.7)),
       to(rgba(17, 17, 17, 0.7))
     ),
-    url(../../../images/Egypt/home-bg.jpg) no-repeat;
+    url(../../../images/Mumbai/home-bg.jpg) no-repeat;
   background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
-    url(../../../images/Egypt/home-bg.jpg) no-repeat;
+    url(../../../images/Mumbai/home-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   display: -webkit-box;
@@ -169,34 +169,34 @@ html::-webkit-scrollbar-thumb {
   justify-content: center;
   padding-bottom: 5rem;
 }
-.light .Pages.Egypt .home .btn {
+.light .Pages.Mumbai .home .btn {
   color: #333;
 }
-.light .Pages.Egypt .home .btn:hover {
+.light .Pages.Mumbai .home .btn:hover {
   color: #efefef;
 }
-.light .Pages.Egypt .home .content {
+.light .Pages.Mumbai .home .content {
   text-align: center;
 }
-.light .Pages.Egypt .home .content span {
+.light .Pages.Mumbai .home .content span {
   font-weight: bolder;
   color: transparent;
   -webkit-text-stroke: 0.1rem var(--orange);
   font-size: 4vw;
   display: block;
 }
-.light .Pages.Egypt .home .content h3 {
+.light .Pages.Mumbai .home .content h3 {
   font-size: 5vw;
   color: #fff;
 }
-.light .Pages.Egypt .home .content p {
+.light .Pages.Mumbai .home .content p {
   max-width: 60rem;
   margin: 1rem auto;
   font-size: 1.5em;
   line-height: 2;
   color: #eee;
 }
-.light .Pages.Egypt .book-form {
+.light .Pages.Mumbai .book-form {
   background: #efefef;
   width: 80%;
   margin: 1rem auto;
@@ -206,7 +206,7 @@ html::-webkit-scrollbar-thumb {
   box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.3);
   padding: 3rem 2rem;
 }
-.light .Pages.Egypt .book-form form {
+.light .Pages.Mumbai .book-form form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,27 +217,27 @@ html::-webkit-scrollbar-thumb {
   flex-wrap: wrap;
   gap: 1.5rem;
 }
-.light .Pages.Egypt .book-form form .inputBox {
+.light .Pages.Mumbai .book-form form .inputBox {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 25rem;
   flex: 1 1 25rem;
 }
-.light .Pages.Egypt .book-form form .inputBox span {
+.light .Pages.Mumbai .book-form form .inputBox span {
   display: block;
   font-size: 2em;
   font-weight: 600;
   text-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
   color: #333;
 }
-.light .Pages.Egypt .book-form form span h1 {
+.light .Pages.Mumbai .book-form form span h1 {
   display: block;
   font-size: 1.5em;
   font-weight: 600;
   color: var(--orange);
   text-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
-.light .Pages.Egypt .book-form form .inputBox input,
-.light .Pages.Egypt select {
+.light .Pages.Mumbai .book-form form .inputBox input,
+.light .Pages.Mumbai select {
   width: 100%;
   padding: 1.2rem 1.4rem;
   border-radius: 5rem;
@@ -248,19 +248,19 @@ html::-webkit-scrollbar-thumb {
   margin-top: 1rem;
   color: #555;
 }
-.light .Pages.Egypt .btn-book {
+.light .Pages.Mumbai .btn-book {
   padding: 1.2rem 1.4rem;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.light .Pages.Egypt .book-form form .btn {
+.light .Pages.Mumbai .book-form form .btn {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 15rem;
   flex: 1 1 15rem;
 }
-.light .Pages.Egypt .about {
+.light .Pages.Mumbai .about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,20 +272,20 @@ html::-webkit-scrollbar-thumb {
   gap: 2rem;
   margin-top: 5rem;
 }
-.light .Pages.Egypt .about .video-container {
+.light .Pages.Mumbai .about .video-container {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 42rem;
   flex: 1 1 42rem;
 }
-.light .Pages.Egypt .about .video-container video {
+.light .Pages.Mumbai .about .video-container video {
   border-radius: 1rem;
   width: 100%;
 }
-.light .Pages.Egypt .about .video-container .controls {
+.light .Pages.Mumbai .about .video-container .controls {
   text-align: center;
   padding: 2rem 0;
 }
-.light .Pages.Egypt .about .video-container .controls span {
+.light .Pages.Mumbai .about .video-container .controls span {
   display: inline-block;
   height: 2rem;
   width: 2rem;
@@ -295,75 +295,75 @@ html::-webkit-scrollbar-thumb {
   cursor: pointer;
   margin: 0.7rem;
 }
-.light .Pages.Egypt .about .video-container .controls span:hover {
+.light .Pages.Mumbai .about .video-container .controls span:hover {
   background: var(--orange);
 }
-.light .Pages.Egypt .about .content {
+.light .Pages.Mumbai .about .content {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 42rem;
   flex: 1 1 42rem;
   margin-bottom: 5rem;
 }
-.light .Pages.Egypt .about .content span {
+.light .Pages.Mumbai .about .content span {
   color: var(--orange);
   font-size: 2rem;
 }
-.light .Pages.Egypt .about .content h3 {
+.light .Pages.Mumbai .about .content h3 {
   color: #333;
   font-size: 4em;
   margin-top: 0.5rem;
 }
-.light .Pages.Egypt .about .content p {
+.light .Pages.Mumbai .about .content p {
   padding: 1rem 0;
   font-size: 1.7em;
   line-height: 2;
   color: #555;
 }
-.light .Pages.Egypt .destination .box-container {
+.light .Pages.Mumbai .destination .box-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(27rem, 1fr)) [auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
   gap: 1.5rem;
 }
-.light .Pages.Egypt .destination .box-container .box {
+.light .Pages.Mumbai .destination .box-container .box {
   border-radius: 1rem;
   overflow: hidden;
   background: #fff;
 }
-.light .Pages.Egypt .destination .box-container .box:hover {
+.light .Pages.Mumbai .destination .box-container .box:hover {
   box-shadow: 0 1em 2em rgba(0, 0, 0, 0.05);
 }
-.light .Pages.Egypt .destination .box-container .box:hover img {
+.light .Pages.Mumbai .destination .box-container .box:hover img {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-.light .Pages.Egypt .destination .box-container .box .image {
+.light .Pages.Mumbai .destination .box-container .box .image {
   height: 20rem;
   overflow: hidden;
   width: 100%;
 }
-.light .Pages.Egypt .destination .box-container .box .image img {
+.light .Pages.Mumbai .destination .box-container .box .image img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
-.light .Pages.Egypt .destination .box-container .box .content {
+.light .Pages.Mumbai .destination .box-container .box .content {
   padding: 2rem;
   text-align: center;
 }
-.light .Pages.Egypt .destination .box-container .box .content h3 {
+.light .Pages.Mumbai .destination .box-container .box .content h3 {
   font-size: 2rem;
   color: #333;
 }
-.light .Pages.Egypt .destination .box-container .box .content p {
+.light .Pages.Mumbai .destination .box-container .box .content p {
   padding: 1rem 0;
   font-size: 1.4em;
   line-height: 2;
   color: #555;
 }
-.light .Pages.Egypt .destination .box-container .box .content a {
+.light .Pages.Mumbai .destination .box-container .box .content a {
   position: absolute;
   bottom: 1em;
   right: 1em;
@@ -373,74 +373,74 @@ html::-webkit-scrollbar-thumb {
   font-size: 1.7rem;
   color: var(--orange);
 }
-.light .Pages.Egypt .destination .box-container .box .content a:hover i {
+.light .Pages.Mumbai .destination .box-container .box .content a:hover i {
   padding-left: 1rem;
 }
-.light .Pages.Egypt .destination .box-container .box .content a i {
+.light .Pages.Mumbai .destination .box-container .box .content a i {
   padding-top: 0.2em;
   padding-right: 0.5rem;
 }
-.light .Pages.Egypt .services .box-container {
+.light .Pages.Mumbai .services .box-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(32rem, 1fr)) [auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
   gap: 1.5rem;
 }
-.light .Pages.Egypt .services .box-container .box {
+.light .Pages.Mumbai .services .box-container .box {
   background: #efefef;
   border-radius: 1rem;
   padding: 3rem;
   text-align: center;
   border: 0.2em solid var(--orange);
 }
-.light .Pages.Egypt .services .box-container .box:hover {
+.light .Pages.Mumbai .services .box-container .box:hover {
   background: rgba(255, 255, 255, 0.8);
   border: 0.2rem solid var(--orange);
 }
-.light .Pages.Egypt .services .box-container .box i {
+.light .Pages.Mumbai .services .box-container .box i {
   font-size: 4rem;
   color: var(--orange);
   margin-bottom: 2rem;
 }
-.light .Pages.Egypt .services .box-container .box h3 {
+.light .Pages.Mumbai .services .box-container .box h3 {
   font-size: 2rem;
   color: #333;
 }
-.light .Pages.Egypt .services .box-container .box p {
+.light .Pages.Mumbai .services .box-container .box p {
   padding: 1rem 0;
   font-size: 1.4em;
   font-weight: 600;
   line-height: 2;
   color: #555;
 }
-.light .Pages.Egypt .gallery .box-container {
+.light .Pages.Mumbai .gallery .box-container {
   -webkit-columns: 3 25rem;
   columns: 3 25rem;
   -webkit-column-gap: 1.5rem;
   column-gap: 1.5rem;
 }
-.light .Pages.Egypt .gallery .box-container .box {
+.light .Pages.Mumbai .gallery .box-container .box {
   margin-bottom: 1rem;
   -webkit-column-break-inside: avoid;
   break-inside: avoid;
 }
-.light .Pages.Egypt .gallery .box-container .box img {
+.light .Pages.Mumbai .gallery .box-container .box img {
   width: 100%;
   border-radius: 1rem;
   margin-bottom: 1rem;
 }
-.light .Pages.Egypt .gallery .box-container .box span {
+.light .Pages.Mumbai .gallery .box-container .box span {
   font-size: 1.4em;
   font-weight: 600;
   color: #555;
 }
-.light .Pages.Egypt .gallery .box-container .box h3 {
+.light .Pages.Mumbai .gallery .box-container .box h3 {
   margin-top: 0.5rem;
   font-size: 2rem;
   color: var(--orange);
 }
-.light .Pages.Egypt .review {
+.light .Pages.Mumbai .review {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -451,27 +451,27 @@ html::-webkit-scrollbar-thumb {
   flex-wrap: wrap;
   gap: 2rem;
 }
-.light .Pages.Egypt .review .content {
+.light .Pages.Mumbai .review .content {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 42rem;
   flex: 1 1 42rem;
 }
-.light .Pages.Egypt .review .content span {
+.light .Pages.Mumbai .review .content span {
   font-size: 2rem;
   color: var(--orange);
 }
-.light .Pages.Egypt .review .content h3 {
+.light .Pages.Mumbai .review .content h3 {
   font-size: 3rem;
   color: #333;
 }
-.light .Pages.Egypt .review .content p {
+.light .Pages.Mumbai .review .content p {
   color: #555;
   font-size: 1.4em;
   font-weight: 600;
   padding: 1rem 0;
   line-height: 2;
 }
-.light .Pages.Egypt .review .box-container {
+.light .Pages.Mumbai .review .box-container {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 42rem;
   flex: 1 1 42rem;
@@ -482,7 +482,7 @@ html::-webkit-scrollbar-thumb {
   flex-wrap: wrap;
   gap: 1.5rem;
 }
-.light .Pages.Egypt .review .box-container .box {
+.light .Pages.Mumbai .review .box-container .box {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 20rem;
   flex: 1 1 20rem;
@@ -491,18 +491,18 @@ html::-webkit-scrollbar-thumb {
   background: #efefef;
   border: 0.2rem solid var(--orange);
 }
-.light .Pages.Egypt .review .box-container .box:hover {
+.light .Pages.Mumbai .review .box-container .box:hover {
   border: 0.2rem solid var(--orange);
   background: rgba(255, 255, 255, 0.8);
 }
-.light .Pages.Egypt .review .box-container .box p {
+.light .Pages.Mumbai .review .box-container .box p {
   font-size: 1.4em;
   font-weight: 600;
   padding-bottom: 1rem;
   line-height: 2;
   color: #555;
 }
-.light .Pages.Egypt .review .box-container .box .user {
+.light .Pages.Mumbai .review .box-container .box .user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -511,45 +511,45 @@ html::-webkit-scrollbar-thumb {
   align-items: center;
   gap: 1rem;
 }
-.light .Pages.Egypt .review .box-container .box .user img {
+.light .Pages.Mumbai .review .box-container .box .user img {
   height: 5rem;
   width: 5rem;
   border-radius: 50%;
 }
-.light .Pages.Egypt .review .box-container .box .user h3 {
+.light .Pages.Mumbai .review .box-container .box .user h3 {
   font-size: 1.7rem;
   color: #333;
 }
-.light .Pages.Egypt .review .box-container .box .user span {
+.light .Pages.Mumbai .review .box-container .box .user span {
   color: #555;
   font-size: 1.5em;
 }
-.light .Pages.Egypt .contact .row {
+.light .Pages.Mumbai .contact .row {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
   align-items: center;
 }
-.light .Pages.Egypt .contact .row .image {
+.light .Pages.Mumbai .contact .row .image {
   flex: 1 1 35rem;
 }
-.light .Pages.Egypt .contact .row .image img {
+.light .Pages.Mumbai .contact .row .image img {
   width: 100%;
 }
-.light .Pages.Egypt .contact .row form {
+.light .Pages.Mumbai .contact .row form {
   flex: 1 1 50rem;
   padding: 2rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
   background: #fefefe;
   border-radius: 0.5rem;
 }
-.light .Pages.Egypt .contact .row form .inputBox {
+.light .Pages.Mumbai .contact .row form .inputBox {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.light .Pages.Egypt .contact .row form .inputBox input,
-.light .Pages.Egypt .contact .row form textarea {
+.light .Pages.Mumbai .contact .row form .inputBox input,
+.light .Pages.Mumbai .contact .row form textarea {
   width: 49%;
   margin: 1rem 0;
   padding: 1rem;
@@ -559,58 +559,58 @@ html::-webkit-scrollbar-thumb {
   background: #f7f7f7;
   border: 0.1rem solid var(--orange);
 }
-.light .Pages.Egypt .contact .row form textarea {
+.light .Pages.Mumbai .contact .row form textarea {
   height: 15rem;
   resize: none;
   width: 100%;
 }
-.light .Pages.Egypt .blogs .box-container {
+.light .Pages.Mumbai .blogs .box-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(32rem, 1fr)) [auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
   gap: 1.5rem;
 }
-.light .Pages.Egypt .blogs .box-container .box {
+.light .Pages.Mumbai .blogs .box-container .box {
   border-radius: 1rem;
   background: #fff;
   box-shadow: 0 1em 2em rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
-.light .Pages.Egypt .blogs .box-container .box:hover .image img {
+.light .Pages.Mumbai .blogs .box-container .box:hover .image img {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-.light .Pages.Egypt .blogs .box-container .box .image {
+.light .Pages.Mumbai .blogs .box-container .box .image {
   height: 25rem;
   overflow: hidden;
   width: 100%;
 }
-.light .Pages.Egypt .blogs .box-container .box .image img {
+.light .Pages.Mumbai .blogs .box-container .box .image img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
-.light .Pages.Egypt .blogs .box-container .box .content {
+.light .Pages.Mumbai .blogs .box-container .box .content {
   padding: 2rem;
 }
-.light .Pages.Egypt .blogs .box-container .box .content .link {
+.light .Pages.Mumbai .blogs .box-container .box .content .link {
   font-size: 2em;
   font-weight: 600;
   color: #333;
 }
-.light .Pages.Egypt .blogs .box-container .box .content .link:hover {
+.light .Pages.Mumbai .blogs .box-container .box .content .link:hover {
   color: var(--orange);
 }
-.light .Pages.Egypt .blogs .box-container .box .content p {
+.light .Pages.Mumbai .blogs .box-container .box .content p {
   padding: 1rem 0;
   font-size: 1.4em;
   line-height: 2;
   margin-bottom: 1em;
   color: #555;
 }
-.light .Pages.Egypt .blogs .box-container .box .content .icon {
+.light .Pages.Mumbai .blogs .box-container .box .content .icon {
   padding-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -622,18 +622,18 @@ html::-webkit-scrollbar-thumb {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-.light .Pages.Egypt .blogs .box-container .box .content .icon a {
+.light .Pages.Mumbai .blogs .box-container .box .content .icon a {
   font-size: 1.4em;
   color: #555;
 }
-.light .Pages.Egypt .blogs .box-container .box .content .icon a:hover {
+.light .Pages.Mumbai .blogs .box-container .box .content .icon a:hover {
   color: var(--orange);
 }
-.light .Pages.Egypt .blogs .box-container .box .content .icon a i {
+.light .Pages.Mumbai .blogs .box-container .box .content .icon a i {
   padding-right: 0.5rem;
   color: var(--orange);
 }
-.light .Pages.Egypt .banner {
+.light .Pages.Mumbai .banner {
   background: -webkit-gradient(
       linear,
       left top,
@@ -641,71 +641,71 @@ html::-webkit-scrollbar-thumb {
       from(rgba(17, 17, 17, 0.7)),
       to(rgba(17, 17, 17, 0.7))
     ),
-    url(../../../images/Egypt/banner-bg.jpg) no-repeat;
+    url(../../../images/Mumbai/banner-bg.jpg) no-repeat;
   background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
-    url(../../../images/Egypt/banner-bg.jpg) no-repeat;
+    url(../../../images/Mumbai/banner-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   padding: 3rem 2rem;
   background-attachment: fixed;
   text-align: center;
 }
-.light .Pages.Egypt .banner .content span {
+.light .Pages.Mumbai .banner .content span {
   font-size: 2rem;
   color: var(--orange);
 }                          
-.light .Pages.Egypt .banner .content h3 {
+.light .Pages.Mumbai .banner .content h3 {
   font-size: 4rem;
   color: #fff;
   margin-top: 1rem;
 }
-.light .Pages.Egypt .banner .content p {
+.light .Pages.Mumbai .banner .content p {
   max-width: 60rem;
   margin: 1rem auto;
   line-height: 2;
   font-size: 1.4em;
   color: #eee;
 }
-.light .Pages.Egypt .footer {
+.light .Pages.Mumbai .footer {
   background: #222;
 }
-.light .Pages.Egypt .lower{
+.light .Pages.Mumbai .lower{
   text-transform: none;
 }
-.light .Pages.Egypt .footer .box-container {
+.light .Pages.Mumbai .footer .box-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(25rem, 1fr)) [auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 1.5rem;
 }
-.light .Pages.Egypt .footer .box-container .box {
+.light .Pages.Mumbai .footer .box-container .box {
   padding: 1rem 0;
 }
-.light .Pages.Egypt .footer .box-container .box .logo {
+.light .Pages.Mumbai .footer .box-container .box .logo {
   padding-bottom: 1rem;
 }
-.light .Pages.Egypt .footer .box-container .box h3 {
+.light .Pages.Mumbai .footer .box-container .box h3 {
   font-size: 2.2rem;
   padding: 1rem 0;
   color: #fff;
 }
-.light .Pages.Egypt .footer .box-container .box p {
+.light .Pages.Mumbai .footer .box-container .box p {
   color: #eee;
   font-size: 1.4em;
   padding: 1rem 0;
   line-height: 2;
 }
-.light .Pages.Egypt .footer .box-container .box p i {
+.light .Pages.Mumbai .footer .box-container .box p i {
   padding-right: 0.5rem;
   color: var(--orange);
 }
-.light .Pages.Egypt .footer .box-container .box .share {
+.light .Pages.Mumbai .footer .box-container .box .share {
   padding-top: 1rem;
   display: flex;
   flex-direction: row;
 }
-.light .Pages.Egypt .footer .box-container .box .share a {
+.light .Pages.Mumbai .footer .box-container .box .share a {
   height: 4.5rem;
   width: 4.5rem;
   line-height: 4rem;
@@ -721,27 +721,27 @@ html::-webkit-scrollbar-thumb {
   align-items: center;
   justify-content: center;
 }
-.light .Pages.Egypt .footer .box-container .box .share a:hover {
+.light .Pages.Mumbai .footer .box-container .box .share a:hover {
   background: var(--orange);
   color: #111;
 }
-.light .Pages.Egypt .footer .box-container .box .links {
+.light .Pages.Mumbai .footer .box-container .box .links {
   color: #eee;
   font-size: 1.4em;
   padding: 1rem 0;
   display: block;
 }
-.light .Pages.Egypt .footer .box-container .box .links:hover {
+.light .Pages.Mumbai .footer .box-container .box .links:hover {
   color: var(--orange);
 }
-.light .Pages.Egypt .footer .box-container .box .links:hover i {
+.light .Pages.Mumbai .footer .box-container .box .links:hover i {
   padding-right: 2rem;
 }
-.light .Pages.Egypt .footer .box-container .box .links i {
+.light .Pages.Mumbai .footer .box-container .box .links i {
   padding-right: 0.5rem;
   color: var(--orange);
 }
-.light .Pages.Egypt .footer .box-container .box form .email {
+.light .Pages.Mumbai .footer .box-container .box form .email {
   color: #555;
   width: 100%;
   border-radius: 5rem;
@@ -752,52 +752,52 @@ html::-webkit-scrollbar-thumb {
   margin-bottom: 1rem;
   padding: 1.2rem 1.4rem;
 }
-.light .Pages.Egypt .footer .btn {
+.light .Pages.Mumbai .footer .btn {
   color: #333;
 }
-.light .Pages.Egypt .footer .btn:hover {
+.light .Pages.Mumbai .footer .btn:hover {
   color: var(--orange);
 }
-.light .Pages.Egypt .credit {
+.light .Pages.Mumbai .credit {
   background: #222;
   text-align: center;
   font-size: 2rem;
   padding: 2rem 1rem;
   color: #555;
 }
-.light .Pages.Egypt .credit span {
+.light .Pages.Mumbai .credit span {
   color: var(--orange);
 }
 @media (max-width: 1030px) {
-  .light .Pages.Egypt .btn-toggle {
+  .light .Pages.Mumbai .btn-toggle {
     right: 22%;
   }
 }
 @media (max-width: 991px) {
-  .light .Pages.Egypt .btn-toggle {
+  .light .Pages.Mumbai .btn-toggle {
     right: 18%;
   }
   html {
     font-size: 55%;
   }
-  .light .Pages.Egypt .header {
+  .light .Pages.Mumbai .header {
     padding: 1.5rem 2rem;
   }
-  .light .Pages.Egypt section {
+  .light .Pages.Mumbai section {
     padding: 3rem 2rem;
   }
 }
 @media (max-width: 768px) {
-  .light .Pages.Egypt .book-form form span h1 {
+  .light .Pages.Mumbai .book-form form span h1 {
     font-size: 1.2em;
   }
-  .light .Pages.Egypt .btn-toggle {
+  .light .Pages.Mumbai .btn-toggle {
     right: 30%;
   }
-  .light .Pages.Egypt #menu-btn {
+  .light .Pages.Mumbai #menu-btn {
     display: inline-block;
   }
-  .light .Pages.Egypt .header .navbar {
+  .light .Pages.Mumbai .header .navbar {
     position: absolute;
     top: 99%;
     left: 0;
@@ -806,49 +806,49 @@ html::-webkit-scrollbar-thumb {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
-  .light .Pages.Egypt .header .navbar a {
+  .light .Pages.Mumbai .header .navbar a {
     margin: 2rem;
     font-size: 2rem;
     display: block;
   }
-  .light .Pages.Egypt .header .navbar.active {
+  .light .Pages.Mumbai .header .navbar.active {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
-  .light .Pages.Egypt .home {
+  .light .Pages.Mumbai .home {
     margin-top: 10rem;
   }
- .light .Pages.Egypt .home .content span {
+ .light .Pages.Mumbai .home .content span {
     font-size: 8vw;
   }
-  .light .Pages.Egypt .home .content h3 {
+  .light .Pages.Mumbai .home .content h3 {
     font-size: 9vw;
   }
 }
 @media (max-width: 450px) {
-  .light .Pages.Egypt .contact .row form .inputBox input {
+  .light .Pages.Mumbai .contact .row form .inputBox input {
     width: 100%;
   }
-  .light .Pages.Egypt .btn-toggle {
+  .light .Pages.Mumbai .btn-toggle {
     right: 30%;
   }
   html {
     font-size: 50%;
   }
-  .light .Pages.Egypt .about .content h3 {
+  .light .Pages.Mumbai .about .content h3 {
     font-size: 3.5rem;
   }
-  .light .Pages.Egypt .banner .content h3 {
+  .light .Pages.Mumbai .banner .content h3 {
     font-size: 2.7rem;
   }
 }
 @media (max-width: 350px) {
-  .light .Pages.Egypt .btn-toggle {
+  .light .Pages.Mumbai .btn-toggle {
     right: 35%;
   }
 }
 @media (max-width: 300px) {
-  .light .Pages.Egypt .btn-toggle {
+  .light .Pages.Mumbai .btn-toggle {
     right: 38%;
     font-size: 1.5em;
   }

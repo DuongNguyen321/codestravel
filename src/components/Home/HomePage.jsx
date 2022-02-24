@@ -3,6 +3,7 @@ import "../../Style/night.css";
 import "../../Style/rate.css";
 import PropTypes from "prop-types";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -268,7 +269,7 @@ const packagesBox = [
     src: "./images/Home/p-1.jpg",
     h3: " mumbai",
     p1: "Mumbai-Thành phố của nơi giao thoa giữa quá khứ-hiện tại",
-    p2: "Chuyến đi được tìm nhiểu nhất",
+    p2: "Chuyến đi được tìm kiếm nhiểu nhất",
     price: "30.000.000 ",
     spanPrice: "52.845.245",
     href: "/Mumbai",
@@ -780,6 +781,13 @@ const Brand = () => {
 };
 
 function HomePage(props) {
+    useEffect(() => {
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+    }, []);
   return (
     <div className="HomePages">
       <Header />

@@ -38,12 +38,20 @@ function App() {
   window.onload = function () {
     let body = document.body;
     var theme = localStorage.getItem("theme");
-    if ((theme === "light")) {
+    let btnToggle = document.querySelector(".btn-toggle");
+
+    if (theme === "light") {
       body.classList = "light";
-    } else if ((theme === "dark")) {
+      btnToggle.classList.add("fa-moon");
+      btnToggle.classList.remove("fa-sun-o");
+    } else if (theme === "dark") {
       body.classList = "dark";
+      btnToggle.classList.remove("fa-moon");
+      btnToggle.classList.add("fa-sun-o");
     } else {
       body.classList = "light";
+      btnToggle.classList.add("fa-moon");
+      btnToggle.classList.remove("fa-sun-o");
     }
   };
   AOS.init({

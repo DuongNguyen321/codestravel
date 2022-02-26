@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
-import "../../Style/pages/night.css"
-import "../../Style/pages/style.css"
+import "../../Style/pages/night.css";
+import "../../Style/pages/style.css";
 
 export default function Footer() {
   return (
     <footer className="footer">
-      
       <section className="footer">
         <div className="box-container">
           <div className="box">
@@ -76,9 +75,11 @@ export default function Footer() {
           </div>
         </div>
       </section>
-      <div className="credit">
-        created by <span>STravel</span> | all rights reserved!
-      </div>
+      <Link to={"/"}>
+        <div className="credit">
+          created by <span>STravel</span> | all rights reserved!
+        </div>
+      </Link>
     </footer>
   );
 }

@@ -283,7 +283,7 @@ html::-webkit-scrollbar-thumb {
   height: 25px;
 }
 .dark .HomePages #search-btn.fa-times {
-  padding: 15px;
+  padding: 12px;
   border-radius: 50%;
   border: 2px solid var(--orange);
 }

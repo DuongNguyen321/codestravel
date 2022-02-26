@@ -32,7 +32,7 @@ const Home = () => {
         <Link
           data-aos="fade-up"
           data-aos-delay="500"
-          to="/Mumbai"
+          to="/mumbai"
           className="btn"
         >
           Tìm hiểu thêm

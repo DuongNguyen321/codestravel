@@ -47,7 +47,7 @@ const Bookform = () => {
 
         <div data-aos="zoom-in" data-aos-delay="100" className="inputBox">
           <span>
-            <Link className="btn btn-book" to="/Mumbai/book">
+            <Link className="btn btn-book" to="/mumbai/book">
               Đặt ngay
             </Link>
           </span>
@@ -97,7 +97,7 @@ const destinationBox = [
     src: "../../images/Mumbai/des-1.jpg",
     h3: "Ấn Độ môn",
 
-    icon: "fas fa-angle-right",
+    
     p: "được xây dựng vào năm 1931, còn có tên gọi khác là bia kỷ niệm chiến sĩ Ấn Độ",
   },
   {
@@ -105,7 +105,7 @@ const destinationBox = [
     src: "./images/Mumbai/des-2.jpg",
     h3: "Tòa nhà hình trứng",
 
-    icon: "fas fa-angle-right",
+    
     p: " nghệ thuật kiến trúc thị giác kết hợp với cách sản xuất, sử dụng và tái tạo năng lượng thông minh",
   },
   {
@@ -113,7 +113,7 @@ const destinationBox = [
     src: "./images/Mumbai/des-3.jpg",
     h3: "Vườn quốc gia Sanjay Gandhi",
 
-    icon: "fas fa-angle-right",
+    
     p: "bao gồm loài bướm đêm Atlas – bướm đêm lớn nhất thế giới, cây hoa Karvi 7 năm nở hoa một lần…",
   },
   {
@@ -121,7 +121,7 @@ const destinationBox = [
     src: "./images/Mumbai/des-4.jpg",
     h3: "Trung tâm triễn lãm Jehanggir",
 
-    icon: "fas fa-angle-right",
+    
     p: "khu vực triển lãm hàng đầu ở Mumbai dành cho nền mỹ thuật Ấn Độ đương đại",
   },
   {
@@ -129,7 +129,7 @@ const destinationBox = [
     src: "./images/Mumbai/des-5.jpg",
     h3: "Hang động Elephanta",
 
-    icon: "fas fa-angle-right",
+    
     p: "lưu giữ nhiều kiến trúc chạm khắc tinh xảo và chúng đã xuất hiện ở đây từ thế kỷ thứ 5 đến thứ 8",
   },
   {
@@ -137,7 +137,7 @@ const destinationBox = [
     src: "./images/Mumbai/des-6.jpg",
     h3: "Lonavala và Khandala",
 
-    icon: "fas fa-angle-right",
+    
     p: " khu nghỉ dưỡng rất nổi tiếng, nằm giữa đường cao tốc Mumbai – Pune.",
   },
   {
@@ -145,7 +145,7 @@ const destinationBox = [
     src: "./images/Mumbai/des-7.jpg",
     h3: "Thành phố Pune",
 
-    icon: "fas fa-angle-right",
+    
     p: "Giáo dục, nghệ thuật và âm nhạc là trọng tâm tại thành phố có nền văn hóa phong phú lâu đời này",
   },
   {
@@ -153,7 +153,7 @@ const destinationBox = [
     src: "./images/Mumbai/des-8.jpg",
     h3: "Thành phố Nashik",
 
-    icon: "fas fa-angle-right",
+    
     p: "là trung tâm hành hương lớn của người Hindu. Nashik có sự pha trộn của nét cổ xưa và hiện đại",
   },
 ];
@@ -167,7 +167,7 @@ const Destination = () => {
       <div className="box-container">
         {destinationBox.map((destinationBox) => {
           return (
-            <Link to="/Mumbai/more" key={destinationBox.id} className="box">
+            <Link to="/mumbai/more" key={destinationBox.id} className="box">
               <div className="image">
                 <img src={destinationBox.src} alt={destinationBox.h3} />
               </div>
@@ -221,7 +221,7 @@ const Services = () => {
         <span>Dịch vụ</span>
         <h1>Nâng cao trải nghiệm</h1>
       </div>
-      <div className="box-container">
+      <Link to={"/aboutus"} className="box-container">
         {servicesBox.map((servicesBox) => {
           return (
             <div key={servicesBox.id} className="box">
@@ -231,7 +231,7 @@ const Services = () => {
             </div>
           );
         })}
-      </div>
+      </Link>
     </section>
   );
 };
@@ -350,22 +350,22 @@ const Blog = () => {
       <div className="box-container">
         {blogBox.map((blogBox)=>{
           return (
-            <Link to="/Mumbai/blog" className="box" key={blogBox.id}>
+            <Link to="/mumbai/blog" className="box" key={blogBox.id}>
               <div className="image">
                 <img src={blogBox.src} alt={blogBox.a} />
               </div>
               <div className="content">
-                <Link to="/Mumbai/blog" className="link">
+                <p className="link">
                   {blogBox.a}
-                </Link>
+                </p>
                 <p>{blogBox.p}</p>
                 <div className="icon">
-                  <Link to="/Mumbai/blog">
+                  <p>
                     <i className="fas fa-clock"></i> 21st may, 2021
-                  </Link>
-                  <Link to="/Mumbai/blog">
+                  </p>
+                  <p>
                     <i className="fas fa-user"></i> by admin
-                  </Link>
+                  </p>
                 </div>
               </div>
             </Link>

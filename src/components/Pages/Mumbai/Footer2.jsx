@@ -85,9 +85,11 @@ export default function Footer() {
           </div>
         </div>
       </section>
-      <div className="credit">
-        created by <span>STravel</span> | all rights reserved!
-      </div>
+      <Link to={"/"}>
+        <div className="credit">
+          created by <span>STravel</span> | all rights reserved!
+        </div>
+      </Link>
     </footer>
   );
 }

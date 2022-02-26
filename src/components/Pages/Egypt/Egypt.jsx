@@ -96,7 +96,7 @@ const destinationBox = [
     src: "../../images/Egypt/des-1.jpg",
     h3: "Kim tự tháp Giza",
 
-    icon: "fas fa-angle-right",
+    
     p: "Kim tự tháp Giza là một trong Bảy kỳ quan thế giới cổ đại",
   },
   {
@@ -104,7 +104,7 @@ const destinationBox = [
     src: "./images/Egypt/des-2.jpg",
     h3: "Đền karnak của Luxor",
 
-    icon: "fas fa-angle-right",
+    
     p: "Thung lũng của các vị vua, Đền Karnak, và Đền tưởng niệm Hatshepsut",
   },
   {
@@ -112,7 +112,7 @@ const destinationBox = [
     src: "./images/Egypt/des-3.jpg",
     h3: "Hồi giáo Cario",
 
-    icon: "fas fa-angle-right",
+    
     p: "đầy đủ các nhà thờ Hồi giáo,trường học Hồi giáo và các di tích cổ đại",
   },
   {
@@ -120,7 +120,7 @@ const destinationBox = [
     src: "./images/Egypt/des-4.jpg",
     h3: "Aswan",
 
-    icon: "fas fa-angle-right",
+    
     p: "Thị trấn yên bình nhất của Ai Cập, đặt trên những đường cong của sông Nile",
   },
   {
@@ -128,7 +128,7 @@ const destinationBox = [
     src: "./images/Egypt/des-5.jpg",
     h3: "Abu simbel",
 
-    icon: "fas fa-angle-right",
+    
     p: "Nổi tiếng với tỷ lệ megalithic và được biết đến với ngôi đền của Ramses II",
   },
   {
@@ -136,7 +136,7 @@ const destinationBox = [
     src: "./images/Egypt/des-6.jpg",
     h3: "Bảo tàng Egyptian",
 
-    icon: "fas fa-angle-right",
+    
     p: "Bảo tàng Ai Cập của Cairo là một trong những bộ sưu tập bảo tàng tuyệt vời của thế giới",
   },
   {
@@ -144,7 +144,7 @@ const destinationBox = [
     src: "./images/Egypt/des-7.jpg",
     h3: "Sa mạc trắng",
 
-    icon: "fas fa-angle-right",
+    
     p: "Kỳ quan tự nhiên Sa mạc Trắng trông giống như một vùng đất hoang tuyết ở giữa cát khô cằn",
   },
   {
@@ -152,7 +152,7 @@ const destinationBox = [
     src: "./images/Egypt/des-8.jpg",
     h3: "Siwa Oasis",
 
-    icon: "fas fa-angle-right",
+    
     p: "Siwa là loại thuốc bổ yên tĩnh đến sự hối hả của các thành phố Ai Cập và là một trong những địa điểm đẹp nhất của Tây Sa mạc",
   },
 ];
@@ -220,7 +220,7 @@ const Services = () => {
         <span>Dịch vụ</span>
         <h1>Nâng cao trải nghiệm</h1>
       </div>
-      <div className="box-container">
+      <Link to={"/aboutus"} className="box-container">
         {servicesBox.map((servicesBox) => {
           return (
             <div key={servicesBox.id} className="box">
@@ -230,7 +230,7 @@ const Services = () => {
             </div>
           );
         })}
-      </div>
+      </Link>
     </section>
   );
 };
@@ -354,17 +354,17 @@ const Blog = () => {
                 <img src={blogBox.src} alt={blogBox.a} />
               </div>
               <div className="content">
-                <Link to="/egypt/blog" className="link">
+                <p className="link">
                   {blogBox.a}
-                </Link>
+                </p>
                 <p>{blogBox.p}</p>
                 <div className="icon">
-                  <Link to="/egypt/blog">
+                  <p>
                     <i className="fas fa-clock"></i> 21st may, 2021
-                  </Link>
-                  <Link to="/egypt/blog">
+                  </p>
+                  <p>
                     <i className="fas fa-user"></i> by admin
-                  </Link>
+                  </p>
                 </div>
               </div>
             </Link>

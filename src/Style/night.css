@@ -593,7 +593,7 @@ html::-webkit-scrollbar-thumb {
   border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
 }
 .dark .HomePages .brand-slider {
-  width: 1440px;
+  width: 100%;
 }
 .dark .HomePages .review-slider {
   width: 100%;
@@ -601,6 +601,8 @@ html::-webkit-scrollbar-thumb {
 .dark .HomePages .swiper-slide img{
   border-radius: 5px;
   overflow: hidden;
+  width: 100%;
+  height: 30px;
 }
 @media (max-width: 1450px) {
   html {
@@ -612,7 +614,7 @@ html::-webkit-scrollbar-thumb {
     font-size: 55%;
   }
   .dark .HomePages .brand-slider {
-    width: 1000px;
+    width: 100%;
   }
 }
 @media (max-width: 991px) {
@@ -623,7 +625,7 @@ html::-webkit-scrollbar-thumb {
     padding: 2rem;
   }
   .dark .HomePages .brand-slider {
-    width: 900px;
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
@@ -654,12 +656,12 @@ html::-webkit-scrollbar-thumb {
     background: #222;
   }
   .dark .HomePages .brand-slider {
-    width: 700px;
+    width: 100%;
   }
 }
 @media (max-width: 450px) {
   .dark .HomePages .brand-slider {
-    width: 400px;
+    width: 100%;
   }
   html {
     font-size: 50%;

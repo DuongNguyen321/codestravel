@@ -43,13 +43,7 @@ html::-webkit-scrollbar-thumb {
   color: #fff;
   font-size: 4rem;
 }
-.dark .Pages.Mumbai .header .navbar a {
-  color: #aaa;
-     margin: 1rem;
-     margin-left: 2rem;
-    font-size: 2rem;
-  display:block;
-}
+
 .dark .Pages.Hawaii .btn {
   color: #111;
     display: flex;
@@ -90,9 +84,10 @@ html::-webkit-scrollbar-thumb {
 }
 .dark .Pages.Hawaii .header .navbar a {
   color: #aaa;
-  font-size: 1.7rem;
-  display: inline-block;
-  margin: 0 1rem;
+     margin: 1rem;
+     margin-left: 2rem;
+    font-size: 2rem;
+  display:block;
 }
 .dark .Pages.Hawaii .home .content p {
   color: #aaa;
@@ -818,6 +813,8 @@ html::-webkit-scrollbar-thumb {
   }
   .dark .Pages.Hawaii .header .navbar {
     position: absolute;
+    display: flex;
+    flex-direction: column;
     top: 99%;
     left: 0;
     right: 0;

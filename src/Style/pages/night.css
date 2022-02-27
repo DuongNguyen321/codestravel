@@ -286,6 +286,8 @@ html::-webkit-scrollbar-thumb {
   }
   .dark .Pages .header .navbar {
     position: absolute;
+    display: flex;
+    flex-direction: column;
     top: 99%;
     left: 0;
     right: 0;

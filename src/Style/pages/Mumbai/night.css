@@ -349,9 +349,6 @@ html::-webkit-scrollbar-thumb {
   justify-content: space-between;
   padding: 1.5rem 9%;
 }
-.dark .Pages.Mumbai .header .navbar a:hover {
-  color: var(--orange);
-}
 .dark .Pages.Mumbai .header .btn {
   margin-top: 0;
   padding: 0.5rem 1rem;

@@ -11,9 +11,17 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 function Login(props) {
+    const handleCloselogin = (e) => {
+      let loginForm = document.querySelector(".login-form-container");
+      loginForm.classList.remove("active");
+    };
   return (
     <div className="login-form-container">
-      <i className="fas fa-times" id="form-close"></i>
+      <i
+        className="fas fa-times"
+        id="form-close"
+        onClick={handleCloselogin}
+      ></i>
       <form action="">
         <h3>Đăng nhập</h3>
         <input
@@ -811,14 +819,12 @@ const handleScroll = (e)=> {
   let menu = document.querySelector("#menu-bar");
   let loginForm = document.querySelector(".login-form-container");
   let navbar = document.querySelector(".navbar");
-  HomePages.onscroll = () => {
     searchBtn.classList.remove("fa-times");
     searchBar.classList.remove("active");
     menu.classList.remove("fa-times");
     navbar.classList.remove("active");
     loginForm.classList.remove("active");
     document.querySelector("#menu-bar .fas").classList.add("fa-bars");
-  };
 }
   return (
     <div className="HomePages" onScroll={handleScroll}>

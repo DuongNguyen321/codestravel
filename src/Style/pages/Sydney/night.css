@@ -43,7 +43,7 @@ html::-webkit-scrollbar-thumb {
   color: #fff;
   font-size: 4rem;
 }
-.dark .Pages.Mumbai .header .navbar a {
+.dark .Pages.Sydney .header .navbar a {
   color: #aaa;
      margin: 1rem;
      margin-left: 2rem;
@@ -87,12 +87,6 @@ html::-webkit-scrollbar-thumb {
   justify-content: center;
   align-content: center;
   bottom: 1.7rem;
-}
-.dark .Pages.Sydney .header .navbar a {
-  color: #aaa;
-  font-size: 1.7rem;
-  display: inline-block;
-  margin: 0 1rem;
 }
 .dark .Pages.Sydney .home .content p {
   color: #aaa;
@@ -818,6 +812,8 @@ html::-webkit-scrollbar-thumb {
   }
   .dark .Pages.Sydney .header .navbar {
     position: absolute;
+        display: flex;
+    flex-direction: column;
     top: 99%;
     left: 0;
     right: 0;

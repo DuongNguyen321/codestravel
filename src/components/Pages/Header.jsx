@@ -11,7 +11,6 @@ window.onscroll = () => {
     let body = document.body;
     var theme = localStorage.getItem("theme");
 
-    btnToggle.addEventListener("click", function () {
       if (body.getAttribute("class") === "light" && theme === "light") {
         body.classList = "dark";
         localStorage.setItem("theme", "dark");
@@ -23,15 +22,10 @@ window.onscroll = () => {
         btnToggle.classList.add("fa-moon");
         btnToggle.classList.remove("fa-sun-o");
       }
-    });
   };
   const handleMenu = (e) => {
     let Navbar = document.querySelector(".navbar");
-    let menuBtn = document.getElementById("menu-btn");
-
-    menuBtn.onclick = () => {
       Navbar.classList.toggle("active");
-    };
   };
   return (
     <header className="header">

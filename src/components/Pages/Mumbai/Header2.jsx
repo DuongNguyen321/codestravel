@@ -2,10 +2,30 @@ import "../../../Style/pages/style.css";
 import "../../../Style/pages/night.css";
 import { Link } from "react-router-dom";
 export default function Header() {
-  
+    const handleMenu = (e) => {
+      let Navbar = document.querySelector(".navbar");
+      Navbar.classList.toggle("active");
+    };
+      const handleTheme = (e) => {
+        let btnToggle = document.querySelector(".btn-toggle");
+        let body = document.body;
+        var theme = localStorage.getItem("theme");
+
+        if (body.getAttribute("class") === "light" && theme === "light") {
+          body.classList = "dark";
+          localStorage.setItem("theme", "dark");
+          btnToggle.classList.remove("fa-moon");
+          btnToggle.classList.add("fa-sun-o");
+        } else {
+          body.classList = "light";
+          localStorage.setItem("theme", "light");
+          btnToggle.classList.add("fa-moon");
+          btnToggle.classList.remove("fa-sun-o");
+        }
+      };
   return (
     <header className="header">
-      <div id="menu-btn" className="fas fa-bars"></div>
+      <div id="menu-btn" className="fas fa-bars"onClick={handleMenu}></div>
 
       <Link
         data-aos="zoom-in-left"
@@ -40,6 +60,7 @@ export default function Header() {
         className="far fa-moon btn-toggle"
         data-aos="zoom-in-left"
         data-aos-delay="450"
+        onClick={handleTheme}
       ></i>
       <Link
         data-aos="zoom-in-left"

@@ -58,6 +58,8 @@ html::-webkit-scrollbar-thumb {
 .light .Pages.Mumbai .btn {
   display: flex;
   justify-content: center;
+  align-content: center;
+  align-items: center;
   margin-top: 1rem;
   background: var(--orange);
   color: #efefef;

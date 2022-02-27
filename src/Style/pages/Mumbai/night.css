@@ -36,7 +36,7 @@ html::-webkit-scrollbar-thumb {
   border-radius: 5rem;
 }
 .dark .Pages.Mumbai {
-  background: #111;
+  background: #222;
   overflow: hidden;
 }
 .dark .Pages.Mumbai .heading h1 {
@@ -45,7 +45,10 @@ html::-webkit-scrollbar-thumb {
 }
 .dark .Pages.Mumbai .btn {
   color: #111;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
   margin-top: 1rem;
   background: var(--orange);
   padding: 0.8rem 2rem;
@@ -54,6 +57,10 @@ html::-webkit-scrollbar-thumb {
   cursor: pointer;
   font-size: 2rem;
   transition: 0.3s;
+}
+
+.dark .Pages.Mumbai .header .navbar a:hover {
+  color: var(--orange);
 }
 .dark .Pages.Mumbai .btn:hover {
   color: var(--orange);
@@ -80,9 +87,10 @@ html::-webkit-scrollbar-thumb {
 }
 .dark .Pages.Mumbai .header .navbar a {
   color: #aaa;
-  font-size: 1.7rem;
-  display: inline-block;
-  margin: 0 1rem;
+     margin: 1rem;
+     margin-left: 2rem;
+    font-size: 2rem;
+  display:block;
 }
 .dark .Pages.Mumbai .home .content p {
   color: #aaa;
@@ -210,7 +218,7 @@ html::-webkit-scrollbar-thumb {
   padding: 2rem;
 }
 .dark .Pages.Mumbai .review .box-container .box:hover {
-  background: rgba(255, 255, 255, 0.8);
+  background: #333;
   border: 0.2rem solid var(--orange);
 }
 .dark .Pages.Mumbai .review .box-container .box p {
@@ -378,9 +386,9 @@ html::-webkit-scrollbar-thumb {
       from(rgba(17, 17, 17, 0.7)),
       to(rgba(17, 17, 17, 0.7))
     ),
-    url(../../../images/Hawaii/home-bg.jpg) no-repeat;
+    url(../../../images/Mumbai/home-bg.jpg) no-repeat;
   background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
-    url(../../../images/Hawaii/home-bg.jpg) no-repeat;
+    url(../../../images/Mumbai/home-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   display: -webkit-box;
@@ -692,9 +700,9 @@ html::-webkit-scrollbar-thumb {
       from(rgba(17, 17, 17, 0.7)),
       to(rgba(17, 17, 17, 0.7))
     ),
-    url(../../../images/Hawaii/banner-bg.jpg) no-repeat;
+    url(../../../images/Mumbai/banner-bg.jpg) no-repeat;
   background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
-    url(../../../images/Hawaii/banner-bg.jpg) no-repeat;
+    url(../../../images/Mumbai/banner-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   padding: 3rem 2rem;
@@ -808,6 +816,8 @@ html::-webkit-scrollbar-thumb {
   }
   .dark .Pages.Mumbai .header .navbar {
     position: absolute;
+    display: flex;
+    flex-direction: column;
     top: 99%;
     left: 0;
     right: 0;

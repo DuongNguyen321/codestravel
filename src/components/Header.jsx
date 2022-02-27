@@ -47,12 +47,13 @@ const navbarItems = [
 ];
 
 function Header(props) {
+  
  const handleTheme=(e)=>{
 let btnToggle = document.querySelector(".btn-toggle");
 let body = document.body;
     var theme = localStorage.getItem("theme");
 
-btnToggle.addEventListener("click", function () {
+btnToggle.addEventListener("click", function (e) {
   if (body.getAttribute("class") === "light" && theme ==="light" ) {
     body.classList = "dark";
     localStorage.setItem("theme", "dark");
@@ -66,6 +67,35 @@ btnToggle.addEventListener("click", function () {
   }
 });
   }
+  const handleLogin =(e)=>{
+let loginForm = document.querySelector(".login-form-container");
+let formClose = document.getElementById("form-close");
+let formBtn = document.getElementById("login-btn");
+formBtn.addEventListener("click", (e) => {
+  loginForm.classList.add("active");
+});
+formClose.addEventListener("click", (e) => {
+  loginForm.classList.remove("active");
+});
+  }
+  const handleSearch =(e)=>{
+let searchBtn = document.getElementById("search-btn");
+let searchBar = document.querySelector(".search-bar-container");
+
+searchBtn.addEventListener("click", (e) => {
+  searchBtn.classList.toggle("fa-times");
+  searchBar.classList.toggle("active");
+});
+  }
+  const handleMenu =(e)=>{
+    let navbar = document.querySelector(".navbar");
+    let menu = document.querySelector("#menu-bar");
+    menu.addEventListener("click", () => {
+      menu.classList.toggle("fa-times");
+      document.querySelector("#menu-bar .fas").classList.toggle("fa-bars");
+      navbar.classList.toggle("active");
+    });
+  }
   return (
     <header>
       <div
@@ -73,6 +103,7 @@ btnToggle.addEventListener("click", function () {
         className="fas"
         data-aos="zoom-in-left"
         data-aos-delay="100"
+        onClick={handleMenu}
       >
         <i className="fas fa-bars"></i>
       </div>
@@ -95,13 +126,13 @@ btnToggle.addEventListener("click", function () {
       </nav>
       <div className="icons" data-aos="zoom-in-left" data-aos-delay="400">
         <i className="far fa-moon btn-toggle" onClick={handleTheme} />
-        <i className="fas fa-search" id="search-btn" />
-        <i className="fas fa-user" id="login-btn" />
+        <i className="fas fa-search" id="search-btn" onClick={handleSearch} />
+        <i className="fas fa-user" id="login-btn" onClick={handleLogin} />
       </div>
       <form action="" className="search-bar-container">
         <input
           type="text"
-          name="Tìm Kiếm"
+          name="search"
           id="search-bar"
           placeholder="Tìm kiếm..."
         />

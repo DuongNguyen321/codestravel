@@ -60,11 +60,21 @@ const Bookform = () => {
   );
 };
 const About = () => {
+  const handleVidbtn = (e) => {
+    document
+      .querySelectorAll(".about .video-container .controls .control-btn")
+      .forEach((btn) => {
+        btn.onclick = () => {
+          let src = btn.getAttribute("data-src");
+          document.querySelector(".about .video-container .video").src = src;
+        };
+      });
+  };
   return (
     <section className="about" id="about">
       <div
         className="video-container"
-        
+        data-aos="fade-right"
         data-aos-delay="150"
       >
         <video
@@ -75,9 +85,21 @@ const About = () => {
           className="video"
         ></video>
         <div className="controls">
-          <span className="control-btn" data-src="/videos/vid-1.mp4"></span>
-          <span className="control-btn" data-src="/videos/vid-2.mp4"></span>
-          <span className="control-btn" data-src="/videos/vid-3.mp4"></span>
+          <span
+            className="control-btn"
+            data-src="/videos/vid-1.mp4"
+            onClick={handleVidbtn}
+          ></span>
+          <span
+            className="control-btn"
+            data-src="/videos/vid-2.mp4"
+            onClick={handleVidbtn}
+          ></span>
+          <span
+            className="control-btn"
+            data-src="/videos/vid-3.mp4"
+            onClick={handleVidbtn}
+          ></span>
         </div>
       </div>
       <div className="content" data-aos="fade-left" data-aos-delay="200">
@@ -440,7 +462,13 @@ const Banner =()=>{
   );
 } 
 export default function Hawaii() {
-
+const handleScroll = (e) => {
+  let Navbar = document.querySelector(".navbar");
+  let Pages = document.querySelectorAll(".Pages");
+  Pages.onscroll = () => {
+    Navbar.classList.remove("active");
+  };
+};
 
   useEffect(() => {
     window.scroll({
@@ -450,7 +478,7 @@ export default function Hawaii() {
     });
   }, []);
   return (
-    <div className="Pages Hawaii">
+    <div className="Pages Hawaii" onScroll={handleScroll}>
       <Header  />
       <div className="container">
         <Home />

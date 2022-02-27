@@ -36,16 +36,26 @@ html::-webkit-scrollbar-thumb {
   border-radius: 5rem;
 }
 .dark .Pages.Hawaii {
-  background: #111;
+  background: #222;
   overflow: hidden;
 }
 .dark .Pages.Hawaii .heading h1 {
   color: #fff;
   font-size: 4rem;
 }
+.dark .Pages.Mumbai .header .navbar a {
+  color: #aaa;
+     margin: 1rem;
+     margin-left: 2rem;
+    font-size: 2rem;
+  display:block;
+}
 .dark .Pages.Hawaii .btn {
   color: #111;
-  display: inline-block;
+    display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   margin-top: 1rem;
   background: var(--orange);
   padding: 0.8rem 2rem;
@@ -210,7 +220,7 @@ html::-webkit-scrollbar-thumb {
   padding: 2rem;
 }
 .dark .Pages.Hawaii .review .box-container .box:hover {
-  background: rgba(255, 255, 255, 0.8);
+  background: #333;
   border: 0.2rem solid var(--orange);
 }
 .dark .Pages.Hawaii .review .box-container .box p {
@@ -378,9 +388,9 @@ html::-webkit-scrollbar-thumb {
       from(rgba(17, 17, 17, 0.7)),
       to(rgba(17, 17, 17, 0.7))
     ),
-    url(../../../images/Mumbai/home-bg.jpg) no-repeat;
+    url(../../../images/Hawaii/home-bg.jpg) no-repeat;
   background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
-    url(../../../images/Mumbai/home-bg.jpg) no-repeat;
+    url(../../../images/Hawaii/home-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   display: -webkit-box;
@@ -692,9 +702,9 @@ html::-webkit-scrollbar-thumb {
       from(rgba(17, 17, 17, 0.7)),
       to(rgba(17, 17, 17, 0.7))
     ),
-    url(../../../images/Mumbai/banner-bg.jpg) no-repeat;
+    url(../../../images/Hawaii/banner-bg.jpg) no-repeat;
   background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
-    url(../../../images/Mumbai/banner-bg.jpg) no-repeat;
+    url(../../../images/Hawaii/banner-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   padding: 3rem 2rem;

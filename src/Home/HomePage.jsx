@@ -56,6 +56,17 @@ const homeControls = [
 ];
 
 function Home(props) {
+  const handleVidbtn = (e) => {
+    let videoBtn = document.querySelectorAll(".vid-btn");
+    videoBtn.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelector(".controls .active").classList.remove("active");
+        btn.classList.add("active");
+        let src = btn.getAttribute("data-src");
+        document.querySelector("#video-slider").src = src;
+      });
+    });
+  };
   return (
     <section className="home" id="home">
       <div className="content">
@@ -73,6 +84,7 @@ function Home(props) {
         {homeControls.map((homeControls) => {
           return (
             <span
+            onClick={handleVidbtn}
               key={homeControls.id}
               className={homeControls.className}
               data-src={homeControls.dataSrc}
@@ -792,8 +804,24 @@ function HomePage(props) {
       behavior: "smooth",
     });
   }, []);
+const handleScroll = (e)=> {
+  let HomePages = document.querySelectorAll(".HomePages")
+  let searchBtn = document.getElementById("search-btn");
+  let searchBar = document.querySelector(".search-bar-container");
+  let menu = document.querySelector("#menu-bar");
+  let loginForm = document.querySelector(".login-form-container");
+  let navbar = document.querySelector(".navbar");
+  HomePages.onscroll = () => {
+    searchBtn.classList.remove("fa-times");
+    searchBar.classList.remove("active");
+    menu.classList.remove("fa-times");
+    navbar.classList.remove("active");
+    loginForm.classList.remove("active");
+    document.querySelector("#menu-bar .fas").classList.add("fa-bars");
+  };
+}
   return (
-    <div className="HomePages">
+    <div className="HomePages" onScroll={handleScroll}>
       <Header />
       <div className="Container">
         <Login />

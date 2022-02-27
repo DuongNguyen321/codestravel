@@ -56,8 +56,10 @@ html::-webkit-scrollbar-thumb {
   color: #333;
 }
 .light .Pages.Egypt .btn {
-  display: flex;
+    display: flex;
   justify-content: center;
+  align-content: center;
+  align-items: center;
   margin-top: 1rem;
   background: var(--orange);
   color: #efefef;

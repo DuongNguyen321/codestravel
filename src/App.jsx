@@ -54,6 +54,20 @@ function App() {
       btnToggle.classList.remove("fa-sun-o");
     }
   };
+  window.onscroll = () => {
+let searchBtn = document.getElementById("search-btn");
+let searchBar = document.querySelector(".search-bar-container");
+let menu = document.querySelector("#menu-bar");
+let navbar = document.querySelector(".navbar");
+let loginForm = document.querySelector(".login-form-container");
+
+    searchBtn.classList.remove("fa-times");
+    searchBar.classList.remove("active");
+    menu.classList.remove("fa-times");
+    navbar.classList.remove("active");
+    loginForm.classList.remove("active");
+    document.querySelector("#menu-bar .fas").classList.add("fa-bars");
+  };
   AOS.init({
     disable: false,
     startEvent: "DOMContentLoaded",

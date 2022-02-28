@@ -2,30 +2,30 @@ import "../../../Style/pages/style.css";
 import "../../../Style/pages/night.css";
 import { Link } from "react-router-dom";
 export default function Header() {
-    const handleMenu = (e) => {
-      let Navbar = document.querySelector(".navbar");
-      Navbar.classList.toggle("active");
-    };
-      const handleTheme = (e) => {
-        let btnToggle = document.querySelector(".btn-toggle");
-        let body = document.body;
-        var theme = localStorage.getItem("theme");
+  const handleMenu = (e) => {
+    let Navbar = document.querySelector(".navbar");
+    Navbar.classList.toggle("active");
+  };
+  const handleTheme = (e) => {
+    let btnToggle = document.querySelector(".btn-toggle");
+    let body = document.body;
+    var theme = localStorage.getItem("theme");
 
-        if (body.getAttribute("class") === "light" && theme === "light") {
-          body.classList = "dark";
-          localStorage.setItem("theme", "dark");
-          btnToggle.classList.remove("fa-moon");
-          btnToggle.classList.add("fa-sun-o");
-        } else {
-          body.classList = "light";
-          localStorage.setItem("theme", "light");
-          btnToggle.classList.add("fa-moon");
-          btnToggle.classList.remove("fa-sun-o");
-        }
-      };
+    if (body.getAttribute("class") === "light" && theme === "light") {
+      body.classList = "dark";
+      localStorage.setItem("theme", "dark");
+      btnToggle.classList.remove("fa-moon");
+      btnToggle.classList.add("fa-sun-o");
+    } else {
+      body.classList = "light";
+      localStorage.setItem("theme", "light");
+      btnToggle.classList.add("fa-moon");
+      btnToggle.classList.remove("fa-sun-o");
+    }
+  };
   return (
     <header className="header">
-      <div id="menu-btn" className="fas fa-bars"onClick={handleMenu}></div>
+      <div id="menu-btn" className="fas fa-bars" onClick={handleMenu}></div>
 
       <Link
         data-aos="zoom-in-left"
@@ -37,24 +37,32 @@ export default function Header() {
       </Link>
 
       <nav className="navbar">
-        <a href="#home" data-aos="zoom-in-left" data-aos-delay="150">
+        <Link to="/sydney#home" data-aos="zoom-in-left" data-aos-delay="150">
           Home
-        </a>
-        <a data-aos="zoom-in-left" data-aos-delay="200" href="#about">
+        </Link>
+        <Link data-aos="zoom-in-left" data-aos-delay="200" to="/sydney#about">
           About
-        </a>
-        <a data-aos="zoom-in-left" data-aos-delay="250" href="#destination">
+        </Link>
+        <Link
+          data-aos="zoom-in-left"
+          data-aos-delay="250"
+          to="/sydney#destination"
+        >
           Điểm đến
-        </a>
-        <a data-aos="zoom-in-left" data-aos-delay="300" href="#services">
+        </Link>
+        <Link
+          data-aos="zoom-in-left"
+          data-aos-delay="300"
+          to="/sydney#services"
+        >
           Dịch vụ
-        </a>
-        <a data-aos="zoom-in-left" data-aos-delay="350" href="#gallery">
+        </Link>
+        <Link data-aos="zoom-in-left" data-aos-delay="350" to="/sydney#gallery">
           Ảnh
-        </a>
-        <a data-aos="zoom-in-left" data-aos-delay="400" href="#blogs">
+        </Link>
+        <Link data-aos="zoom-in-left" data-aos-delay="400" to="/sydney#blogs">
           blogs
-        </a>
+        </Link>
       </nav>
       <i
         className="far fa-moon btn-toggle"

@@ -5,16 +5,16 @@ import "../../../Style/pages/style.css"
 export default function Footer() {
   return (
     <footer className="footer">
-        <div className="banner">
-      <div className="content" data-aos="zoom-in-up" data-aos-delay="250">
-        <span>Cùng STravel</span>
-        <h3>Bắt đầu chuyến đi của bạn</h3>
-        <p>
-          Mỗi chuyến đi đều là một kỷ niệm đẹp. Hãy cùng STravel ghi lại kỷ niệm
-          này !
-        </p>
+      <div className="banner">
+        <div className="content" data-aos="zoom-in-up" data-aos-delay="250">
+          <span>Cùng STravel</span>
+          <h3>Bắt đầu chuyến đi của bạn</h3>
+          <p>
+            Mỗi chuyến đi đều là một kỷ niệm đẹp. Hãy cùng STravel ghi lại kỷ
+            niệm này !
+          </p>
+        </div>
       </div>
-    </div>
       <section className="footer">
         <div className="box-container">
           <div className="box">
@@ -29,7 +29,7 @@ export default function Footer() {
             <div className="share">
               <Link to="/hawaii" className="fab fa-facebook-f"></Link>
               <Link to="/hawaii" className="fab fa-twitter"></Link>
-              <Link to="/hawaii"className="fab fa-instagram"></Link>
+              <Link to="/hawaii" className="fab fa-instagram"></Link>
               <Link to="/hawaii" className="fab fa-linkedin"></Link>
             </div>
           </div>
@@ -38,21 +38,21 @@ export default function Footer() {
             <Link to="/" className="links">
               <i className="fas fa-arrow-right"></i> Trang chủ
             </Link>
-            <a href="#about" className="links">
+            <Link to="/hawaii#about" className="links">
               <i className="fas fa-arrow-right"></i> About
-            </a>
-            <a href="#destination" className="links">
+            </Link>
+            <Link to="/hawaii#destination" className="links">
               <i className="fas fa-arrow-right"></i> Điểm đến
-            </a>
-            <a href="#services" className="links">
+            </Link>
+            <Link to="/hawaii#services" className="links">
               <i className="fas fa-arrow-right"></i> Dịch vụ
-            </a>
-            <a href="#gallery" className="links">
+            </Link>
+            <Link to="/hawaii#gallery" className="links">
               <i className="fas fa-arrow-right"></i> Ảnh
-            </a>
-            <a href="#blogs" className="links">
+            </Link>
+            <Link to="/hawaii#blogs" className="links">
               <i className="fas fa-arrow-right"></i> blogs
-            </a>
+            </Link>
           </div>
           <div className="box">
             <h3>Liên Hệ</h3>

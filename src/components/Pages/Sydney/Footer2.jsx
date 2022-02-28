@@ -38,21 +38,21 @@ export default function Footer() {
             <Link to="/" className="links">
               <i className="fas fa-arrow-right"></i> Trang chủ
             </Link>
-            <a href="#about" className="links">
+            <Link to="/sydney#about" className="links">
               <i className="fas fa-arrow-right"></i> About
-            </a>
-            <a href="#destination" className="links">
+            </Link>
+            <Link to="/sydney#destination" className="links">
               <i className="fas fa-arrow-right"></i> Điểm đến
-            </a>
-            <a href="#services" className="links">
+            </Link>
+            <Link to="/sydney#services" className="links">
               <i className="fas fa-arrow-right"></i> Dịch vụ
-            </a>
-            <a href="#gallery" className="links">
+            </Link>
+            <Link to="/sydney#gallery" className="links">
               <i className="fas fa-arrow-right"></i> Ảnh
-            </a>
-            <a href="#blogs" className="links">
+            </Link>
+            <Link to="/sydney#blogs" className="links">
               <i className="fas fa-arrow-right"></i> blogs
-            </a>
+            </Link>
           </div>
           <div className="box">
             <h3>Liên Hệ</h3>

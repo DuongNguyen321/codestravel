@@ -14,13 +14,14 @@ const Home = () => {
           Sydney
         </span>
         <h3 data-aos="fade-up" data-aos-delay="200">
-          Thành phố có tất cả
+          xứ sở chuột túi
         </h3>
         <p data-aos="fade-up" data-aos-delay="300">
-          Sydney không chỉ là trung tâm tài chính – kinh tế, kinh đô điện ảnh –
-          thời trang của Ấn Độ, mà đây còn là thành phố cảng vừa hiện đại nhưng
-          vẫn mang nhiều nét cổ kính với những công trình kiến trúc, quán bar,
-          nhà hàng, viện bảo tàng và các cửa hàng thời trang hấp dẫn…
+          Sydney là nơi mà đâu đâu cũng có những công trình kiến trúc nguy nga,
+          đồ sộ, thế giới bảo tàng, công viên xanh, những khu vui chơi giải trí
+          hiện đại và cả biển nữa. Quá nhiều điều thú vị vậy thì du lịch Sydney
+          nên đi đâu? Dưới đây là những điểm check-in đẹp nhất mang đậm hơi thở
+          Sydney nói riêng và nước Úc nói chung
         </p>
         <a
           data-aos="fade-up"
@@ -41,7 +42,7 @@ const Bookform = () => {
       <form action="">
         <div data-aos="zoom-in" data-aos-delay="50" className="inputBox">
           <span style={{ fontSize: 2.5 + "em" }}>
-            <h1>Chuyến đi được tìm kiếm nhiểu nhất</h1>
+            <h1>Chuyến đi có ưu đãi tốt nhất</h1>
           </span>
         </div>
 
@@ -117,66 +118,58 @@ const destinationBox = [
   {
     id: 1,
     src: "../../images/Sydney/des-1.jpg",
-    h3: "Ấn Độ môn",
+    h3: "Sydney Opera House",
 
-    
-    p: "được xây dựng vào năm 1931, còn có tên gọi khác là bia kỷ niệm chiến sĩ Ấn Độ",
+    p: "Đây là công trình biểu tượng đỉnh cao của Sydney nói riêng và toàn nước Úc nói chung",
   },
   {
     id: 2,
     src: "./images/Sydney/des-2.jpg",
-    h3: "Tòa nhà hình trứng",
+    h3: "Cầu Sydney Harbour",
 
-    
-    p: " nghệ thuật kiến trúc thị giác kết hợp với cách sản xuất, sử dụng và tái tạo năng lượng thông minh",
+    p: "Đây là cây cầu thép lớn nhất thế giới, một trong những biểu tượng của xứ sở chuột túi",
   },
   {
     id: 3,
     src: "./images/Sydney/des-3.jpg",
-    h3: "Vườn quốc gia Sanjay Gandhi",
+    h3: "Tháp Sydney",
 
-    
-    p: "bao gồm loài bướm đêm Atlas – bướm đêm lớn nhất thế giới, cây hoa Karvi 7 năm nở hoa một lần…",
+    p: "Công trình cao nhất trong thành phố. Toạ lạc tại trung tâm thương mại Piit St.",
   },
   {
     id: 4,
     src: "./images/Sydney/des-4.jpg",
-    h3: "Trung tâm triễn lãm Jehanggir",
+    h3: "Khu phố cổ The Rocks",
 
-    
-    p: "khu vực triển lãm hàng đầu ở Sydney dành cho nền mỹ thuật Ấn Độ đương đại",
+    p: "được ví von là “quá khứ và hiện tại hội tụ hoàn hảo của Sydney”",
   },
   {
     id: 5,
     src: "./images/Sydney/des-5.jpg",
-    h3: "Hang động Elephanta",
+    h3: "Quán bia “Lord Nelson”",
 
-    
-    p: "lưu giữ nhiều kiến trúc chạm khắc tinh xảo và chúng đã xuất hiện ở đây từ thế kỷ thứ 5 đến thứ 8",
+    p: "quán bia xua thật xưa với phong cách cảu người lính,thuỷ thủ và công nhân những năm 1800",
   },
   {
     id: 6,
     src: "./images/Sydney/des-6.jpg",
-    h3: "Lonavala và Khandala",
+    h3: "Darling Harbour",
 
-    
-    p: " khu nghỉ dưỡng rất nổi tiếng, nằm giữa đường cao tốc Sydney – Pune.",
+    p: "hầu hết, khách di lịch cá nhân hoặc đi theo tour đều chọn điểm dừng chân là khu giải trí tại trung tâm Sydney này",
   },
   {
     id: 7,
     src: "./images/Sydney/des-7.jpg",
-    h3: "Thành phố Pune",
+    h3: "Nhà thờ St Mary",
 
-    
-    p: "Giáo dục, nghệ thuật và âm nhạc là trọng tâm tại thành phố có nền văn hóa phong phú lâu đời này",
+    p: "nơi ở của Đức Tổng Giá mục Sydney, đứng đầu trong danh sách các nhà nguyện công giáo đầu tiên tại nước Úc",
   },
   {
     id: 8,
     src: "./images/Sydney/des-8.jpg",
-    h3: "Thành phố Nashik",
+    h3: "Government House",
 
-    
-    p: "là trung tâm hành hương lớn của người Hindu. Nashik có sự pha trộn của nét cổ xưa và hiện đại",
+    p: "nằm trong vườn Bách thảo Hoàng Gia vói một khu vườn xinh đẹp theo kiểu Anh Quốc bao bọc xung quanh",
   },
 ];
 const Destination = () => {
@@ -263,59 +256,59 @@ const galleryBox = [
     id: 1,
 
     src: "./images/Sydney/gallery-img-1.jpg",
-    span: "thành phố Sydney",
-    h3: "vườn quốc gia Sanjay Gandhi",
+    span: "Brisbane, Úc",
+    h3: "Tòa nhà lịch sử Customs House",
   },
   {
     id: 2,
 
     src: "./images/Sydney/gallery-img-2.jpg",
-    span: "",
-    h3: "Nhà Thờ St John The Evangelist",
+    span: "Bảo tàng Mỹ thuật Ứng dụng và Khoa học",
+    h3: "Power House",
   },
   {
     id: 3,
 
     src: "./images/Sydney/gallery-img-3.jpg",
     span: "nằm trên đỉnh ngọn đồi Malabar ở Sydney",
-    h3: "Vườn treo Sydney",
+    h3: "Vườn bách thảo Hoàng gia",
   },
   {
     id: 4,
 
     src: "./images/Sydney/gallery-img-4.jpg",
-    span: "Bảo tàng viện của thành phố Sydney",
-    h3: "Dr. Bhau Daji Lad",
+    span: "phía tây Sydney",
+    h3: "Vườn Quốc gia Blue Mountains",
   },
   {
     id: 5,
     src: "./images/Sydney/gallery-img-5.jpg",
-    span: "di sản thế giới được UNESCO nhìn nhận.",
-    h3: "Tòa đô chánh Sydney",
+    span: "giữa lòng thành phố Sydney",
+    h3: "Công viên Hyde",
   },
   {
     id: 6,
     src: "./images/Sydney/gallery-img-6.jpg",
-    span: "Sydney",
-    h3: "kiến trúc thời Victoria",
+    span: "phía bắc Sydney",
+    h3: "Bãi biển Manly",
   },
   {
     id: 7,
     src: "./images/Sydney/gallery-img-7.jpg",
-    span: "Khách sạn 5 sao ở Sydney",
-    h3: "Khách sạn Taj Mahal",
+    span: "bãi biển nổi tiếng nhất nước Úc",
+    h3: "Bãi biển Bondi",
   },
   {
     id: 8,
     src: "./images/Sydney/gallery-img-8.jpg",
-    span: "phía đông thành phố Sydney",
-    h3: "Hang động Elephanta",
+    span: "gần cảng Sydney",
+    h3: "Vườn bách thú Taronga",
   },
   {
     id: 9,
     src: "./images/Sydney/gallery-img-9.jpg",
-    span: "Sydney",
-    h3: "phiên chợ địa phương",
+    span: "The Rocks, úc",
+    h3: "Rocks Discovery Museum",
   },
 ];
 const Gallery = () => {

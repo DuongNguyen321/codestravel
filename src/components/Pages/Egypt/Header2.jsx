@@ -37,24 +37,28 @@ export default function Header() {
       </Link>
 
       <nav className="navbar">
-        <a href="#home" data-aos="zoom-in-left" data-aos-delay="150">
+        <Link to="/egypt#home" data-aos="zoom-in-left" data-aos-delay="150">
           Home
-        </a>
-        <a data-aos="zoom-in-left" data-aos-delay="200" href="#about">
+        </Link>
+        <Link data-aos="zoom-in-left" data-aos-delay="200" to="/egypt#about">
           About
-        </a>
-        <a data-aos="zoom-in-left" data-aos-delay="250" href="#destination">
+        </Link>
+        <Link
+          data-aos="zoom-in-left"
+          data-aos-delay="250"
+          to="/egypt#destination"
+        >
           Điểm đến
-        </a>
-        <a data-aos="zoom-in-left" data-aos-delay="300" href="#services">
+        </Link>
+        <Link data-aos="zoom-in-left" data-aos-delay="300" to="/egypt#services">
           Dịch vụ
-        </a>
-        <a data-aos="zoom-in-left" data-aos-delay="350" href="#gallery">
+        </Link>
+        <Link data-aos="zoom-in-left" data-aos-delay="350" to="/egypt#gallery">
           Ảnh
-        </a>
-        <a data-aos="zoom-in-left" data-aos-delay="400" href="#blogs">
+        </Link>
+        <Link data-aos="zoom-in-left" data-aos-delay="400" to="/egypt#blogs">
           blogs
-        </a>
+        </Link>
       </nav>
       <i
         className="far fa-moon btn-toggle"

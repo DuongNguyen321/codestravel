@@ -48,7 +48,7 @@ const Book = () => {
       <form action="">
         <div data-aos="zoom-in" data-aos-delay="50" className="inputBox">
           <span>
-            <h1>chuyến đi được bình chọn tốt nhất</h1>
+            <h1>chuyến đi có ưu đãi tốt nhất</h1>
           </span>
         </div>
         <div data-aos="zoom-in" data-aos-delay="100" className="inputBox">

@@ -25,7 +25,7 @@ export default function Header() {
       };
   return (
     <header className="header">
-      <div id="menu-btn" className="fas fa-bars"onClick={handleMenu}></div>
+      <div id="menu-btn" className="fas fa-bars" onClick={handleMenu}></div>
 
       <Link
         data-aos="zoom-in-left"
@@ -37,24 +37,32 @@ export default function Header() {
       </Link>
 
       <nav className="navbar">
-        <a href="#home" data-aos="zoom-in-left" data-aos-delay="150">
+        <Link to="/mumbai#home" data-aos="zoom-in-left" data-aos-delay="150">
           Home
-        </a>
-        <a data-aos="zoom-in-left" data-aos-delay="200" href="#about">
+        </Link>
+        <Link data-aos="zoom-in-left" data-aos-delay="200" to="/mumbai#about">
           About
-        </a>
-        <a data-aos="zoom-in-left" data-aos-delay="250" href="#destination">
+        </Link>
+        <Link
+          data-aos="zoom-in-left"
+          data-aos-delay="250"
+          to="/mumbai#destination"
+        >
           Điểm đến
-        </a>
-        <a data-aos="zoom-in-left" data-aos-delay="300" href="#services">
+        </Link>
+        <Link
+          data-aos="zoom-in-left"
+          data-aos-delay="300"
+          to="/mumbai#services"
+        >
           Dịch vụ
-        </a>
-        <a data-aos="zoom-in-left" data-aos-delay="350" href="#gallery">
+        </Link>
+        <Link data-aos="zoom-in-left" data-aos-delay="350" to="/mumbai#gallery">
           Ảnh
-        </a>
-        <a data-aos="zoom-in-left" data-aos-delay="400" href="#blogs">
+        </Link>
+        <Link data-aos="zoom-in-left" data-aos-delay="400" to="/mumbai#blogs">
           blogs
-        </a>
+        </Link>
       </nav>
       <i
         className="far fa-moon btn-toggle"

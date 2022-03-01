@@ -116,7 +116,7 @@ const About = () => {
 const destinationBox = [
   {
     id: 1,
-    src: "../../images/Tokyo/des-1.jpg",
+    src: "./images/Tokyo/des-1.jpg",
     h3: "Công viên Yoyogi",
 
     p: "công viên lớn nhất Tokyo với những bãi cỏ xanh mướt, rộng và hồ nước xinh đẹp",
@@ -156,19 +156,20 @@ const destinationBox = [
 
     p: "đậm chất Avant Garde với những trái bí kì quái, gương vô tận và ngập tràn chấm bi huyền ảo",
   },
+
   {
     id: 7,
     src: "./images/Tokyo/des-7.jpg",
-    h3: "Odaiba",
+    h3: "Sở thú Ueno",
 
-    p: "khu phố nhỏ nằm trên Vịnh Tokyo Đây là trung tâm giải trí, kiến ​​trúc và ẩm thực tuyệt vời của thành phố",
+    p: "Đây là vườn thú lâu đời nhất của Nhật Bản, nổi tiếng với những chú gấu trúc được được sang từ Trung Quốc",
   },
   {
     id: 8,
     src: "./images/Tokyo/des-8.jpg",
-    h3: "Sở thú Ueno",
+    h3: "Odaiba",
 
-    p: "Đây là vườn thú lâu đời nhất của Nhật Bản, nổi tiếng với những chú gấu trúc được được sang từ Trung Quốc",
+    p: "khu phố nhỏ nằm trên Vịnh Tokyo Đây là trung tâm giải trí, kiến ​​trúc và ẩm thực tuyệt vời của thành phố",
   },
 ];
 const Destination = () => {

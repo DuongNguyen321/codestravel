@@ -116,53 +116,54 @@ const About = () => {
 const destinationBox = [
   {
     id: 1,
-    src: "../../images/Paris/des-1.jpg",
+    src: "./images/Paris/des-1.jpg",
+    h3: "Tháp Eiffel",
+
+    p: "Một trong những phần tốt nhất của toà tháp là tầm nhìn toàn cảnh ở trên đỉnh",
+  },
+  {
+    id: 2,
+    src: "./images/Paris/des-2.jpg",
     h3: "Nhà Thờ Đức Bà",
 
     p: "Đây là một trong những công trình kiến trúc điển hình đc thiết kế theo phong cách Gothic Pháp",
   },
   {
-    id: 2,
-    src: "./images/Paris/des-2.jpg",
+    id: 3,
+    src: "./images/Paris/des-3.jpg",
     h3: "Bảo tàng Louvre",
 
     p: "Bảo tàng Louvre là bảo tàng nghệ thật được ghé thăm nhiều nhất trên thế giới",
   },
   {
-    id: 3,
-    src: "./images/Paris/des-3.jpg",
+    id: 4,
+    src: "./images/Paris/des-4.jpg",
     h3: "Đại lộ Champs Elysées",
 
     p: "Louis Vuitton, Cartier, Guerlain, Montblanc… và nhà hàng nổi tiếng đều nằm trên đại lộ này.",
   },
   {
-    id: 4,
-    src: "./images/Paris/des-4.jpg",
+    id: 5,
+    src: "./images/Paris/des-5.jpg",
     h3: "Công viên Disneyland",
 
     p: "Người hâm một của nhân vật hoạt hình Mickey rất thích ghé thăm công viên Disneyland",
   },
   {
-    id: 5,
-    src: "./images/Paris/des-5.jpg",
+    id: 6,
+    src: "./images/Paris/des-6.jpg",
     h3: "Montmartre",
 
     p: "Địa danh nổi tiếng nhất của Montmartre có lẽ là Vương cung Thánh đường Sacré-Cœur nằm ở trên đỉnh đồi",
   },
   {
-    id: 6,
-    src: "./images/Paris/des-6.jpg",
+    id: 7,
+    src: "./images/Paris/des-7.jpg",
     h3: "Cung điện Versailles",
 
     p: "Versailles là lâu đài nổi tiếng nhất ở Pháp và biểu tượng của quyền lực tối thượng thời đại phong kiến",
   },
-  {
-    id: 7,
-    src: "./images/Paris/des-7.jpg",
-    h3: "Tháp Eiffel",
 
-    p: "Một trong những phần tốt nhất của toà tháp là tầm nhìn toàn cảnh ở trên đỉnh",
-  },
   {
     id: 8,
     src: "./images/Paris/des-8.jpg",

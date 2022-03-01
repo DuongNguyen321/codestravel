@@ -31,6 +31,15 @@ import Sydney from "./components/Pages/Sydney/Sydney";
 import SydneyBook from "./components/Pages/Sydney/SydneyBook";
 import SydneyBlog from "./components/Pages/Sydney/SydneyBlog";
 import SydneyMore from "./components/Pages/Sydney/SydneyMore";
+import Paris from "./components/Pages/Paris/Paris";
+import ParisBook from "./components/Pages/Paris/ParisBook";
+import ParisBlog from "./components/Pages/Paris/ParisBlog";
+import ParisMore from "./components/Pages/Paris/ParisMore";
+import Tokyo from "./components/Pages/Tokyo/Tokyo";
+import TokyoBook from "./components/Pages/Tokyo/TokyoBook";
+import TokyoBlog from "./components/Pages/Tokyo/TokyoBlog";
+import TokyoMore from "./components/Pages/Tokyo/TokyoMore";
+
 
 dom.watch();
 
@@ -111,6 +120,16 @@ let loginForm = document.querySelector(".login-form-container");
         <Route path="/sydney/book" element={<SydneyBook />} />
         <Route path="/sydney/blog" element={<SydneyBlog />} />
         <Route path="/sydney/more" element={<SydneyMore />} />
+        {/*  */}
+        <Route path="/paris" element={<Paris />} />
+        <Route path="/paris/book" element={<ParisBook />} />
+        <Route path="/paris/blog" element={<ParisBlog />} />
+        <Route path="/paris/more" element={<ParisMore />} />
+        {/*  */}
+        <Route path="/tokyo" element={<Tokyo />} />
+        <Route path="/tokyo/book" element={<TokyoBook />} />
+        <Route path="/tokyo/blog" element={<TokyoBlog />} />
+        <Route path="/tokyo/more" element={<TokyoMore />} />
         {/*  */}
       </Routes>
     </div>

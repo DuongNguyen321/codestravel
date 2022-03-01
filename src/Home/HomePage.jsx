@@ -813,7 +813,6 @@ function HomePage(props) {
     });
   }, []);
 const handleScroll = (e)=> {
-  let HomePages = document.querySelectorAll(".HomePages")
   let searchBtn = document.getElementById("search-btn");
   let searchBar = document.querySelector(".search-bar-container");
   let menu = document.querySelector("#menu-bar");

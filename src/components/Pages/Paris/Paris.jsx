@@ -2,24 +2,27 @@ import Header from "../Header";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import "../../../Style/pages/Egypt/night.css"
-import "../../../Style/pages/Egypt/style.css"
+import "../../../Style/pages/Paris/style.css";
+import "../../../Style/pages/Paris/night.css";
 
 const Home = () => {
   return (
     <section className="home" id="home">
       <div className="content">
         <span data-aos="fade-up" data-aos-delay="100">
-          Egypt
+          Paris
         </span>
         <h3 data-aos="fade-up" data-aos-delay="200">
-          vùng đất của Pharaohs
+          Kinh đô thời trang
         </h3>
         <p data-aos="fade-up" data-aos-delay="300">
-          Egypt là một trong những quốc gia lâu đời nhất trên thế giới. Đây là
-          nơi người Ai Cập cổ đại đã xây dựng một nền văn minh vĩ đại trong
-          thung lũng sông Nile, với rất nhiều đền thờ, cổ vật và những tàn tích
-          ngoạn mục đáng để bạn khám phá
+          Paris là một vùng đất của nghệ thuật và nghệ sĩ. Thành phố đầy những
+          di tích có tầm quan trọng trong lịch sủ của thành phố và thế giới.
+          Lịch sử phong phú của thành phố này thu hút rất nhiều những người đam
+          mê khảo cổ và những người yêu thích kiến trúc. Một số di tích kiến
+          trúc nổi tiếng là Boulevard Montmartre được xây dựng vào năm 1897,
+          Basilique du Sacré-Cœur ở Montmartre, bảo tàng Louvre nổi
+          tiếng,Panthéon…
         </p>
         <a
           data-aos="fade-up"
@@ -40,13 +43,13 @@ const Bookform = () => {
       <form action="">
         <div data-aos="zoom-in" data-aos-delay="50" className="inputBox">
           <span style={{ fontSize: 2.5 + "em" }}>
-            <h1>chuyến đi được bình chọn tốt nhất</h1>
+            <h1>Chuyến đi được đặt nhiều nhất</h1>
           </span>
         </div>
 
         <div data-aos="zoom-in" data-aos-delay="100" className="inputBox">
           <span>
-            <Link className="btn btn-book" to="/egypt/book">
+            <Link className="btn btn-book" to="/paris/book">
               Đặt ngay
             </Link>
           </span>
@@ -56,14 +59,14 @@ const Bookform = () => {
   );
 };
 const About = () => {
-  const handleVidbtn=(e)=>{
-document
-  .querySelectorAll(".about .video-container .controls .control-btn")
-  .forEach((btn) => {
-      let src = btn.getAttribute("data-src");
-      document.querySelector(".about .video-container .video").src = src;
-  });
-  }
+  const handleVidbtn = (e) => {
+    document
+      .querySelectorAll(".about .video-container .controls .control-btn")
+      .forEach((btn) => {
+        let src = btn.getAttribute("data-src");
+        document.querySelector(".about .video-container .video").src = src;
+      });
+  };
   return (
     <section className="about" id="about">
       <div
@@ -113,80 +116,72 @@ document
 const destinationBox = [
   {
     id: 1,
-    src: "../../images/Egypt/des-1.jpg",
-    h3: "Kim tự tháp Giza",
+    src: "../../images/Paris/des-1.jpg",
+    h3: "Nhà Thờ Đức Bà",
 
-    
-    p: "Kim tự tháp Giza là một trong Bảy kỳ quan thế giới cổ đại",
+    p: "Đây là một trong những công trình kiến trúc điển hình đc thiết kế theo phong cách Gothic Pháp",
   },
   {
     id: 2,
-    src: "./images/Egypt/des-2.jpg",
-    h3: "Đền karnak của Luxor",
+    src: "./images/Paris/des-2.jpg",
+    h3: "Bảo tàng Louvre",
 
-    
-    p: "Thung lũng của các vị vua, Đền Karnak, và Đền tưởng niệm Hatshepsut",
+    p: "Bảo tàng Louvre là bảo tàng nghệ thật được ghé thăm nhiều nhất trên thế giới",
   },
   {
     id: 3,
-    src: "./images/Egypt/des-3.jpg",
-    h3: "Hồi giáo Cario",
+    src: "./images/Paris/des-3.jpg",
+    h3: "Đại lộ Champs Elysées",
 
-    
-    p: "đầy đủ các nhà thờ Hồi giáo,trường học Hồi giáo và các di tích cổ đại",
+    p: "Louis Vuitton, Cartier, Guerlain, Montblanc… và nhà hàng nổi tiếng đều nằm trên đại lộ này.",
   },
   {
     id: 4,
-    src: "./images/Egypt/des-4.jpg",
-    h3: "Aswan",
+    src: "./images/Paris/des-4.jpg",
+    h3: "Công viên Disneyland",
 
-    
-    p: "Thị trấn yên bình nhất của Ai Cập, đặt trên những đường cong của sông Nile",
+    p: "Người hâm một của nhân vật hoạt hình Mickey rất thích ghé thăm công viên Disneyland",
   },
   {
     id: 5,
-    src: "./images/Egypt/des-5.jpg",
-    h3: "Abu simbel",
+    src: "./images/Paris/des-5.jpg",
+    h3: "Montmartre",
 
-    
-    p: "Nổi tiếng với tỷ lệ megalithic và được biết đến với ngôi đền của Ramses II",
+    p: "Địa danh nổi tiếng nhất của Montmartre có lẽ là Vương cung Thánh đường Sacré-Cœur nằm ở trên đỉnh đồi",
   },
   {
     id: 6,
-    src: "./images/Egypt/des-6.jpg",
-    h3: "Bảo tàng Egyptian",
+    src: "./images/Paris/des-6.jpg",
+    h3: "Cung điện Versailles",
 
-    
-    p: "Bảo tàng Ai Cập của Cairo là một trong những bộ sưu tập bảo tàng tuyệt vời của thế giới",
+    p: "Versailles là lâu đài nổi tiếng nhất ở Pháp và biểu tượng của quyền lực tối thượng thời đại phong kiến",
   },
   {
     id: 7,
-    src: "./images/Egypt/des-7.jpg",
-    h3: "Sa mạc trắng",
+    src: "./images/Paris/des-7.jpg",
+    h3: "Tháp Eiffel",
 
-    
-    p: "Kỳ quan tự nhiên Sa mạc Trắng trông giống như một vùng đất hoang tuyết ở giữa cát khô cằn",
+    p: "Một trong những phần tốt nhất của toà tháp là tầm nhìn toàn cảnh ở trên đỉnh",
   },
   {
     id: 8,
-    src: "./images/Egypt/des-8.jpg",
-    h3: "Siwa Oasis",
+    src: "./images/Paris/des-8.jpg",
+    h3: "Moulin Rouge",
 
-    
-    p: "Siwa là loại thuốc bổ yên tĩnh đến sự hối hả của các thành phố Ai Cập và là một trong những địa điểm đẹp nhất của Tây Sa mạc",
+    p: "Moulin Rouge là một quán rượu được biết đến như quê hương của điệu nhảy Cancan nổi tiếng",
   },
 ];
 const Destination = () => {
   return (
     <section className="destination" id="destination">
       <div className="heading">
-        <span>Những điểm đến ở Egypt</span>
+        <span>Những điểm đến ở Paris</span>
         <h1>Những điểm du lịch bậc nhất</h1>
       </div>
       <div className="box-container">
         {destinationBox.map((destinationBox) => {
           return (
-            <Link to="/egypt/more" key={destinationBox.id} className="box">
+            <Link to="/paris/more" key={destinationBox.id} className="box">
               <div className="image">
                 <img src={destinationBox.src} alt={destinationBox.h3} />
               </div>
@@ -259,60 +254,60 @@ const galleryBox = [
   {
     id: 1,
 
-    src: "./images/Egypt/gallery-img-1.jpg",
-    span: "Thị trấn Dusty Abydos",
-    h3: "Đền Abydos",
+    src: "./images/Paris/gallery-img-1.jpg",
+    span: "Normandie, Pháp",
+    h3: "Đảo Mont Saint-Michel",
   },
   {
     id: 2,
 
-    src: "./images/Egypt/gallery-img-2.jpg",
-    span: "Trung tâm Ai Cập",
-    h3: "Nam Sinai",
+    src: "./images/Paris/gallery-img-2.jpg",
+    span: "Đấu trường La Mã",
+    h3: "Nimes Arena",
   },
   {
     id: 3,
 
-    src: "./images/Egypt/gallery-img-3.jpg",
-    span: "Chân núi Sinai",
-    h3: "Nam Sinai",
+    src: "./images/Paris/gallery-img-3.jpg",
+    span: "Languedoc-Roussillon, Pháp",
+    h3: "pháo đài cổ Carcassonne",
   },
   {
     id: 4,
 
-    src: "./images/Egypt/gallery-img-4.jpg",
-    span: "Alexandria",
-    h3: "Thành phố Alexandria",
+    src: "./images/Paris/gallery-img-4.jpg",
+    span: "Cây cầu xưa mang tính biểu tượng",
+    h3: "Cầu Pont du gard",
   },
   {
     id: 5,
-    src: "./images/Egypt/gallery-img-5.jpg",
-    span: "Tây sa mạc",
-    h3: "Siwa Oasis",
+    src: "./images/Paris/gallery-img-5.jpg",
+    span: "Chiến trường Chiến tranh thế giới lần thứ nhất",
+    h3: "Hào quang Trận Somme",
   },
   {
     id: 6,
-    src: "./images/Egypt/gallery-img-6.jpg",
-    span: "Bắc Farafra Oasis",
-    h3: "Sa mạc trắng",
+    src: "./images/Paris/gallery-img-6.jpg",
+    span: "Nơi ăn ảnh nhất nước pháp",
+    h3: "dãy núi Alps",
   },
   {
     id: 7,
-    src: "./images/Egypt/gallery-img-7.jpg",
-    span: "Cario",
-    h3: "Bảo tàng Egyptian",
+    src: "./images/Paris/gallery-img-7.jpg",
+    span: "Nằm giữa biên giới của Pháp với Italy",
+    h3: "Mont Blanc",
   },
   {
     id: 8,
-    src: "./images/Egypt/gallery-img-8.jpg",
-    span: "Nam Ai Cập",
-    h3: "Abu simbel",
+    src: "./images/Paris/gallery-img-8.jpg",
+    span: "Provence",
+    h3: "Đồng hoa Oải Hương",
   },
   {
     id: 9,
-    src: "./images/Egypt/gallery-img-9.jpg",
-    span: "Quận hồi giáo",
-    h3: "Hổi Giáo Cario",
+    src: "./images/Paris/gallery-img-9.jpg",
+    span: "Thủ đô chính trị và toà án Hoàng Gia",
+    h3: "Château de Versailles",
   },
 ];
 const Gallery = () => {
@@ -320,7 +315,7 @@ const Gallery = () => {
     <section className="gallery" id="gallery">
       <div className="heading">
         <span>
-          <h2>những bức Ảnh về Egypt</h2>
+          <h2>những bức Ảnh về Paris</h2>
         </span>
       </div>
       <div className="box-container">
@@ -341,21 +336,21 @@ const Gallery = () => {
 const blogBox = [
   {
     id: 1,
-    src: "./images/Egypt/blog-1.jpg",
-    a :"Mang những gì khi đi Egypt",
-    p:"Giấy tờ tuỳ thân, giấy xác minh tài chính, visa, Vé máy bay, trang phục, đồ dùng cá nhân, balo, túi đựng đồ..."
+    src: "./images/Paris/blog-1.jpg",
+    a: "Mang những gì khi đi Paris",
+    p: "Giấy tờ tuỳ thân, giấy xác minh tài chính, visa, Vé máy bay, trang phục, đồ dùng cá nhân, balo, túi đựng đồ...",
   },
   {
     id: 2,
-    src: "./images/Egypt/blog-2.jpg",
-    a :"Xin visa đi Egypt",
-    p:"Visa Ai Cập không khó xin, thủ tục đơn giản gồm đơn tải từ trang web chính thức của Đại sứ quán..."
+    src: "./images/Paris/blog-2.jpg",
+    a: "Xin visa đi Paris",
+    p: "Visa Ai Cập không khó xin, thủ tục đơn giản gồm đơn tải từ trang web chính thức của Đại sứ quán...",
   },
   {
     id: 3,
-    src: "./images/Egypt/blog-3.jpg",
-    a :"Phương tiện di chuyển",
-    p:"bạn có thể đi xe bus, tàu lửa, tàu thủy hoặc thú vị hơn có thể cưỡi lạc đà hoặc ngựa đều được..."
+    src: "./images/Paris/blog-3.jpg",
+    a: "Phương tiện di chuyển",
+    p: "bạn có thể đi xe bus, tàu lửa, tàu thủy hoặc thú vị hơn có thể cưỡi lạc đà hoặc ngựa đều được...",
   },
 ];
 
@@ -364,19 +359,17 @@ const Blog = () => {
     <section className="blogs" id="blogs">
       <div className="heading">
         <span>blogs & posts</span>
-        <h1>Tìm hiểu thêm về Egypt</h1>
+        <h1>Tìm hiểu thêm về Paris</h1>
       </div>
       <div className="box-container">
-        {blogBox.map((blogBox)=>{
+        {blogBox.map((blogBox) => {
           return (
-            <Link to="/egypt/blog" className="box" key={blogBox.id}>
+            <Link to="/paris/blog" className="box" key={blogBox.id}>
               <div className="image">
                 <img src={blogBox.src} alt={blogBox.a} />
               </div>
               <div className="content">
-                <p className="link">
-                  {blogBox.a}
-                </p>
+                <p className="link">{blogBox.a}</p>
                 <p>{blogBox.p}</p>
                 <div className="icon">
                   <p>
@@ -390,70 +383,70 @@ const Blog = () => {
             </Link>
           );
         })}
-      
       </div>
     </section>
   );
 };
 
-const Review =()=> {
-      return(
-        <section className="review">
-        <div className="content" data-aos="fade-right" data-aos-delay="250">
-          <span>Đánh giá</span>
-          <h3>Những lời đánh giá tốt nhất</h3>
-          <p>
-            Tất cả những lời đánh giá chúng tôi đều ghi nhận và tiếp thu để phát
-            triển. đây là những đánh giá tốt nhất về chuyến đi Egypt này.
-          </p>
-        </div>
+const Review = () => {
+  return (
+    <section className="review">
+      <div className="content">
+        <span>Đánh giá</span>
+        <h3>Những lời đánh giá tốt nhất</h3>
+        <p>
+          Tất cả những lời đánh giá chúng tôi đều ghi nhận và tiếp thu để phát
+          triển. đây là những đánh giá tốt nhất về chuyến đi Paris này.
+        </p>
+      </div>
 
-        <div className="box-container" data-aos="fade-left" data-aos-delay="350">
-          <div className="box">
-            <p>Some test</p>
-            <div className="user">
-              <img src="./images/Egypt/pic-1.png" alt="" />
-              <div className="info">
-                <h3>Some test</h3>
-                <span>...</span>
-              </div>
-            </div>
-          </div>
-          <div className="box">
-            <p>Some test</p>
-            <div className="user">
-              <img src="./images/Egypt/pic-2.png" alt="" />
-              <div className="info">
-                <h3>Some test</h3>
-                <span>...</span>
-              </div>
-            </div>
-          </div>
-          <div className="box">
-            <p>Some test</p>
-            <div className="user">
-              <img src="./images/Egypt/pic-3.png" alt="" />
-              <div className="info">
-                <h3>Some test</h3>
-                <span>...</span>
-              </div>
-            </div>
-          </div>
-          <div className="box">
-            <p>Some test</p>
-            <div className="user">
-              <img src="./images/Egypt/pic-4.png" alt="" />
-              <div className="info">
-                <h3>Some test</h3>
-                <span>...</span>
-              </div>
+      <div className="box-container">
+        <div className="box">
+          <p>Some text</p>
+          <div className="user">
+            <img src="./images/Paris/pic-1.png" alt="" />
+            <div className="info">
+              <h3>Some text</h3>
+              <span>...</span>
             </div>
           </div>
         </div>
-      </section>
-      )
-}
-const Banner =()=>{
+        <div className="box">
+          <p>Some text</p>
+          <div className="user">
+            <img src="./images/Paris/pic-2.png" alt="" />
+            <div className="info">
+              <h3>Some text</h3>
+              <span>...</span>
+            </div>
+          </div>
+        </div>
+        <div className="box">
+          <p>Some text</p>
+          <div className="user">
+            <img src="./images/Paris/pic-3.png" alt="" />
+            <div className="info">
+              <h3>Some text</h3>
+              <span>...</span>
+            </div>
+          </div>
+        </div>
+        <div className="box">
+          <p>Some text</p>
+          <div className="user">
+            <img src="./images/Paris/pic-4.png" alt="" />
+            <div className="info">
+              <h3>Some text</h3>
+              <span>...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const Banner = () => {
   return (
     <div className="banner">
       <div className="content" data-aos="zoom-in-up" data-aos-delay="250">
@@ -463,21 +456,21 @@ const Banner =()=>{
           Mỗi chuyến đi đều là một kỷ niệm đẹp. Hãy cùng STravel ghi lại kỷ niệm
           này !
         </p>
-        <Link to="/egypt/book" className="btn">
+        <Link to="/paris/book" className="btn">
           Đặt Ngay
         </Link>
       </div>
     </div>
   );
-}
-export default function Egypt() {
-const handleScroll = (e) => {
-    let Navbar = document.querySelector(".navbar");
- let Pages = document.querySelectorAll(".Pages")
- Pages.onscroll=()=> {
-      Navbar.classList.remove("active");
- }
 };
+export default function Paris() {
+  const handleScroll = (e) => {
+    let Navbar = document.querySelector(".navbar");
+    let Pages = document.querySelectorAll(".Pages");
+    Pages.onscroll = () => {
+      Navbar.classList.remove("active");
+    };
+  };
 
   useEffect(() => {
     window.scroll({
@@ -487,8 +480,8 @@ const handleScroll = (e) => {
     });
   }, []);
   return (
-    <div className="Pages Egypt" onScroll={handleScroll}>
-      <Header  />
+    <div className="Pages Paris" onScroll={handleScroll}>
+      <Header />
       <div className="container">
         <Home />
         <Bookform />
@@ -497,8 +490,8 @@ const handleScroll = (e) => {
         <Services />
         <Gallery />
         <Blog />
-        <Review/>
-        <Banner/>
+        <Review />
+        <Banner />
       </div>
       <Footer />
     </div>

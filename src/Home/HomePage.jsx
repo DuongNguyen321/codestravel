@@ -10,48 +10,6 @@ import "../Style/rate.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-function Login(props) {
-    const handleCloselogin = (e) => {
-      let loginForm = document.querySelector(".login-form-container");
-      loginForm.classList.remove("active");
-    };
-  return (
-    <div className="login-form-container">
-      <i
-        className="fas fa-times"
-        id="form-close"
-        onClick={handleCloselogin}
-      ></i>
-      <form action="">
-        <h3>Đăng nhập</h3>
-        <input
-          type="email"
-          autoComplete="username"
-          className="box"
-          placeholder="Email của bạn"
-        />
-        <input
-          type="password"
-          autoComplete="current-password"
-          className="box"
-          placeholder="Mật khẩu của bạn"
-        />
-        <input type="submit" value="Đăng nhập" name="login" className="btn" />
-
-        <label htmlFor="remember">
-          <input type="checkbox" id="remember" />
-          Ghi nhớ
-        </label>
-        <p>
-          Quên mật khẩu? <Link to="/register">Bấm vào đây</Link>
-        </p>
-        <p>
-          không có tài khoản? <Link to="/register">Đăng kí ngay</Link>
-        </p>
-      </form>
-    </div>
-  );
-}
 
 const homeContent = [
   { id: 1, text: "Khám phá các vùng đất mới cùng Stravel" },
@@ -829,7 +787,6 @@ const handleScroll = (e)=> {
     <div className="HomePages" onScroll={handleScroll}>
       <Header />
       <div className="Container">
-        <Login />
         <Home />
         <Book />
         <Packages />

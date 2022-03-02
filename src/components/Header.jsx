@@ -1,6 +1,7 @@
 import "../Style/style.css";
 import "../Style/night.css";
 import { Link } from "react-router-dom";
+import Login from "./Login/Login";
 const navbarItems = [
   {
     id: 1,
@@ -46,7 +47,7 @@ const navbarItems = [
   },
 ];
 
-function Login(props) {
+function FormLogin(props) {
   const handleCloselogin = (e) => {
     let loginForm = document.querySelector(".login-form-container");
     loginForm.classList.remove("active");
@@ -59,31 +60,7 @@ function Login(props) {
         onClick={handleCloselogin}
       ></i>
       <form action="">
-        <h3>Đăng nhập</h3>
-        <input
-          type="email"
-          autoComplete="username"
-          className="box"
-          placeholder="Email của bạn"
-        />
-        <input
-          type="password"
-          autoComplete="current-password"
-          className="box"
-          placeholder="Mật khẩu của bạn"
-        />
-        <input type="submit" value="Đăng nhập" name="login" className="btn" />
-
-        <label htmlFor="remember">
-          <input type="checkbox" id="remember" />
-          Ghi nhớ
-        </label>
-        <p>
-          Quên mật khẩu? <Link to="/register">Bấm vào đây</Link>
-        </p>
-        <p>
-          không có tài khoản? <Link to="/register">Đăng kí ngay</Link>
-        </p>
+        <Login/>
       </form>
     </div>
   );
@@ -131,8 +108,9 @@ let searchBar = document.querySelector(".search-bar-container");
    
   }
   return (
+
     <header>
-      <Login/>
+    <FormLogin/>
       <div
         id="menu-bar"
         className="fas"

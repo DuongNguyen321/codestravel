@@ -786,7 +786,7 @@ const handleScroll = (e)=> {
   return (
     <div className="HomePages" onScroll={handleScroll}>
       <Header />
-      <div className="Container">
+      <div className="container">
         <Home />
         <Book />
         <Packages />

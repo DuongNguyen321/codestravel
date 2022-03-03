@@ -169,8 +169,8 @@ html {
 }
 .light .HomePages .login-form-container {
   position: fixed;
-  top: -120%;
-  left: 0;
+right: -120%;
+top: 0;
   z-index: 10000;
   min-height: 100vh;
   width: 100%;
@@ -180,6 +180,7 @@ html {
   justify-content: center;
 }
 .light .HomePages .login-form-container.active {
+  right: 0;
   top: 0;
 }
 .light .HomePages .login-form-container form {
@@ -187,49 +188,34 @@ html {
   padding: 1.5rem 2rem;
   border-radius: 0.5rem;
   background: #fefefe;
-  width: 50rem;
+ max-width: 400px;
+
 }
-.light .HomePages .login-form-container form h3 {
-  font-size: 3rem;
-  color: #444;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 1rem 0;
-}
-.light .HomePages .login-form-container form .box {
-  width: 100%;
-  padding: 1rem;
-  font-size: 1.7rem;
-  color: #333;
-  margin: 0.6rem 0;
-  border: 0.1rem solid rgba(0, 0, 0, 0.3);
-  text-transform: none;
-}
-.light .HomePages .login-form-container form .box:focus {
-  border-color: var(--orange);
-}
-.light .HomePages .login-form-container form #remember {
-  margin: 2rem 1rem;
-}
-.light .HomePages .login-form-container form label {
+.light .HomePages .login-form-container form .profile{
   display: flex;
-  align-items: center;
-  font-size: 1.5rem;
+  justify-content: space-between;
 }
-.light .HomePages .login-form-container form .btn {
-  display: block;
-  width: 100%;
+.light .HomePages .login-form-container form .profile img{
+  width: 100px;
+  margin-right:20px ;
 }
-.light .HomePages .login-form-container form p {
-  padding: 0.5rem 0;
-  font-size: 1.5rem;
-  color: #666;
+.light .HomePages .login-form-container form .profile div{
+display: flex;
+flex-direction: column;
 }
-.light .HomePages .login-form-container form p a {
-  color: var(--orange);
+.light .HomePages .login-form-container form .profile div h2{
+font-size: 2em;
+margin-bottom: 5px;
 }
-.light .HomePages .login-form-container form p a:hover {
-  text-decoration: underline;
+.light .HomePages .login-form-container form .profile div p{
+font-size: 1.5em;
+margin-left: 5px;
+}
+.light .HomePages .login-form-container form .btn{
+width: 100px;
+height: auto;
+font-size: 1.5em;
+padding: 3px;
 }
 .light .HomePages .login-form-container #form-close {
   position: absolute;

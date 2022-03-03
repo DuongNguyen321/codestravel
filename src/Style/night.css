@@ -63,41 +63,6 @@ html::-webkit-scrollbar-thumb {
   font-size: 1.7rem;
   border-radius: 0.5rem;
 }
-.dark .HomePages .login-form-container form {
-  background: #333;
-  margin: 2rem;
-  padding: 1.5rem 2rem;
-  border-radius: 0.5rem;
-  width: 50rem;
-}
-.dark .HomePages .login-form-container form h3 {
-  color: var(--orange);
-  font-size: 3rem;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 1rem 0;
-}
-.dark .HomePages .login-form-container form .box {
-  background: #333;
-  color: #efefef;
-  border: 0.1rem solid var(--orange);
-  width: 100%;
-  padding: 1rem;
-  font-size: 1.7rem;
-  margin: 0.6rem 0;
-  text-transform: none;
-}
-.dark .HomePages .login-form-container form label {
-  color: var(--orange);
-  display: flex;
-  align-items: center;
-  font-size: 1.5rem;
-}
-.dark .HomePages .login-form-container form p {
-  color: #888;
-  padding: 0.5rem 0;
-  font-size: 1.5rem;
-}
 .dark .HomePages #menu-bar {
   border: 0.1em solid var(--orange);
   color: #fefefe;
@@ -323,10 +288,11 @@ html::-webkit-scrollbar-thumb {
 .dark .HomePages header .search-bar-container label:hover {
   color: var(--orange);
 }
+
 .dark .HomePages .login-form-container {
   position: fixed;
-  top: -120%;
-  left: 0;
+right: -120%;
+top: 0;
   z-index: 10000;
   min-height: 100vh;
   width: 100%;
@@ -336,23 +302,20 @@ html::-webkit-scrollbar-thumb {
   justify-content: center;
 }
 .dark .HomePages .login-form-container.active {
+  right: 0;
   top: 0;
 }
-.dark .HomePages .login-form-container form .box:focus {
-  border-color: var(--orange);
+.dark .HomePages .login-form-container form {
+  margin: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: #333;
+ max-width: 400px;
+
 }
-.dark .HomePages .login-form-container form #remember {
-  margin: 2rem 1rem;
-}
-.dark .HomePages .login-form-container form .btn {
-  display: block;
-  width: 100%;
-}
-.dark .HomePages .login-form-container form p a {
-  color: var(--orange);
-}
-.dark .HomePages .login-form-container form p a:hover {
-  text-decoration: underline;
+.dark .HomePages .login-form-container form .profile{
+  display: flex;
+  justify-content: space-between;
 }
 .dark .HomePages .login-form-container #form-close {
   position: absolute;
@@ -361,6 +324,30 @@ html::-webkit-scrollbar-thumb {
   font-size: 4rem;
   color: #fefefe;
   cursor: pointer;
+}
+.dark .HomePages .login-form-container form .profile img{
+  width: 100px;
+  margin-right:20px ;
+}
+.dark .HomePages .login-form-container form .profile div{
+display: flex;
+flex-direction: column;
+}
+.dark .HomePages .login-form-container form .profile div h2{
+font-size: 2em;
+margin-bottom: 5px;
+color: var(--orange);
+}
+.dark .HomePages .login-form-container form .profile div p{
+font-size: 1.5em;
+margin-left: 5px;
+color: #efefef;
+}
+.dark .HomePages .login-form-container form .btn{
+width: 100px;
+height: auto;
+font-size: 1.5em;
+padding: 3px;
 }
 .dark .HomePages .home {
   min-height: 100vh;

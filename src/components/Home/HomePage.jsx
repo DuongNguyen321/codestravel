@@ -3,12 +3,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import "../Style/style.css";
-import "../Style/night.css";
-import "../Style/rate.css";
+import "../../Style/style.css";
+import "../../Style/night.css";
+import "../../Style/rate.css";
 
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../Header";
+import Footer from "../Footer";
 
 const homeContent = [
   { id: 1, text: "Khám phá các vùng đất mới cùng Stravel" },
@@ -175,7 +175,7 @@ function Book(props) {
       </h1>
       <div className="row">
         <div className="image">
-          <img src="../../images/Home/book-img.svg" alt="" />
+          <img src="./images/Home/book-img.svg" alt="" />
         </div>
         <form action="">
           <div className="inputBox">
@@ -212,7 +212,7 @@ function Book(props) {
             <h3>Kết thúc vào :</h3>
             <input type="date" />
           </div>
-          <input type="submit" className="btn" value="Tìm Ngay" />
+          <Link to={"/commingsoon"} className="btn" >Tìm Ngay</Link>
         </form>
       </div>
     </section>
@@ -694,7 +694,7 @@ const Contact = () => {
       <div className="row">
         <div className="image">
           <iframe
-            title="Location"
+            title="Địa chỉ"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.4064000497674!2d105.78126121547308!3d20.976340386026827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acd2d89877d7%3A0xe55435164e9b4695!2zMTk3IFRy4bqnbiBQaMO6LCBQLiBWxINuIFF1w6FuLCBIw6AgxJDDtG5nLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1639249145111!5m2!1svi!2s"
             width="100%"
             height="350vh"
@@ -739,6 +739,12 @@ const brandBox = [
   { id: 4, src: "./images/Home/4.jpg" },
   { id: 5, src: "./images/Home/5.jpg" },
   { id: 6, src: "./images/Home/6.jpg" },
+  { id: 7, src: "./images/Home/7.jpg" },
+  { id: 8, src: "./images/Home/8.jpg" },
+  { id: 9, src: "./images/Home/9.jpg" },
+  { id: 10, src: "./images/Home/10.jpg" },
+  { id: 11, src: "./images/Home/11.jpg" },
+  { id: 12, src: "./images/Home/12.jpg" },
 ];
 const Brand = () => {
   return (

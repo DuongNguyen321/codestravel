@@ -17,7 +17,7 @@ const Home = () => {
         </h3>
         <p data-aos="fade-up" data-aos-delay="300">
           Paris là một vùng đất của nghệ thuật và nghệ sĩ. Thành phố đầy những
-          di tích có tầm quan trọng trong lịch sủ của thành phố và thế giới.
+          di tích có tầm quan trọng trong lịch sử của thành phố và thế giới.
           Lịch sử phong phú của thành phố này thu hút rất nhiều những người đam
           mê khảo cổ và những người yêu thích kiến trúc. Một số di tích kiến
           trúc nổi tiếng là Boulevard Montmartre được xây dựng vào năm 1897,

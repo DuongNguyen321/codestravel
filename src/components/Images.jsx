@@ -1,8 +1,6 @@
-import "../Style/night.css";
-import "../Style/style.css";
+
 import { useEffect } from "react";
-import Header from "./Header";
-import Footer from "./Footer";
+import CommingSoon from "./comming/Comming";
 export default function Images() {
     useEffect(() => {
       window.scroll({
@@ -12,12 +10,8 @@ export default function Images() {
       });
     }, []);
   return (
-    <div className="HomePages">
-      <Header />
-      <div className="container" style={{ marginTop: 80 }}>
-        <section className="images">Img</section>
-      </div>
-      <Footer />
-    </div>
+
+     <CommingSoon/>
+
   );
 }

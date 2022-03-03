@@ -14,7 +14,7 @@ const Home = () => {
           Hawaii
         </span>
         <h3 data-aos="fade-up" data-aos-delay="200">
-          Hòn ngọc của <br />
+          Hòn ngọc của
           thái bình dương
         </h3>
         <p data-aos="fade-up" data-aos-delay="300">

@@ -3,37 +3,41 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import Chatbots from "../Chatbot/Chatbot";
 const Header = () => {
-  const handleClick = () => {
-    var chat = document.querySelector("dpnone");
-    chat.classList.add("active");
-  };
   return (
     <header>
-      <Link to="/" className="logo">
+      <a href="/" className="logo">
         Stravel
-      </Link>
+      </a>
       <nav>
         <ul>
           <li>
-            <Link to={"/"}>Home</Link>
+            <a href="/">Home</a>
           </li>
         </ul>
       </nav>
     </header>
   );
 };
+function Chat() {
+  function handleClick() {
+    let formchat = document.querySelector(".formchat");
+    formchat.classList.toggle("active");
+  }
+  return (
+    <div className="HomeChat">
+      <button className="Chattoggle" onClick={handleClick}>
+        <i className="fab fa-facebook-messenger"></i>
+      </button>
+      <div className="formchat">
+        <Chatbots />
+      </div>
+    </div>
+  );
+}
 const Section = () => {
   function handleAdd(e) {
-    var newsletter = document.querySelector(".newsletter");
+    let newsletter = document.querySelector(".newsletter");
     newsletter.classList.add("active");
-  }
-  function handleChat(e) {
-    var chat = document.querySelector(".dpnone");
-    chat.classList.add("active");
-  }
-  function handleCloseChat(e) {
-    var chat = document.querySelector(".dpnone");
-    chat.classList.remove("active");
   }
   return (
     <section>
@@ -64,13 +68,7 @@ const Section = () => {
           </div>
         </div>
         <button onClick={handleAdd}>Thông báo cho tôi</button>
-        <button onClick={handleChat}>Chat với tôi</button>
       </div>
-      <div className="dpnone">
-        <button className="CloseChat" onClick={handleCloseChat}><p>X</p></button>
-        <Chat />
-      </div>
-
       <div className="imgBx">
         <img alt="img" src="./images/Home/man.png" />
       </div>
@@ -96,7 +94,7 @@ const Section = () => {
 };
 const Newsletter = () => {
   function handleRemove(e) {
-    var newsletter = document.querySelector(".newsletter");
+    let newsletter = document.querySelector(".newsletter");
     newsletter.classList.remove("active");
   }
   return (
@@ -113,27 +111,24 @@ const Newsletter = () => {
     </div>
   );
 };
-const Chat = () => {
-  return <Chatbots />;
-};
 export default function CommingSoon() {
   window.onscroll = function () {
-    var newsletter = document.querySelector(".newsletter");
+    let newsletter = document.querySelector(".newsletter");
     newsletter.classList.remove("active");
   };
-  var countDate = new Date("March 6,2022 00:00:00").getTime();
+  let countDate = new Date("March 7,2022 00:00:00").getTime();
   useEffect(() => {
     function newYear() {
-      var now = new Date().getTime();
+      let now = new Date().getTime();
       const gap = countDate - now;
-      var second = 1000;
-      var minute = second * 60;
-      var hour = minute * 60;
-      var day = hour * 24;
-      var d = Math.floor(gap / day);
-      var h = Math.floor((gap % day) / hour);
-      var m = Math.floor((gap % hour) / minute);
-      var s = Math.floor((gap % minute) / second);
+      let second = 1000;
+      let minute = second * 60;
+      let hour = minute * 60;
+      let day = hour * 24;
+      let d = Math.floor(gap / day);
+      let h = Math.floor((gap % day) / hour);
+      let m = Math.floor((gap % hour) / minute);
+      let s = Math.floor((gap % minute) / second);
       document.getElementById("day").innerText = d;
       document.getElementById("hour").innerText = h;
       document.getElementById("minute").innerText = m;
@@ -149,6 +144,7 @@ export default function CommingSoon() {
       <Header />
       <Section />
       <Newsletter />
+      <Chat/>
     </div>
   );
 }

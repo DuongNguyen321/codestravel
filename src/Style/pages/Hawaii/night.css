@@ -84,10 +84,9 @@ html::-webkit-scrollbar-thumb {
 }
 .dark .Pages.Hawaii .header .navbar a {
   color: #aaa;
-     margin: 1rem;
-     margin-left: 2rem;
-    font-size: 2rem;
-  display:block;
+  font-size: 1.7rem;
+  display: inline-block;
+  margin: 0 1rem;
 }
 .dark .Pages.Hawaii .home .content p {
   color: #aaa;

@@ -6,13 +6,7 @@ class MessageParser {
   parse(message) {
     const lowerCaseMessage = message.toLowerCase();
 
-    if (lowerCaseMessage.includes("hello")) {
-      this.actionProvider.greet();
-    }
-    if (lowerCaseMessage.includes("xin chao")) {
-      this.actionProvider.greet();
-    }
-    if (lowerCaseMessage.includes("hi")) {
+    if (lowerCaseMessage.includes("")) {
       this.actionProvider.greet();
     }
 
@@ -30,6 +24,12 @@ class MessageParser {
       this.actionProvider.handleServices();
     }
 
+    if (lowerCaseMessage.includes("dịch")) {
+      this.actionProvider.handleCovid();
+    }
+    if (lowerCaseMessage.includes("dich")) {
+      this.actionProvider.handleCovid();
+    }
     if (lowerCaseMessage.includes("covid")) {
       this.actionProvider.handleCovid();
     }
@@ -43,11 +43,17 @@ class MessageParser {
     if (lowerCaseMessage.includes("an toan")) {
       this.actionProvider.handleSafe();
     }
+    if (lowerCaseMessage.includes("safe")) {
+      this.actionProvider.handleSafe();
+    }
 
     if (lowerCaseMessage.includes("about")) {
       this.actionProvider.handleAbout();
     }
     if (lowerCaseMessage.includes("stravel")) {
+      this.actionProvider.handleAbout();
+    }
+    if (lowerCaseMessage.includes("duong")) {
       this.actionProvider.handleAbout();
     }
   }

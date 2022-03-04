@@ -2,21 +2,6 @@
 :root {
   --orange: #ffa500;
 }
-.dpnone {
-  position: fixed;
-  bottom: 0;
-  left: -150%;
-  transform: translate(-50%, -50%);
-  z-index: 1000;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.5s;
-}
-.dpnone.active {
-  visibility: visible;
-  opacity: 1;
-  left: 50%;
-}
 .CloseChat {
   width: 100%;
   display: flex;

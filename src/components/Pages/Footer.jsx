@@ -17,10 +17,10 @@ export default function Footer() {
               “Nâng tầm trải nghiệm từng chuyến đi”
             </p>
             <div className="share">
-              <a href="#" className="fab fa-facebook-f"></a>
-              <a href="#" className="fab fa-twitter"></a>
-              <a href="#" className="fab fa-instagram"></a>
-              <a href="#" className="fab fa-linkedin"></a>
+              <Link to="/" className="fab fa-facebook-f"></Link>
+              <Link to="/" className="fab fa-twitter"></Link>
+              <Link to="/" className="fab fa-instagram"></Link>
+              <Link to="/" className="fab fa-linkedin"></Link>
             </div>
           </div>
           <div className="box">

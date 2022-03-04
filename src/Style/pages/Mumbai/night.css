@@ -85,12 +85,12 @@ html::-webkit-scrollbar-thumb {
   align-content: center;
   bottom: 1.7rem;
 }
+
 .dark .Pages.Mumbai .header .navbar a {
   color: #aaa;
-     margin: 1rem;
-     margin-left: 2rem;
-    font-size: 2rem;
-  display:block;
+  font-size: 1.7rem;
+  display: inline-block;
+  margin: 0 1rem;
 }
 .dark .Pages.Mumbai .home .content p {
   color: #aaa;

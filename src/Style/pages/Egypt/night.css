@@ -83,11 +83,10 @@ html::-webkit-scrollbar-thumb {
   bottom: 1.7rem;
 }
 .dark .Pages.Egypt .header .navbar a {
-  color: #aaa;
-     margin: 1rem;
-     margin-left: 2rem;
-    font-size: 2rem;
-  display:block;
+   color: #aaa;
+  font-size: 1.7rem;
+  display: inline-block;
+  margin: 0 1rem;
 }
 .dark .Pages.Egypt .home .content p {
   color: #aaa;

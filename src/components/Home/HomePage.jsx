@@ -2,14 +2,16 @@ import PropTypes from "prop-types";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
 
 import "../../Style/style.css";
 import "../../Style/night.css";
 import "../../Style/rate.css";
+import "./homechat.css"
 
 import Header from "../Header";
 import Footer from "../Footer";
-
+import Chatbots from "../Chatbot/Chatbot";
 const homeContent = [
   { id: 1, text: "Khám phá các vùng đất mới cùng Stravel" },
   { id: 2, text: "Những chuyến đi đang chờ đợi bạn" },
@@ -19,6 +21,41 @@ const homeControls = [
   { id: 2, className: "vid-btn", dataSrc: "./videos/vid-2.mp4" },
   { id: 3, className: "vid-btn", dataSrc: "./videos/vid-3.mp4" },
 ];
+
+function Homecontent() {
+  const { user, isAuthenticated } = useAuth0();
+  if (isAuthenticated === true) {
+    return (
+      isAuthenticated && (
+        <div className="content">
+          <h3>Xin Chào {user.nickname} !</h3>
+
+          {homeContent.map((homeContent) => {
+            return <p key={homeContent.id}>{homeContent.text}</p>;
+          })}
+
+          <a href="#packages" className="btn">
+            Khám phá ngay
+          </a>
+        </div>
+      )
+    );
+  } else {
+    return (
+      <div className="content">
+        <h3>Mọi chuyến đi đều đáng giá</h3>
+
+        {homeContent.map((homeContent) => {
+          return <p key={homeContent.id}>{homeContent.text}</p>;
+        })}
+
+        <a href="#packages" className="btn">
+          Khám phá ngay
+        </a>
+      </div>
+    );
+  }
+}
 
 function Home(props) {
   const handleVidbtn = (e) => {
@@ -34,17 +71,7 @@ function Home(props) {
   };
   return (
     <section className="home" id="home">
-      <div className="content">
-        <h3>Mọi chuyến đi đều đáng giá</h3>
-
-        {homeContent.map((homeContent) => {
-          return <p key={homeContent.id}>{homeContent.text}</p>;
-        })}
-
-        <a href="#packages" className="btn">
-          Khám phá ngay
-        </a>
-      </div>
+      <Homecontent />
       <div className="controls">
         {homeControls.map((homeControls) => {
           return (
@@ -212,7 +239,9 @@ function Book(props) {
             <h3>Kết thúc vào :</h3>
             <input type="date" />
           </div>
-          <Link to={"/commingsoon"} className="btn" >Tìm Ngay</Link>
+          <Link to={"/commingsoon"} className="btn">
+            Tìm Ngay
+          </Link>
         </form>
       </div>
     </section>
@@ -767,6 +796,23 @@ const Brand = () => {
   );
 };
 
+function Chat() {
+  function handleClick(){
+    let formchat = document.querySelector(".formchat");
+    formchat.classList.toggle("active")
+  };
+  return (
+    <div className="HomeChat">
+      <button className="Chattoggle" onClick={handleClick}>
+        <i className="fab fa-facebook-messenger"></i>
+      </button>
+      <div className="formchat">
+        <Chatbots />
+      </div>
+    </div>
+  );
+}
+
 function HomePage(props) {
   useEffect(() => {
     window.scroll({
@@ -775,8 +821,8 @@ function HomePage(props) {
       behavior: "smooth",
     });
   }, []);
-window.onscroll=()=>{
- let searchBtn = document.getElementById("search-btn");
+  window.onscroll = () => {
+    let searchBtn = document.getElementById("search-btn");
     let searchBar = document.querySelector(".search-bar-container");
     let menu = document.querySelector("#menu-bar");
     let loginForm = document.querySelector(".login-form-container");
@@ -787,15 +833,13 @@ window.onscroll=()=>{
     menu.classList.remove("fa-times");
     navbar.classList.remove("active");
     document.querySelector("#menu-bar .fas").classList.add("fa-bars");
-
- 
-  
   };
   return (
     <div className="HomePages">
       <Header />
       <div className="container">
         <Home />
+        <Chat/>
         <Book />
         <Packages />
         <Services />

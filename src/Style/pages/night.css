@@ -78,12 +78,6 @@ html::-webkit-scrollbar-thumb {
   align-content: center;
   bottom: 1.7rem;
 }
-.dark .Pages .header .navbar a {
-  color: #aaa;
-  font-size: 1.7rem;
-  display: inline-block;
-  margin: 0 1rem;
-}
 .dark .Pages .banner .content p {
   color: #aaa;
   max-width: 60rem;
@@ -153,9 +147,6 @@ html::-webkit-scrollbar-thumb {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 1.5rem 9%;
-}
-.dark .Pages .header .navbar a:hover {
-  color: var(--orange);
 }
 .dark .Pages .header .btn {
   margin-top: 0;

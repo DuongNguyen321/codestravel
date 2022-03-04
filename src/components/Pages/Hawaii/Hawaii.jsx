@@ -50,7 +50,7 @@ const Bookform = () => {
 
         <div data-aos="zoom-in" data-aos-delay="100" className="inputBox">
           <span>
-            <Link className="btn btn-book" to="/hawaii/book">
+            <Link className="btn btn-book" to="/commingsoon">
               Đặt ngay
             </Link>
           </span>
@@ -174,7 +174,7 @@ const Destination = () => {
       <div className="box-container">
         {destinationBox.map((destinationBox) => {
           return (
-            <Link to="/hawaii/more" key={destinationBox.id} className="box">
+            <Link to="/commingsoon" key={destinationBox.id} className="box">
               <div className="image">
                 <img src={destinationBox.src} alt={destinationBox.h3} />
               </div>
@@ -357,17 +357,15 @@ const Blog = () => {
       <div className="box-container">
         {blogBox.map((blogBox)=>{
           return (
-            <Link to="/hawaii/blog" className="box" key={blogBox.id}>
+            <Link to="/commingsoon" className="box" key={blogBox.id}>
               <div className="image">
                 <img src={blogBox.src} alt={blogBox.a} />
               </div>
               <div className="content">
-                <p  className="link">
-                  {blogBox.a}
-                </p>
+                <p className="link">{blogBox.a}</p>
                 <p>{blogBox.p}</p>
                 <div className="icon">
-                  <p >
+                  <p>
                     <i className="fas fa-clock"></i> 21st may, 2021
                   </p>
                   <p>
@@ -452,7 +450,7 @@ const Banner =()=>{
           Mỗi chuyến đi đều là một kỷ niệm đẹp. Hãy cùng STravel ghi lại kỷ niệm
           này !
         </p>
-        <Link to="/hawaii/book" className="btn">
+        <Link to="/commingsoon" className="btn">
           Đặt Ngay
         </Link>
       </div>

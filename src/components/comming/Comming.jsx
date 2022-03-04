@@ -1,7 +1,12 @@
 import "./index.css";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import Chatbots from "../Chatbot/Chatbot";
 const Header = () => {
+  const handleClick = () => {
+    var chat = document.querySelector("dpnone");
+    chat.classList.add("active");
+  };
   return (
     <header>
       <Link to="/" className="logo">
@@ -10,7 +15,7 @@ const Header = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to={"/"}>Home</Link>
           </li>
         </ul>
       </nav>
@@ -22,13 +27,23 @@ const Section = () => {
     var newsletter = document.querySelector(".newsletter");
     newsletter.classList.add("active");
   }
+  function handleChat(e) {
+    var chat = document.querySelector(".dpnone");
+    chat.classList.add("active");
+  }
+  function handleCloseChat(e) {
+    var chat = document.querySelector(".dpnone");
+    chat.classList.remove("active");
+  }
   return (
     <section>
       <img alt="img" src="./images/Home/curve.png" className="wave" />
       <div className="contentBx">
         <h2>Comming Soon...</h2>
         <p>
-          Page đang trong quá trình hoàn thiện và nâng cấp. Chúng tôi sẽ gửi thông báo tới bạn khi Page hoàn thành bằng việc bạn điền vào form "Thông Báo cho tôi"
+          Page đang trong quá trình hoàn thiện và nâng cấp. Chúng tôi sẽ gửi
+          thông báo tới bạn khi Page hoàn thành bằng việc bạn điền vào form
+          "Thông Báo cho tôi"
         </p>
         <div className="countdown">
           <div className="time">
@@ -49,6 +64,11 @@ const Section = () => {
           </div>
         </div>
         <button onClick={handleAdd}>Thông báo cho tôi</button>
+        <button onClick={handleChat}>Chat với tôi</button>
+      </div>
+      <div className="dpnone">
+        <button className="CloseChat" onClick={handleCloseChat}><p>X</p></button>
+        <Chat />
       </div>
 
       <div className="imgBx">
@@ -75,10 +95,10 @@ const Section = () => {
   );
 };
 const Newsletter = () => {
-      function handleRemove(e) {
-        var newsletter = document.querySelector(".newsletter");
-        newsletter.classList.remove("active");
-      }
+  function handleRemove(e) {
+    var newsletter = document.querySelector(".newsletter");
+    newsletter.classList.remove("active");
+  }
   return (
     <div className="newsletter">
       <img alt="img" src="./images/Home/close.png" onClick={handleRemove} />
@@ -86,42 +106,43 @@ const Newsletter = () => {
       <p>Nhập email của bạn</p>
       <div className="inputBox">
         <form action="">
-          <input type="email" name="" placeholder="abc@gmail.com"/>
+          <input type="email" name="" placeholder="abc@gmail.com" />
           <input type="submit" value="Gửi đi" />
         </form>
       </div>
     </div>
   );
 };
-
+const Chat = () => {
+  return <Chatbots />;
+};
 export default function CommingSoon() {
   window.onscroll = function () {
     var newsletter = document.querySelector(".newsletter");
     newsletter.classList.remove("active");
   };
   var countDate = new Date("March 6,2022 00:00:00").getTime();
-  useEffect(()=>{
- function newYear() {
-   var now = new Date().getTime();
-   const gap = countDate - now;
-   var second = 1000;
-   var minute = second * 60;
-   var hour = minute * 60;
-   var day = hour * 24;
-   var d = Math.floor(gap / day);
-   var h = Math.floor((gap % day) / hour);
-   var m = Math.floor((gap % hour) / minute);
-   var s = Math.floor((gap % minute) / second);
-   document.getElementById("day").innerText = d;
-   document.getElementById("hour").innerText = h;
-   document.getElementById("minute").innerText = m;
-   document.getElementById("second").innerText = s;
- }
-   setInterval(function () {
-     newYear();
-   }, 1000);
-
-  })
+  useEffect(() => {
+    function newYear() {
+      var now = new Date().getTime();
+      const gap = countDate - now;
+      var second = 1000;
+      var minute = second * 60;
+      var hour = minute * 60;
+      var day = hour * 24;
+      var d = Math.floor(gap / day);
+      var h = Math.floor((gap % day) / hour);
+      var m = Math.floor((gap % hour) / minute);
+      var s = Math.floor((gap % minute) / second);
+      document.getElementById("day").innerText = d;
+      document.getElementById("hour").innerText = h;
+      document.getElementById("minute").innerText = m;
+      document.getElementById("second").innerText = s;
+    }
+    setInterval(function () {
+      newYear();
+    }, 1000);
+  });
 
   return (
     <div className="Comming">

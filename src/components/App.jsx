@@ -41,6 +41,7 @@ import TokyoBook from "./Pages/Tokyo/TokyoBook";
 import TokyoBlog from "./Pages/Tokyo/TokyoBlog";
 import TokyoMore from "./Pages/Tokyo/TokyoMore";
 import CommingSoon from "./comming/Comming";
+import Chatbots from "./Chatbot/Chatbot";
 
 dom.watch();
 
@@ -87,6 +88,7 @@ function App() {
         <Route path="/success" element={<Success />} />
         <Route path="/images" element={<Images />} />
         <Route path="/commingsoon" element={<CommingSoon />} />
+        <Route path="/chat" element={<Chatbots />} />
         {/*  */}
         <Route path="/egypt" element={<Egypt />} />
         <Route path="/egypt/book" element={<EgyptBook />} />

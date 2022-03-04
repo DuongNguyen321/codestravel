@@ -2,9 +2,40 @@
 :root {
   --orange: #ffa500;
 }
+.dpnone {
+  position: fixed;
+  bottom: 0;
+  left: -150%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.dpnone.active {
+  visibility: visible;
+  opacity: 1;
+  left: 50%;
+}
+.CloseChat {
+  width: 100%;
+  display: flex;
+margin-bottom: 10px;
+  background-color: initial;
+}
+.CloseChat p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ff0083;
+  border-radius: 50%;
+}
 .Comming {
   background: var(--orange);
-    box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Poppins";
 }
 .Comming header {
@@ -143,39 +174,39 @@
 }
 .Comming section .sci li a {
   display: block;
-  margin-right: 20px ;
+  margin-right: 20px;
   transform: scale(0.8);
 }
 .Comming .newsletter {
   position: fixed;
-top: -120%;
-left: 50%;
-transform: translate(-50%,-50%);
-width: 600px;
-padding: 60px;
-background-color: #fff;
-z-index: 1000;
-box-shadow: 0 0 0 100vh rgba(41, 27, 0, 0.95);
-visibility: hidden;
-opacity: 0;
-transition: 0.5s;
+  top: -120%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  padding: 60px;
+  background-color: #fff;
+  z-index: 1000;
+  box-shadow: 0 0 0 100vh rgba(41, 27, 0, 0.95);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
 }
 .Comming .newsletter.active {
   visibility: visible;
   top: 50%;
-opacity: 1;
+  opacity: 1;
 }
 .Comming .newsletter h2 {
   font-size: 48px;
-   color: #fff;
+  color: #fff;
 
-     text-shadow: 2px 0 0 #ffa500, -2px 0 0 #ffa500, 0 2px 0 #ffa500,
+  text-shadow: 2px 0 0 #ffa500, -2px 0 0 #ffa500, 0 2px 0 #ffa500,
     0 -2px 0 #ffa500, 1px 1px #ffa500, -1px -1px 0 #ffa500, 1px -1px 0 #ffa500,
     -1px 1px 0 #ffa500;
 }
 .Comming .newsletter p {
   font-size: 20px;
-   color: #fff;
+  color: #fff;
   text-shadow: 2px 0 0 #ff0083, -2px 0 0 #ff0083, 0 2px 0 #ff0083,
     0 -2px 0 #ff0083, 1px 1px #ff0083, -1px -1px 0 #ff0083, 1px -1px 0 #ff0083,
     -1px 1px 0 #ff0083;
@@ -190,16 +221,16 @@ opacity: 1;
   font-size: 18px;
   border: 1px solid #999;
 }
-.Comming .newsletter .inputBox input[type="submit"]{
-  padding: 10px ;
+.Comming .newsletter .inputBox input[type="submit"] {
+  padding: 10px;
   outline: none;
   width: 140px;
- color: #fff;
- background: #ffa500; 
-   border: 1px solid #ffa500;
-   letter-spacing: 2px;
-   box-sizing: border-box;
-   cursor: pointer;
+  color: #fff;
+  background: #ffa500;
+  border: 1px solid #ffa500;
+  letter-spacing: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 .Comming .newsletter img {
   position: absolute;
@@ -208,58 +239,57 @@ opacity: 1;
   top: 0;
   right: 0;
 }
-@media (max-width:991px) {
- .Comming section{
+@media (max-width: 991px) {
+  .Comming section {
     flex-direction: column;
-    padding-top:150px;
+    padding-top: 150px;
     height: auto;
   }
   .Comming section .contentBx {
     max-width: 100%;
   }
-  .Comming section .imgBx img{
+  .Comming section .imgBx img {
     margin-top: 0;
   }
 }
-@media (max-width:767px) {
- .Comming header{
-   padding: 20px 50px;
- }
-   .Comming section{
+@media (max-width: 767px) {
+  .Comming header {
+    padding: 20px 50px;
+  }
+  .Comming section {
     flex-direction: column;
-   padding:120px 50px 100px;
+    padding: 120px 50px 100px;
     height: auto;
   }
-  .Comming section .contentBx h2{
+  .Comming section .contentBx h2 {
     font-size: 40px;
   }
-  .Comming section .contentBx p{
+  .Comming section .contentBx p {
     font-size: 16px;
   }
-  .Comming section .contentBx .countdown .time{
+  .Comming section .contentBx .countdown .time {
     font-size: 30px;
     min-width: 70px;
     margin-right: 5px;
   }
-   .Comming section .contentBx .countdown .time p {
-     font-size: 14px;
-   }
-   .Comming section .contentBx a {
-     font-size: 16px;
-   }
-   .Comming section .sci {
-     left:  50px;
-   }
-  .Comming .newsletter{
-     width: 90%;
-     padding: 30px;
-   }
-   .Comming .newsletter .inputBox input{
-     margin-top: 10px;
-     width: 100%;
-   }
-.Comming .newsletter h2{
-  font-size: 36px;
-
-}
+  .Comming section .contentBx .countdown .time p {
+    font-size: 14px;
   }
+  .Comming section .contentBx a {
+    font-size: 16px;
+  }
+  .Comming section .sci {
+    left: 50px;
+  }
+  .Comming .newsletter {
+    width: 90%;
+    padding: 30px;
+  }
+  .Comming .newsletter .inputBox input {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .Comming .newsletter h2 {
+    font-size: 36px;
+  }
+}

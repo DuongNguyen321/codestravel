@@ -116,7 +116,7 @@ export default function CommingSoon() {
     let newsletter = document.querySelector(".newsletter");
     newsletter.classList.remove("active");
   };
-  let countDate = new Date("March 7,2022 00:00:00").getTime();
+  let countDate = new Date("March 8,2022 00:00:00").getTime();
   useEffect(() => {
     function newYear() {
       let now = new Date().getTime();

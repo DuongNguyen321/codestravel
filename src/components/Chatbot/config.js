@@ -93,8 +93,8 @@ const config = {
             id: 1,
           },
           {
-            text: "Stravel có các chi nhánh chính tại Hà Nội, Ấn Độ, Mỹ, Nhật Bản, Pháp",
-            url: "/",
+            text: "Watch my CV",
+            url: "https://nguyeduongcv.w3spaces.com/index.html",
             id: 2,
           },
           {

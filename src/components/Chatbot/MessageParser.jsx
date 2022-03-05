@@ -70,6 +70,9 @@ class MessageParser {
     if (lowerCaseMessage.includes("duong")) {
       this.actionProvider.handleAbout();
     }
+    if (lowerCaseMessage.includes("cv")) {
+      this.actionProvider.handleAbout();
+    }
      if (lowerCaseMessage.includes("")) {
        this.actionProvider.text();
      }

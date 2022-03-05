@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import "../../../Style/pages/Paris/style.css";
 import "../../../Style/pages/Paris/night.css";
+import { Chat } from "../../Home/HomePage";
 
 const Home = () => {
   return (
@@ -493,6 +494,7 @@ export default function Paris() {
         <Blog />
         <Review />
         <Banner />
+        <Chat/>
       </div>
       <Footer />
     </div>

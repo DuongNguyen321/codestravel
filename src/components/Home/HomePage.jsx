@@ -1024,7 +1024,7 @@ const Brand = () => {
   );
 };
 
-function Chat() {
+export function Chat() {
   function handleClick(){
     let formchat = document.querySelector(".formchat");
     formchat.classList.toggle("active")

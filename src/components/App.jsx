@@ -9,7 +9,7 @@ import { dom } from "@fortawesome/fontawesome-svg-core";
 import HomePage from "./Home/HomePage";
 import About from "./About";
 import Success from "./Success";
-import Images from "./Images";
+import Images from "./gallery/Images";
 
 import Egypt from "./Pages/Egypt/Egypt";
 import EgyptBook from "./Pages/Egypt/EgyptBook";

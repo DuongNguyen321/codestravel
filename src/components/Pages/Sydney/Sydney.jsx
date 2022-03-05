@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import "../../../Style/pages/Sydney/style.css";
 import "../../../Style/pages/Sydney/night.css";
+import { Chat } from "../../Home/HomePage";
 
 
 const Home = () => {
@@ -492,6 +493,7 @@ const handleScroll = (e) => {
         <Blog />
         <Review/>
         <Banner/>
+        <Chat/>
       </div>
       <Footer />
     </div>

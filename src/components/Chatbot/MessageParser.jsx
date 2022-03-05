@@ -5,8 +5,22 @@ class MessageParser {
 
   parse(message) {
     const lowerCaseMessage = message.toLowerCase();
-
-    if (lowerCaseMessage.includes("")) {
+    if (lowerCaseMessage.includes("xin chao")) {
+      this.actionProvider.greet();
+    }
+    if (lowerCaseMessage.includes("xin chào")) {
+      this.actionProvider.greet();
+    }
+    if (lowerCaseMessage.includes("hello")) {
+      this.actionProvider.greet();
+    }
+    if (lowerCaseMessage.includes("hi")) {
+      this.actionProvider.greet();
+    }
+    if (lowerCaseMessage.includes("...")) {
+      this.actionProvider.greet();
+    }
+    if (lowerCaseMessage.includes("alo")) {
       this.actionProvider.greet();
     }
 
@@ -56,6 +70,9 @@ class MessageParser {
     if (lowerCaseMessage.includes("duong")) {
       this.actionProvider.handleAbout();
     }
+     if (lowerCaseMessage.includes("")) {
+       this.actionProvider.text();
+     }
   }
 }
 

@@ -5,7 +5,14 @@ class ActionProvider {
   }
   greet = () => {
     const message = this.createChatBotMessage(
-      "Hi chào bạn, Tôi là chatbot, Tôi có thể giúp gì cho bạn?",
+      "Hi chào bạn, Tôi là chatbot. Tôi có thể giải đáp cho các câu hỏi thường gặp",
+    );
+
+    this.updateChatbotState(message);
+  };
+  text = () => {
+    const message = this.createChatBotMessage(
+      "Tôi có thể giúp gì cho bạn?",
       {
         widget: "learningOptions",
       }

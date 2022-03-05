@@ -49,7 +49,7 @@ const Bookform = () => {
 
         <div data-aos="zoom-in" data-aos-delay="100" className="inputBox">
           <span>
-            <Link className="btn btn-book" to="/commingsoon">
+            <Link className="btn btn-book" to="/tokyo/book">
               Đặt ngay
             </Link>
           </span>
@@ -457,7 +457,7 @@ const Banner = () => {
           Mỗi chuyến đi đều là một kỷ niệm đẹp. Hãy cùng STravel ghi lại kỷ niệm
           này !
         </p>
-        <Link to="/commingsoon" className="btn">
+        <Link to="/tokyo/book" className="btn">
           Đặt Ngay
         </Link>
       </div>

@@ -1,7 +1,7 @@
 import "./index.css";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import Chatbots from "../Chatbot/Chatbot";
+import Chatbots from "../chatbot/Chatbot";
 const Header = () => {
   return (
     <header>

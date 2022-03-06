@@ -1,36 +1,35 @@
 import { Routes, Route } from "react-router-dom";
 
 
-import HomePage from "./Home/HomePage";
-import About from "./About";
-import Success from "./Success";
-import Images from "./gallery/Images";
+import HomePage from "../Pages/Home/HomePage";
+import About from "../Pages/About/About";
+import Success from "../Pages/Success/Success";
+import Images from "../Pages/gallery/Images";
 
-import Egypt from "./Pages/Egypt/Egypt";
-import EgyptBook from "./Pages/Egypt/EgyptBook";
-import EgyptBlog from "./Pages/Egypt/EgyptBlog";
+import Egypt from "../Pages/Egypt/Egypt";
+import EgyptBook from "../Pages/Egypt/EgyptBook";
+import EgyptBlog from "../Pages/Egypt/EgyptBlog";
 
-import Mumbai from "./Pages/Mumbai/Mumbai";
-import MumbaiBook from "./Pages/Mumbai/MumbaiBook";
-import MumbaiBlog from "./Pages/Mumbai/MumbaiBlog";
+import Mumbai from "../Pages/Mumbai/Mumbai";
+import MumbaiBook from "../Pages/Mumbai/MumbaiBook";
+import MumbaiBlog from "../Pages/Mumbai/MumbaiBlog";
 
-import Hawaii from "./Pages/Hawaii/Hawaii";
-import HawaiiBook from "./Pages/Hawaii/HawaiiBook";
-import HawaiiBlog from "./Pages/Hawaii/HawaiiBlog";
+import Hawaii from "../Pages/Hawaii/Hawaii";
+import HawaiiBook from "../Pages/Hawaii/HawaiiBook";
+import HawaiiBlog from "../Pages/Hawaii/HawaiiBlog";
 
-import Sydney from "./Pages/Sydney/Sydney";
-import SydneyBook from "./Pages/Sydney/SydneyBook";
-import SydneyBlog from "./Pages/Sydney/SydneyBlog";
+import Sydney from "../Pages/Sydney/Sydney";
+import SydneyBook from "../Pages/Sydney/SydneyBook";
+import SydneyBlog from "../Pages/Sydney/SydneyBlog";
 
-import Paris from "./Pages/Paris/Paris";
-import ParisBook from "./Pages/Paris/ParisBook";
-import ParisBlog from "./Pages/Paris/ParisBlog";
+import Paris from "../Pages/Paris/Paris";
+import ParisBook from "../Pages/Paris/ParisBook";
+import ParisBlog from "../Pages/Paris/ParisBlog";
 
-import Tokyo from "./Pages/Tokyo/Tokyo";
-import TokyoBook from "./Pages/Tokyo/TokyoBook";
-import TokyoBlog from "./Pages/Tokyo/TokyoBlog";
+import Tokyo from "../Pages/Tokyo/Tokyo";
+import TokyoBook from "../Pages/Tokyo/TokyoBook";
+import TokyoBlog from "../Pages/Tokyo/TokyoBlog";
 import CommingSoon from "./comming/Comming";
-import Chatbots from "./Chatbot/Chatbot";
 
 
 
@@ -63,7 +62,6 @@ import Chatbots from "./Chatbot/Chatbot";
         <Route path="/success" element={<Success />} />
         <Route path="/images" element={<Images />} />
         <Route path="/commingsoon" element={<CommingSoon />} />
-        <Route path="/chat" element={<Chatbots />} />
         {/*  */}
         <Route path="/egypt" element={<Egypt />} />
         <Route path="/egypt/book" element={<EgyptBook />} />

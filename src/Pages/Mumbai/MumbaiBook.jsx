@@ -15,7 +15,7 @@ class Home extends React.Component {
     };
   }
   componentDidMount() {
-    fetch("https://whispering-ridge-42285.herokuapp.com/pages/3")
+    fetch("https://apiforstravel.herokuapp.com/pages/3")
       .then((res) => res.json())
       .then(
         (result) => {

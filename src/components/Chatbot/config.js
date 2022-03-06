@@ -88,8 +88,8 @@ const config = {
       props: {
         options: [
           {
-            text: "Trải Qua 17 Năm Phát Triển Bền Vững, STravel Đã Ghi Dấu Ấn Của Mình Với Thông Điệp “Nâng Tầm Trải Nghiệm Từng Chuyến Đi”",
-            url: "/",
+            text: "View my db Json",
+            url: "https://apiforstravel.herokuapp.com/",
             id: 1,
           },
           {

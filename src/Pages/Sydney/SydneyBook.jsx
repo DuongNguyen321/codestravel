@@ -1,44 +1,63 @@
 import Header from "../../components/sydney/Header2";
 import Footer from "../../components/sydney/Footer2";
 import { Link } from "react-router-dom";
+import React from "react";
 import { useEffect } from "react";
 import "../../Style/citys/night.css";
 import "../../Style/citys/style.css";
-const Home = () => {
-  useEffect(() => {
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  }, []);
-  return (
-    <section className="home" id="home">
-      <div className="content">
-        <span data-aos="fade-up" data-aos-delay="100">
-          Sydney
-        </span>
-        <h3 data-aos="fade-up" data-aos-delay="200">
-          vùng đất của Pharaohs
-        </h3>
-        <p data-aos="fade-up" data-aos-delay="400">
-          Sydney là một trong những quốc gia lâu đời nhất trên thế giới. Đây là
-          nơi người Ai Cập cổ đại đã xây dựng một nền văn minh vĩ đại trong
-          thung lũng sông Nile, với rất nhiều đền thờ, cổ vật và những tàn tích
-          ngoạn mục đáng để bạn khám phá
-        </p>
-        <Link
-          data-aos="fade-up"
-          data-aos-delay="500"
-          to="/Sydney"
-          className="btn"
-        >
-          Tìm hiểu thêm
-        </Link>
-      </div>
-    </section>
-  );
-};
+class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      error: null,
+      isLoaded: false,
+      home: [],
+    };
+  }
+  componentDidMount() {
+    fetch("https://apiforstravel.herokuapp.com/pages/5")
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          this.setState({
+            isLoaded: true,
+            home: result.home,
+          });
+        },
+        (error) => {
+          this.setState({
+            isLoaded: true,
+            error,
+          });
+        }
+      );
+  }
+  render() {
+    return (
+      <section className="home" id="home">
+        <div className="content">
+          <span data-aos="fade-up" data-aos-delay="100">
+            {this.state.home.name}
+          </span>
+          <h3 data-aos="fade-up" data-aos-delay="200">
+            {this.state.home.content}
+          </h3>
+          <p data-aos="fade-up" data-aos-delay="300">
+            {this.state.home.textcontent}
+          </p>
+          <a
+            data-aos="fade-up"
+            data-aos-delay="450"
+            href="#destination"
+            className="btn"
+          >
+            Tìm hiểu thêm
+          </a>
+        </div>
+      </section>
+    );
+  }
+}
 
 const Book = () => {
   return (

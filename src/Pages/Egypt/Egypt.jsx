@@ -15,7 +15,7 @@ class Home extends React.Component {
     };
   }
   componentDidMount() {
-    fetch("https://whispering-ridge-42285.herokuapp.com/pages/1")
+    fetch("https://apiforstravel.herokuapp.com/pages/1")
       .then((res) => res.json())
       .then(
         (result) => {
@@ -69,7 +69,7 @@ class Bookform extends React.Component {
     };
   }
   componentDidMount() {
-    fetch("https://whispering-ridge-42285.herokuapp.com/pages/1")
+    fetch("https://apiforstravel.herokuapp.com/pages/1")
       .then((res) => res.json())
       .then(
         (result) => {
@@ -109,7 +109,7 @@ class Bookform extends React.Component {
   }
 }
 const About = () => {
-  const handleVidbtn = (e) => {
+  const handleVidbtn = () => {
     document
       .querySelectorAll(".about .video-container .controls .control-btn")
       .forEach((btn) => {
@@ -125,7 +125,7 @@ const About = () => {
         data-aos-delay="150"
       >
         <video
-          src="/videos/vid-1.mp4"
+          src="./videos/vid-1.mp4"
           muted
           autoPlay
           loop
@@ -134,17 +134,17 @@ const About = () => {
         <div className="controls">
           <span
             className="control-btn"
-            data-src="/videos/vid-1.mp4"
+            data-src="./videos/vid-1.mp4"
             onClick={handleVidbtn}
           ></span>
           <span
             className="control-btn"
-            data-src="/videos/vid-2.mp4"
+            data-src="./videos/vid-2.mp4"
             onClick={handleVidbtn}
           ></span>
           <span
             className="control-btn"
-            data-src="/videos/vid-3.mp4"
+            data-src="./videos/vid-2.mp4"
             onClick={handleVidbtn}
           ></span>
         </div>
@@ -173,7 +173,7 @@ class Destination extends React.Component {
     };
   }
   componentDidMount() {
-    fetch("https://whispering-ridge-42285.herokuapp.com/pages/1")
+    fetch("https://apiforstravel.herokuapp.com/pages/1")
       .then((res) => res.json())
       .then(
         (result) => {
@@ -206,10 +206,7 @@ class Destination extends React.Component {
                 className="box"
               >
                 <div className="image">
-                  <img
-                    src={destinationBox.src}
-                    alt={destinationBox.h3}
-                  />
+                  <img src={destinationBox.src} alt={destinationBox.h3} />
                 </div>
                 <div className="content">
                   <h3>{destinationBox.h3}</h3>
@@ -234,7 +231,7 @@ class Services extends React.Component {
     };
   }
   componentDidMount() {
-    fetch("https://whispering-ridge-42285.herokuapp.com/pages/1")
+    fetch("https://apiforstravel.herokuapp.com/pages/1")
       .then((res) => res.json())
       .then(
         (result) => {
@@ -285,7 +282,7 @@ class Gallery extends React.Component {
     };
   }
   componentDidMount() {
-    fetch("https://whispering-ridge-42285.herokuapp.com/pages/1")
+    fetch("https://apiforstravel.herokuapp.com/pages/1")
       .then((res) => res.json())
       .then(
         (result) => {
@@ -337,7 +334,7 @@ class Blog extends React.Component {
     };
   }
   componentDidMount() {
-    fetch("https://whispering-ridge-42285.herokuapp.com/pages/1")
+    fetch("https://apiforstravel.herokuapp.com/pages/1")
       .then((res) => res.json())
       .then(
         (result) => {
@@ -389,62 +386,96 @@ class Blog extends React.Component {
   }
 }
 
-const Review = () => {
-  return (
-    <section className="review">
-      <div className="content" data-aos="fade-right" data-aos-delay="250">
-        <span>Đánh giá</span>
-        <h3>Những lời đánh giá tốt nhất</h3>
-        <p>
-          Tất cả những lời đánh giá chúng tôi đều ghi nhận và tiếp thu để phát
-          triển. đây là những đánh giá tốt nhất về chuyến đi Egypt này.
-        </p>
-      </div>
+class Review extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      error: null,
+      isLoaded: false,
+      reviewuser: [],
+    };
+  }
+  componentDidMount() {
+    fetch("https://apiforstravel.herokuapp.com/pages/1")
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          this.setState({
+            isLoaded: true,
+            reviewuser: result.reviewuser,
+          });
+        },
+        (error) => {
+          this.setState({
+            isLoaded: true,
+            error,
+          });
+        }
+      );
+  }
 
-      <div className="box-container" data-aos="fade-left" data-aos-delay="350">
-        <div className="box">
-          <p>Some test</p>
-          <div className="user">
-            <img src="./images/Egypt/pic-1.png" alt="" />
-            <div className="info">
-              <h3>Some test</h3>
-              <span>...</span>
+  
+  render() {
+    return (
+      <section className="review">
+        <div className="content" data-aos="fade-right" data-aos-delay="250">
+          <span>Đánh giá</span>
+          <h3>Những lời đánh giá tốt nhất</h3>
+          <p>
+            Tất cả những lời đánh giá chúng tôi đều ghi nhận và tiếp thu để phát
+            triển. đây là những đánh giá tốt nhất về chuyến đi Egypt này.
+          </p>
+        </div>
+
+        <div
+          className="box-container"
+          data-aos="fade-left"
+          data-aos-delay="350"
+        >
+          <div className="box">
+            <p>Some test</p>
+            <div className="user">
+              <img src={this.state.reviewuser.src1} alt="" />
+              <div className="info">
+                <h3>Some test</h3>
+                <span>...</span>
+              </div>
+            </div>
+          </div>
+          <div className="box">
+            <p>Some test</p>
+            <div className="user">
+              <img src={this.state.reviewuser.src2} alt="" />
+              <div className="info">
+                <h3>Some test</h3>
+                <span>...</span>
+              </div>
+            </div>
+          </div>
+          <div className="box">
+            <p>Some test</p>
+            <div className="user">
+              <img src={this.state.reviewuser.src3} alt="" />
+              <div className="info">
+                <h3>Some test</h3>
+                <span>...</span>
+              </div>
+            </div>
+          </div>
+          <div className="box">
+            <p>Some test</p>
+            <div className="user">
+              <img src={this.state.reviewuser.src4} alt="" />
+              <div className="info">
+                <h3>Some test</h3>
+                <span>...</span>
+              </div>
             </div>
           </div>
         </div>
-        <div className="box">
-          <p>Some test</p>
-          <div className="user">
-            <img src="./images/Egypt/pic-2.png" alt="" />
-            <div className="info">
-              <h3>Some test</h3>
-              <span>...</span>
-            </div>
-          </div>
-        </div>
-        <div className="box">
-          <p>Some test</p>
-          <div className="user">
-            <img src="./images/Egypt/pic-3.png" alt="" />
-            <div className="info">
-              <h3>Some test</h3>
-              <span>...</span>
-            </div>
-          </div>
-        </div>
-        <div className="box">
-          <p>Some test</p>
-          <div className="user">
-            <img src="./images/Egypt/pic-4.png" alt="" />
-            <div className="info">
-              <h3>Some test</h3>
-              <span>...</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+      </section>
+    );
+  }
 };
 const Banner = () => {
   return (

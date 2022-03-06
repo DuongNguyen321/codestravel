@@ -18,7 +18,7 @@ class ActionProvider {
     this.updateChatbotState(message);
   };
   keyboard = () => {
-    const message = this.createChatBotMessage("Tôi không có tay, Vậy nên tôi không chơi bàn phím cơ :(", {
+    const message = this.createChatBotMessage("Xin lỗi, Tôi không có tay, Vậy nên tôi không chơi bàn phím cơ :(", {
       widget: "learningOptions",
     });
 

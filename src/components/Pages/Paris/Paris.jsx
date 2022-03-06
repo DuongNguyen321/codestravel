@@ -1,64 +1,114 @@
 import Header from "../Header";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
-import "../../../Style/pages/Paris/style.css";
+import React, { useEffect } from "react";
 import "../../../Style/pages/Paris/night.css";
+import "../../../Style/pages/Paris/style.css";
 import { Chat } from "../../Home/HomePage";
-
-const Home = () => {
-  return (
-    <section className="home" id="home">
-      <div className="content">
-        <span data-aos="fade-up" data-aos-delay="100">
-          Paris
-        </span>
-        <h3 data-aos="fade-up" data-aos-delay="200">
-          Kinh đô thời trang
-        </h3>
-        <p data-aos="fade-up" data-aos-delay="300">
-          Paris là một vùng đất của nghệ thuật và nghệ sĩ. Thành phố đầy những
-          di tích có tầm quan trọng trong lịch sử của thành phố và thế giới.
-          Lịch sử phong phú của thành phố này thu hút rất nhiều những người đam
-          mê khảo cổ và những người yêu thích kiến trúc. Một số di tích kiến
-          trúc nổi tiếng là Boulevard Montmartre được xây dựng vào năm 1897,
-          Basilique du Sacré-Cœur ở Montmartre, bảo tàng Louvre nổi
-          tiếng,Panthéon…
-        </p>
-        <a
-          data-aos="fade-up"
-          data-aos-delay="450"
-          href="#destination"
-          className="btn"
-        >
-          Tìm hiểu thêm
-        </a>
-      </div>
-    </section>
-  );
-};
-
-const Bookform = () => {
-  return (
-    <section className="book-form" id="book-form">
-      <form action="">
-        <div data-aos="zoom-in" data-aos-delay="50" className="inputBox">
-          <span style={{ fontSize: 2.5 + "em" }}>
-            <h1>Chuyến đi được đặt nhiều nhất</h1>
+import { render } from "@testing-library/react";
+class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      error: null,
+      isLoaded: false,
+      home: [],
+    };
+  }
+  componentDidMount() {
+    fetch("https://whispering-ridge-42285.herokuapp.com/pages/4")
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          this.setState({
+            isLoaded: true,
+            home: result.home,
+          });
+        },
+        (error) => {
+          this.setState({
+            isLoaded: true,
+            error,
+          });
+        }
+      );
+  }
+  render() {
+    return (
+      <section className="home" id="home">
+        <div className="content">
+          <span data-aos="fade-up" data-aos-delay="100">
+            {this.state.home.name}
           </span>
+          <h3 data-aos="fade-up" data-aos-delay="200">
+            {this.state.home.content}
+          </h3>
+          <p data-aos="fade-up" data-aos-delay="300">
+            {this.state.home.textcontent}
+          </p>
+          <a
+            data-aos="fade-up"
+            data-aos-delay="450"
+            href="#destination"
+            className="btn"
+          >
+            Tìm hiểu thêm
+          </a>
         </div>
+      </section>
+    );
+  }
+}
 
-        <div data-aos="zoom-in" data-aos-delay="100" className="inputBox">
-          <span>
-            <Link className="btn btn-book" to="/paris/book">
-              Đặt ngay
-            </Link>
-          </span>
-        </div>
-      </form>
-    </section>
-  );
-};
+class Bookform extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      error: null,
+      isLoaded: false,
+      Book: [],
+    };
+  }
+  componentDidMount() {
+    fetch("https://whispering-ridge-42285.herokuapp.com/pages/4")
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          this.setState({
+            isLoaded: true,
+            Book: result.Book,
+          });
+        },
+        (error) => {
+          this.setState({
+            isLoaded: true,
+            error,
+          });
+        }
+      );
+  }
+  render() {
+    return (
+      <section className="book-form" id="book-form">
+        <form action="">
+          <div data-aos="zoom-in" data-aos-delay="50" className="inputBox">
+            <span style={{ fontSize: 2.5 + "em" }}>
+              <h1>{this.state.Book.content}</h1>
+            </span>
+          </div>
+
+          <div data-aos="zoom-in" data-aos-delay="100" className="inputBox">
+            <span>
+              <Link className="btn btn-book" to="/paris/book">
+                Đặt ngay
+              </Link>
+            </span>
+          </div>
+        </form>
+      </section>
+    );
+  }
+}
 const About = () => {
   const handleVidbtn = (e) => {
     document
@@ -114,286 +164,236 @@ const About = () => {
     </section>
   );
 };
-const destinationBox = [
-  {
-    id: 1,
-    src: "./images/Paris/des-1.jpg",
-    h3: "Tháp Eiffel",
+class Destination extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      error: null,
+      isLoaded: false,
+      destinationBox: [],
+    };
+  }
+  componentDidMount() {
+    fetch("https://whispering-ridge-42285.herokuapp.com/pages/4")
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          this.setState({
+            isLoaded: true,
+            destinationBox: result.destinationBox,
+          });
+        },
+        (error) => {
+          this.setState({
+            isLoaded: true,
+            error,
+          });
+        }
+      );
+  }
+  render() {
+    return (
+      <section className="destination" id="destination">
+        <div className="heading">
+          <span>Những điểm đến ở Paris</span>
+          <h1>Những điểm du lịch bậc nhất</h1>
+        </div>
+        <div className="box-container">
+          {this.state.destinationBox.map((destinationBox) => {
+            return (
+              <a
+                href="https://ximgo.com/tin-tuc/17-dia-diem-du-lich-ai-cap-nhat-dinh-phai-ghe-tham-1-lan-1129"
+                key={destinationBox.id}
+                className="box"
+              >
+                <div className="image">
+                  <img
+                    src={destinationBox.src}
+                    alt={destinationBox.h3}
+                  />
+                </div>
+                <div className="content">
+                  <h3>{destinationBox.h3}</h3>
+                  <p>{destinationBox.p}</p>
+                </div>
+              </a>
+            );
+          })}
+        </div>
+      </section>
+    );
+  }
+}
 
-    p: "Một trong những phần tốt nhất của toà tháp là tầm nhìn toàn cảnh ở trên đỉnh",
-  },
-  {
-    id: 2,
-    src: "./images/Paris/des-2.jpg",
-    h3: "Nhà Thờ Đức Bà",
+class Services extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      error: null,
+      isLoaded: false,
+      servicesBox: [],
+    };
+  }
+  componentDidMount() {
+    fetch("https://whispering-ridge-42285.herokuapp.com/pages/4")
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          this.setState({
+            isLoaded: true,
+            servicesBox: result.servicesBox,
+          });
+        },
+        (error) => {
+          this.setState({
+            isLoaded: true,
+            error,
+          });
+        }
+      );
+  }
 
-    p: "Đây là một trong những công trình kiến trúc điển hình đc thiết kế theo phong cách Gothic Pháp",
-  },
-  {
-    id: 3,
-    src: "./images/Paris/des-3.jpg",
-    h3: "Bảo tàng Louvre",
-
-    p: "Bảo tàng Louvre là bảo tàng nghệ thật được ghé thăm nhiều nhất trên thế giới",
-  },
-  {
-    id: 4,
-    src: "./images/Paris/des-4.jpg",
-    h3: "Đại lộ Champs Elysées",
-
-    p: "Louis Vuitton, Cartier, Guerlain, Montblanc… và nhà hàng nổi tiếng đều nằm trên đại lộ này.",
-  },
-  {
-    id: 5,
-    src: "./images/Paris/des-5.jpg",
-    h3: "Công viên Disneyland",
-
-    p: "Người hâm một của nhân vật hoạt hình Mickey rất thích ghé thăm công viên Disneyland",
-  },
-  {
-    id: 6,
-    src: "./images/Paris/des-6.jpg",
-    h3: "Montmartre",
-
-    p: "Địa danh nổi tiếng nhất của Montmartre có lẽ là Vương cung Thánh đường Sacré-Cœur nằm ở trên đỉnh đồi",
-  },
-  {
-    id: 7,
-    src: "./images/Paris/des-7.jpg",
-    h3: "Cung điện Versailles",
-
-    p: "Versailles là lâu đài nổi tiếng nhất ở Pháp và biểu tượng của quyền lực tối thượng thời đại phong kiến",
-  },
-
-  {
-    id: 8,
-    src: "./images/Paris/des-8.jpg",
-    h3: "Moulin Rouge",
-
-    p: "Moulin Rouge là một quán rượu được biết đến như quê hương của điệu nhảy Cancan nổi tiếng",
-  },
-];
-const Destination = () => {
-  return (
-    <section className="destination" id="destination">
-      <div className="heading">
-        <span>Những điểm đến ở Paris</span>
-        <h1>Những điểm du lịch bậc nhất</h1>
-      </div>
-      <div className="box-container">
-        {destinationBox.map((destinationBox) => {
-          return (
-            <Link to="/commingsoon" key={destinationBox.id} className="box">
-              <div className="image">
-                <img src={destinationBox.src} alt={destinationBox.h3} />
+  render() {
+    return (
+      <section className="services" id="services">
+        <div className="heading">
+          <span>Dịch vụ</span>
+          <h1>Nâng cao trải nghiệm</h1>
+        </div>
+        <Link to={"/aboutus"} className="box-container">
+          {this.state.servicesBox.map((servicesBox) => {
+            return (
+              <div key={servicesBox.id} className="box">
+                <i className={servicesBox.icon}></i>
+                <h3>{servicesBox.h3}</h3>
+                <p>Some text...</p>
               </div>
-              <div className="content">
-                <h3>{destinationBox.h3}</h3>
-                <p>{destinationBox.p}</p>
+            );
+          })}
+        </Link>
+      </section>
+    );
+  }
+}
+
+class Gallery extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      error: null,
+      isLoaded: false,
+      galleryBox: [],
+    };
+  }
+  componentDidMount() {
+    fetch("https://whispering-ridge-42285.herokuapp.com/pages/4")
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          this.setState({
+            isLoaded: true,
+            galleryBox: result.galleryBox,
+          });
+        },
+        (error) => {
+          this.setState({
+            isLoaded: true,
+            error,
+          });
+        }
+      );
+  }
+
+  render() {
+    return (
+      <section className="gallery" id="gallery">
+        <div className="heading">
+          <span>
+            <h2>những bức Ảnh về Paris</h2>
+          </span>
+        </div>
+        <div className="box-container">
+          {this.state.galleryBox.map((galleryBox) => {
+            return (
+              <div className="box" key={galleryBox.id}>
+                <img src={galleryBox.src} alt={galleryBox.h3} />
+                <span>{galleryBox.span}</span>
+                <h3>{galleryBox.h3}</h3>
               </div>
-            </Link>
-          );
-        })}
-      </div>
-    </section>
-  );
-};
-const servicesBox = [
-  {
-    id: 1,
-    icon: "fas fa-globe",
-    h3: "Rộng khắp thế giới",
-  },
-  {
-    id: 2,
-    icon: "fas fa-hiking",
-    h3: "Những cuộc phiêu lưu",
-  },
-  {
-    id: 3,
-    icon: "fas fa-utensils",
-    h3: "Dịch vụ ăn uống",
-  },
-  {
-    id: 4,
-    icon: "fas fa-hotel",
-    h3: "Nghỉ dưỡng cao cấp",
-  },
-  {
-    id: 5,
-    icon: "fas fa-wallet",
-    h3: "Mức giá tốt nhất",
-  },
-  {
-    id: 6,
-    icon: "fas fa-headset",
-    h3: "Hỗ trợ 24/7",
-  },
-];
-const Services = () => {
-  return (
-    <section className="services" id="services">
-      <div className="heading">
-        <span>Dịch vụ</span>
-        <h1>Nâng cao trải nghiệm</h1>
-      </div>
-      <Link to={"/aboutus"} className="box-container">
-        {servicesBox.map((servicesBox) => {
-          return (
-            <div key={servicesBox.id} className="box">
-              <i className={servicesBox.icon}></i>
-              <h3>{servicesBox.h3}</h3>
-              <p>Some text...</p>
-            </div>
-          );
-        })}
-      </Link>
-    </section>
-  );
-};
+            );
+          })}
+        </div>
+      </section>
+    );
+  }
+}
 
-const galleryBox = [
-  {
-    id: 1,
-
-    src: "./images/Paris/gallery-img-1.jpg",
-    span: "Normandie, Pháp",
-    h3: "Đảo Mont Saint-Michel",
-  },
-  {
-    id: 2,
-
-    src: "./images/Paris/gallery-img-2.jpg",
-    span: "Đấu trường La Mã",
-    h3: "Nimes Arena",
-  },
-  {
-    id: 3,
-
-    src: "./images/Paris/gallery-img-3.jpg",
-    span: "Languedoc-Roussillon, Pháp",
-    h3: "pháo đài cổ Carcassonne",
-  },
-  {
-    id: 4,
-
-    src: "./images/Paris/gallery-img-4.jpg",
-    span: "Cây cầu xưa mang tính biểu tượng",
-    h3: "Cầu Pont du gard",
-  },
-  {
-    id: 5,
-    src: "./images/Paris/gallery-img-5.jpg",
-    span: "Chiến trường Chiến tranh thế giới lần thứ nhất",
-    h3: "Hào quang Trận Somme",
-  },
-  {
-    id: 6,
-    src: "./images/Paris/gallery-img-6.jpg",
-    span: "Nơi ăn ảnh nhất nước pháp",
-    h3: "dãy núi Alps",
-  },
-  {
-    id: 7,
-    src: "./images/Paris/gallery-img-7.jpg",
-    span: "Nằm giữa biên giới của Pháp với Italy",
-    h3: "Mont Blanc",
-  },
-  {
-    id: 8,
-    src: "./images/Paris/gallery-img-8.jpg",
-    span: "Provence",
-    h3: "Đồng hoa Oải Hương",
-  },
-  {
-    id: 9,
-    src: "./images/Paris/gallery-img-9.jpg",
-    span: "Thủ đô chính trị và toà án Hoàng Gia",
-    h3: "Château de Versailles",
-  },
-];
-const Gallery = () => {
-  return (
-    <section className="gallery" id="gallery">
-      <div className="heading">
-        <span>
-          <h2>những bức Ảnh về Paris</h2>
-        </span>
-      </div>
-      <div className="box-container">
-        {galleryBox.map((galleryBox) => {
-          return (
-            <div className="box" key={galleryBox.id}>
-              <img src={galleryBox.src} alt={galleryBox.h3} />
-              <span>{galleryBox.span}</span>
-              <h3>{galleryBox.h3}</h3>
-            </div>
-          );
-        })}
-      </div>
-    </section>
-  );
-};
-
-const blogBox = [
-  {
-    id: 1,
-    src: "./images/Paris/blog-1.jpg",
-    a: "Mang những gì khi đi Paris",
-    p: "Giấy tờ tuỳ thân, giấy xác minh tài chính, visa, Vé máy bay, trang phục, đồ dùng cá nhân, balo, túi đựng đồ...",
-  },
-  {
-    id: 2,
-    src: "./images/Paris/blog-2.jpg",
-    a: "Xin visa đi Paris",
-    p: "Visa Ai Cập không khó xin, thủ tục đơn giản gồm đơn tải từ trang web chính thức của Đại sứ quán...",
-  },
-  {
-    id: 3,
-    src: "./images/Paris/blog-3.jpg",
-    a: "Phương tiện di chuyển",
-    p: "bạn có thể đi xe bus, tàu lửa, tàu thủy hoặc thú vị hơn có thể cưỡi lạc đà hoặc ngựa đều được...",
-  },
-];
-
-const Blog = () => {
-  return (
-    <section className="blogs" id="blogs">
-      <div className="heading">
-        <span>blogs & posts</span>
-        <h1>Tìm hiểu thêm về Paris</h1>
-      </div>
-      <div className="box-container">
-        {blogBox.map((blogBox) => {
-          return (
-            <Link to="/commingsoon" className="box" key={blogBox.id}>
-              <div className="image">
-                <img src={blogBox.src} alt={blogBox.a} />
-              </div>
-              <div className="content">
-                <p className="link">{blogBox.a}</p>
-                <p>{blogBox.p}</p>
-                <div className="icon">
-                  <p>
-                    <i className="fas fa-clock"></i> 21st may, 2021
-                  </p>
-                  <p>
-                    <i className="fas fa-user"></i> by admin
-                  </p>
+class Blog extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      error: null,
+      isLoaded: false,
+      blogBox: [],
+    };
+  }
+  componentDidMount() {
+    fetch("https://whispering-ridge-42285.herokuapp.com/pages/4")
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          this.setState({
+            isLoaded: true,
+            blogBox: result.blogBox,
+          });
+        },
+        (error) => {
+          this.setState({
+            isLoaded: true,
+            error,
+          });
+        }
+      );
+  }
+  render() {
+    return (
+      <section className="blogs" id="blogs">
+        <div className="heading">
+          <span>blogs & posts</span>
+          <h1>Tìm hiểu thêm về Paris</h1>
+        </div>
+        <div className="box-container">
+          {this.state.blogBox.map((blogBox) => {
+            return (
+              <div className="box" key={blogBox.id}>
+                <div className="image">
+                  <img src={blogBox.src} alt={blogBox.a} />
+                </div>
+                <div className="content">
+                  <p className="link">{blogBox.a}</p>
+                  <p>{blogBox.p}</p>
+                  <div className="icon">
+                    <p>
+                      <i className="fas fa-clock"></i> 21st may, 2021
+                    </p>
+                    <p>
+                      <i className="fas fa-user"></i> by admin
+                    </p>
+                  </div>
                 </div>
               </div>
-            </Link>
-          );
-        })}
-      </div>
-    </section>
-  );
-};
+            );
+          })}
+        </div>
+      </section>
+    );
+  }
+}
 
 const Review = () => {
   return (
     <section className="review">
-      <div className="content">
+      <div className="content" data-aos="fade-right" data-aos-delay="250">
         <span>Đánh giá</span>
         <h3>Những lời đánh giá tốt nhất</h3>
         <p>
@@ -402,43 +402,43 @@ const Review = () => {
         </p>
       </div>
 
-      <div className="box-container">
+      <div className="box-container" data-aos="fade-left" data-aos-delay="350">
         <div className="box">
-          <p>Some text</p>
+          <p>Some test</p>
           <div className="user">
             <img src="./images/Paris/pic-1.png" alt="" />
             <div className="info">
-              <h3>Some text</h3>
+              <h3>Some test</h3>
               <span>...</span>
             </div>
           </div>
         </div>
         <div className="box">
-          <p>Some text</p>
+          <p>Some test</p>
           <div className="user">
             <img src="./images/Paris/pic-2.png" alt="" />
             <div className="info">
-              <h3>Some text</h3>
+              <h3>Some test</h3>
               <span>...</span>
             </div>
           </div>
         </div>
         <div className="box">
-          <p>Some text</p>
+          <p>Some test</p>
           <div className="user">
             <img src="./images/Paris/pic-3.png" alt="" />
             <div className="info">
-              <h3>Some text</h3>
+              <h3>Some test</h3>
               <span>...</span>
             </div>
           </div>
         </div>
         <div className="box">
-          <p>Some text</p>
+          <p>Some test</p>
           <div className="user">
             <img src="./images/Paris/pic-4.png" alt="" />
             <div className="info">
-              <h3>Some text</h3>
+              <h3>Some test</h3>
               <span>...</span>
             </div>
           </div>
@@ -447,7 +447,6 @@ const Review = () => {
     </section>
   );
 };
-
 const Banner = () => {
   return (
     <div className="banner">
@@ -494,7 +493,7 @@ export default function Paris() {
         <Blog />
         <Review />
         <Banner />
-        <Chat/>
+        <Chat />
       </div>
       <Footer />
     </div>

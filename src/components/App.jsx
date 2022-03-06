@@ -14,32 +14,26 @@ import Images from "./gallery/Images";
 import Egypt from "./Pages/Egypt/Egypt";
 import EgyptBook from "./Pages/Egypt/EgyptBook";
 import EgyptBlog from "./Pages/Egypt/EgyptBlog";
-import EgyptMore from "./Pages/Egypt/EgyptMore";
 
 import Mumbai from "./Pages/Mumbai/Mumbai";
 import MumbaiBook from "./Pages/Mumbai/MumbaiBook";
 import MumbaiBlog from "./Pages/Mumbai/MumbaiBlog";
-import MumbaiMore from "./Pages/Mumbai/MumbaiMore";
 
 import Hawaii from "./Pages/Hawaii/Hawaii";
 import HawaiiBook from "./Pages/Hawaii/HawaiiBook";
 import HawaiiBlog from "./Pages/Hawaii/HawaiiBlog";
-import HawaiiMore from "./Pages/Hawaii/HawaiiMore";
 
 import Sydney from "./Pages/Sydney/Sydney";
 import SydneyBook from "./Pages/Sydney/SydneyBook";
 import SydneyBlog from "./Pages/Sydney/SydneyBlog";
-import SydneyMore from "./Pages/Sydney/SydneyMore";
 
 import Paris from "./Pages/Paris/Paris";
 import ParisBook from "./Pages/Paris/ParisBook";
 import ParisBlog from "./Pages/Paris/ParisBlog";
-import ParisMore from "./Pages/Paris/ParisMore";
 
 import Tokyo from "./Pages/Tokyo/Tokyo";
 import TokyoBook from "./Pages/Tokyo/TokyoBook";
 import TokyoBlog from "./Pages/Tokyo/TokyoBlog";
-import TokyoMore from "./Pages/Tokyo/TokyoMore";
 import CommingSoon from "./comming/Comming";
 import Chatbots from "./Chatbot/Chatbot";
 
@@ -93,32 +87,26 @@ function App() {
         <Route path="/egypt" element={<Egypt />} />
         <Route path="/egypt/book" element={<EgyptBook />} />
         <Route path="/egypt/blog" element={<EgyptBlog />} />
-        <Route path="/egypt/more" element={<EgyptMore />} />
         {/*  */}
         <Route path="/mumbai" element={<Mumbai />} />
         <Route path="/mumbai/book" element={<MumbaiBook />} />
         <Route path="/mumbai/blog" element={<MumbaiBlog />} />
-        <Route path="/mumbai/more" element={<MumbaiMore />} />
         {/*  */}
         <Route path="/hawaii" element={<Hawaii />} />
         <Route path="/hawaii/book" element={<HawaiiBook />} />
         <Route path="/hawaii/blog" element={<HawaiiBlog />} />
-        <Route path="/hawaii/more" element={<HawaiiMore />} />
         {/*  */}
         <Route path="/sydney" element={<Sydney />} />
         <Route path="/sydney/book" element={<SydneyBook />} />
         <Route path="/sydney/blog" element={<SydneyBlog />} />
-        <Route path="/sydney/more" element={<SydneyMore />} />
         {/*  */}
         <Route path="/paris" element={<Paris />} />
         <Route path="/paris/book" element={<ParisBook />} />
         <Route path="/paris/blog" element={<ParisBlog />} />
-        <Route path="/paris/more" element={<ParisMore />} />
         {/*  */}
         <Route path="/tokyo" element={<Tokyo />} />
         <Route path="/tokyo/book" element={<TokyoBook />} />
         <Route path="/tokyo/blog" element={<TokyoBlog />} />
-        <Route path="/tokyo/more" element={<TokyoMore />} />
         {/*  */}
       </Routes>
     </div>

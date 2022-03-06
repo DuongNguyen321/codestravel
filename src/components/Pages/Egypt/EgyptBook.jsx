@@ -2,45 +2,64 @@ import Header from "./Header2";
 import Footer from "./Footer2";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import React from "react";
 
 import "../../../Style/pages/Egypt/night.css";
 import "../../../Style/pages/Egypt/style.css";
 
-const Home = () => {
-    useEffect(() => {
-      window.scroll({
-        top: 0,
-        left: 0,
-        behavior: "smooth",
-      });
-    }, []);
-  return (
-    <section className="home" id="home">
-      <div className="content">
-        <span data-aos="fade-up" data-aos-delay="100">
-          Egypt
-        </span>
-        <h3 data-aos="fade-up" data-aos-delay="200">
-          vùng đất của Pharaohs
-        </h3>
-        <p data-aos="fade-up" data-aos-delay="400">
-          Egypt là một trong những quốc gia lâu đời nhất trên thế giới. Đây là
-          nơi người Ai Cập cổ đại đã xây dựng một nền văn minh vĩ đại trong
-          thung lũng sông Nile, với rất nhiều đền thờ, cổ vật và những tàn tích
-          ngoạn mục đáng để bạn khám phá
-        </p>
-        <Link
-          data-aos="fade-up"
-          data-aos-delay="500"
-          to="/egypt"
-          className="btn"
-        >
-          Tìm hiểu thêm
-        </Link>
-      </div>
-    </section>
-  );
-};
+class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      error: null,
+      isLoaded: false,
+      home: [],
+    };
+  }
+  componentDidMount() {
+    fetch("https://whispering-ridge-42285.herokuapp.com/pages/1")
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          this.setState({
+            isLoaded: true,
+            home: result.home,
+          });
+        },
+        (error) => {
+          this.setState({
+            isLoaded: true,
+            error,
+          });
+        }
+      );
+  }
+  render() {
+    return (
+      <section className="home" id="home">
+        <div className="content">
+          <span data-aos="fade-up" data-aos-delay="100">
+            {this.state.home.name}
+          </span>
+          <h3 data-aos="fade-up" data-aos-delay="200">
+            {this.state.home.content}
+          </h3>
+          <p data-aos="fade-up" data-aos-delay="400">
+            {this.state.home.textcontent}
+          </p>
+          <Link
+            data-aos="fade-up"
+            data-aos-delay="500"
+            to="/egypt"
+            className="btn"
+          >
+            Tìm hiểu thêm
+          </Link>
+        </div>
+      </section>
+    );
+  }
+}
 
 const Book = () => {
   return (
@@ -65,7 +84,7 @@ const Book = () => {
         </div>
         <div data-aos="zoom-in" data-aos-delay="250" className="inputBox">
           <span>Tôi có</span>
-          <input type="number"  min={2} max={8} placeholder="Từ 2-8 người" />
+          <input type="number" min={2} max={8} placeholder="Từ 2-8 người" />
         </div>
         <div data-aos="zoom-in" data-aos-delay="300" className="inputBox">
           <span>Tôi thanh toán bằng</span>
@@ -91,7 +110,11 @@ const Book = () => {
 
 export default function EgyptBook() {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
   }, []);
   return (
     <div className="Pages Egypt">

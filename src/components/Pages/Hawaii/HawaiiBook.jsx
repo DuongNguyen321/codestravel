@@ -2,47 +2,64 @@ import Header from "./Header2";
 import Footer from "./Footer2";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import React from "react";
 
 import "../../../Style/pages/Hawaii/night.css";
 import "../../../Style/pages/Hawaii/style.css";
 
-const Home = () => {
-    useEffect(() => {
-      window.scroll({
-        top: 0,
-        left: 0,
-        behavior: "smooth",
-      });
-    }, []);
-  return (
-    <section className="home" id="home">
-      <div className="content">
-        <span data-aos="fade-up" data-aos-delay="100">
-          Hawaii
-        </span>
-        <h3 data-aos="fade-up" data-aos-delay="200">
-          vùng đất của Pharaohs
-        </h3>
-        <p data-aos="fade-up" data-aos-delay="400">
-          Địa danh này là một quần thể các đảo hoang sơ giữa Thái Bình Dương mà
-          nổi bật nhất là các đảo Oahu, Maui, Big island…trong đó đảo Oahu là
-          nơi có nhiều người sinh sống nhất và cũng là trung tâm du lịch. Hawaii
-          nổi tiếng nhờ các bãi tắm dài và đẹp với nước biển trong xanh. Du
-          khách đến Hawaii là để nghỉ dưỡng, xem mặt trời mọc, mặt trời lặn và
-          văn hóa của các thổ dân đa đảo
-        </p>
-        <Link
-          data-aos="fade-up"
-          data-aos-delay="500"
-          to="/hawaii"
-          className="btn"
-        >
-          Tìm hiểu thêm
-        </Link>
-      </div>
-    </section>
-  );
-};
+class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      error: null,
+      isLoaded: false,
+      home: [],
+    };
+  }
+  componentDidMount() {
+    fetch("https://whispering-ridge-42285.herokuapp.com/pages/2")
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          this.setState({
+            isLoaded: true,
+            home: result.home,
+          });
+        },
+        (error) => {
+          this.setState({
+            isLoaded: true,
+            error,
+          });
+        }
+      );
+  }
+  render() {
+    return (
+      <section className="home" id="home">
+        <div className="content">
+          <span data-aos="fade-up" data-aos-delay="100">
+            {this.state.home.name}
+          </span>
+          <h3 data-aos="fade-up" data-aos-delay="200">
+            {this.state.home.content}
+          </h3>
+          <p data-aos="fade-up" data-aos-delay="400">
+            {this.state.home.textcontent}
+          </p>
+          <Link
+            data-aos="fade-up"
+            data-aos-delay="500"
+            to="/hawaii"
+            className="btn"
+          >
+            Tìm hiểu thêm
+          </Link>
+        </div>
+      </section>
+    );
+  }
+}
 
 const Book = () => {
   return (
@@ -50,7 +67,7 @@ const Book = () => {
       <form action="">
         <div data-aos="zoom-in" data-aos-delay="50" className="inputBox">
           <span>
-            <h1>kỳ nghỉ dưỡng được đánh giá cao nhất</h1>
+            <h1>chuyến đi được bình chọn tốt nhất</h1>
           </span>
         </div>
         <div data-aos="zoom-in" data-aos-delay="100" className="inputBox">
@@ -91,9 +108,13 @@ const Book = () => {
   );
 };
 
-export default function HawaiiBook() {
+export default function EgyptBook() {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
   }, []);
   return (
     <div className="Pages Hawaii">

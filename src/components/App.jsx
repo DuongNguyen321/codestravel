@@ -1,10 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import "swiper/css";
-import "@fortawesome/fontawesome-free/css/all.min.css";
-import "@fortawesome/fontawesome-svg-core";
-import { dom } from "@fortawesome/fontawesome-svg-core";
+
 
 import HomePage from "./Home/HomePage";
 import About from "./About";
@@ -37,9 +32,9 @@ import TokyoBlog from "./Pages/Tokyo/TokyoBlog";
 import CommingSoon from "./comming/Comming";
 import Chatbots from "./Chatbot/Chatbot";
 
-dom.watch();
 
-function App() {
+
+ function App() {
 
   window.onload = function () {
     let body = document.body;
@@ -60,20 +55,6 @@ function App() {
       btnToggle.classList.remove("fa-sun-o");
     }
   };
-  AOS.init({
-    disable: false,
-    startEvent: "DOMContentLoaded",
-    initClassName: "aos-init",
-    animatedClassName: "aos-animate",
-    disableMutationObserver: false,
-    useClassNames: false,
-    debounceDelay: 10,
-    throttleDelay: 50,
-    duration: 600,
-    offset: 150,
-    delay: 0,
-    once: true,
-  });
   return (
     <div className="App">
       <Routes>

@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import { BrowserRouter as Router } from "react-router-dom";
-import App from "./components/App";
+import Main from "./main";
 import { Auth0Provider } from "@auth0/auth0-react";
 
 const domain = "stravel.eu.auth0.com";
@@ -15,7 +15,7 @@ ReactDOM.render(
         clientId={clientId}
         redirectUri={window.location.origin}
       >
-        <App />
+        <Main />
       </Auth0Provider>
     </Router>
   </React.StrictMode>,

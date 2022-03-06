@@ -11,6 +11,12 @@ class MessageParser {
     if (lowerCaseMessage.includes("xin chào")) {
       this.actionProvider.greet();
     }
+    if (lowerCaseMessage.includes("chào")) {
+      this.actionProvider.greet();
+    }
+    if (lowerCaseMessage.includes("chao")) {
+      this.actionProvider.greet();
+    }
     if (lowerCaseMessage.includes("hello")) {
       this.actionProvider.greet();
     }
@@ -73,8 +79,11 @@ class MessageParser {
     if (lowerCaseMessage.includes("cv")) {
       this.actionProvider.handleAbout();
     }
-     if (lowerCaseMessage.includes("")) {
-       this.actionProvider.text();
+     if (lowerCaseMessage.includes("bàn phím cơ")) {
+       this.actionProvider.keyboard();
+     }
+     if (lowerCaseMessage.includes("ban phim co")) {
+       this.actionProvider.keyboard();
      }
   }
 }

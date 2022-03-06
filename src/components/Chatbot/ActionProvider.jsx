@@ -5,18 +5,22 @@ class ActionProvider {
   }
   greet = () => {
     const message = this.createChatBotMessage(
-      "Hi chào bạn, Tôi là chatbot. Tôi có thể giải đáp cho các câu hỏi thường gặp",
+      "Hi chào bạn, Tôi là chatbot. Tôi có thể giải đáp cho các câu hỏi thường gặp"
     );
 
     this.updateChatbotState(message);
   };
   text = () => {
-    const message = this.createChatBotMessage(
-      "Tôi có thể giúp gì cho bạn?",
-      {
-        widget: "learningOptions",
-      }
-    );
+    const message = this.createChatBotMessage("Tôi có thể giúp gì cho bạn?", {
+      widget: "learningOptions",
+    });
+
+    this.updateChatbotState(message);
+  };
+  keyboard = () => {
+    const message = this.createChatBotMessage("Tôi không có tay, Vậy nên tôi không chơi bàn phím cơ :(", {
+      widget: "learningOptions",
+    });
 
     this.updateChatbotState(message);
   };

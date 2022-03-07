@@ -5,9 +5,9 @@ import React, { useEffect } from "react";
 import "../../Style/citys/night.css";
 import "../../Style/citys/style.css";
 import Chat from "../../components/chatbot/MainChat";
-import vid1 from "../../assets/videos/vid-1.mp4";
-import vid2 from "../../assets/videos/vid-2.mp4";
-import vid3 from "../../assets/videos/vid-3.mp4";
+let vid1 = "https://apiforstravel.herokuapp.com/videos/vid-1.mp4";
+let vid2 = "https://apiforstravel.herokuapp.com/videos/vid-2.mp4";
+let vid3 = "https://apiforstravel.herokuapp.com/videos/vid-3.mp4";
 class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -146,7 +146,14 @@ const About = () => {
         data-aos="fade-right"
         data-aos-delay="150"
       >
-        <video src={vid1} muted autoPlay loop className="video"></video>
+        <video
+          src={vid1}
+          muted
+          autoPlay
+          loop
+          controls
+          className="video"
+        ></video>
         <div className="controls">
           <span
             className="control-btn1"

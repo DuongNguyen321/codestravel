@@ -646,20 +646,6 @@ class Contact extends React.Component {
   }
 }
 
-const brandBox = [
-  { id: 1, src: "./images/Home/1.jpg" },
-  { id: 2, src: "./images/Home/2.jpg" },
-  { id: 3, src: "./images/Home/3.jpg" },
-  { id: 4, src: "./images/Home/4.jpg" },
-  { id: 5, src: "./images/Home/5.jpg" },
-  { id: 6, src: "./images/Home/6.jpg" },
-  { id: 7, src: "./images/Home/7.jpg" },
-  { id: 8, src: "./images/Home/8.jpg" },
-  { id: 9, src: "./images/Home/9.jpg" },
-  { id: 10, src: "./images/Home/10.jpg" },
-  { id: 11, src: "./images/Home/11.jpg" },
-  { id: 12, src: "./images/Home/12.jpg" },
-];
 class Brand extends React.Component {
   constructor(props) {
     super(props);

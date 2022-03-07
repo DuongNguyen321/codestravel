@@ -5,6 +5,9 @@ import React, { useEffect } from "react";
 import "../../Style/citys/night.css";
 import "../../Style/citys/style.css";
 import { Chat } from "../Home/HomePage";
+import vid1 from "../../assets/videos/vid-1.mp4";
+import vid2 from "../../assets/videos/vid-2.mp4";
+import vid3 from "../../assets/videos/vid-3.mp4";
 class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -109,13 +112,32 @@ class Bookform extends React.Component {
   }
 }
 const About = () => {
-  const handleVidbtn = (e) => {
-    document
-      .querySelectorAll(".about .video-container .controls .control-btn")
-      .forEach((btn) => {
-        let src = btn.getAttribute("data-src");
-        document.querySelector(".about .video-container .video").src = src;
-      });
+  const handleVidbtn1 = () => {
+    document.querySelectorAll(".control-btn1").forEach((btn1) => {
+      let src = btn1.getAttribute("data-src");
+      btn1.classList.add("active");
+      document.querySelector(".control-btn2").classList.remove("active");
+      document.querySelector(".control-btn3").classList.remove("active");
+      document.querySelector(".about .video-container .video").src = src;
+    });
+  };
+  const handleVidbtn2 = () => {
+    document.querySelectorAll(".control-btn2").forEach((btn2) => {
+      let src = btn2.getAttribute("data-src");
+      btn2.classList.add("active");
+      document.querySelector(".control-btn1").classList.remove("active");
+      document.querySelector(".control-btn3").classList.remove("active");
+      document.querySelector(".about .video-container .video").src = src;
+    });
+  };
+  const handleVidbtn3 = () => {
+    document.querySelectorAll(".control-btn3").forEach((btn3) => {
+      let src = btn3.getAttribute("data-src");
+      btn3.classList.add("active");
+      document.querySelector(".control-btn1").classList.remove("active");
+      document.querySelector(".control-btn2").classList.remove("active");
+      document.querySelector(".about .video-container .video").src = src;
+    });
   };
   return (
     <section className="about" id="about">
@@ -124,28 +146,22 @@ const About = () => {
         data-aos="fade-right"
         data-aos-delay="150"
       >
-        <video
-          src="/videos/vid-1.mp4"
-          muted
-          autoPlay
-          loop
-          className="video"
-        ></video>
+        <video src={vid1} muted autoPlay loop className="video"></video>
         <div className="controls">
           <span
-            className="control-btn"
-            data-src="/videos/vid-1.mp4"
-            onClick={handleVidbtn}
+            className="control-btn1"
+            data-src={vid1}
+            onClick={handleVidbtn1}
           ></span>
           <span
-            className="control-btn"
-            data-src="/videos/vid-2.mp4"
-            onClick={handleVidbtn}
+            className="control-btn2"
+            data-src={vid2}
+            onClick={handleVidbtn2}
           ></span>
           <span
-            className="control-btn"
-            data-src="/videos/vid-3.mp4"
-            onClick={handleVidbtn}
+            className="control-btn3"
+            data-src={vid3}
+            onClick={handleVidbtn3}
           ></span>
         </div>
       </div>

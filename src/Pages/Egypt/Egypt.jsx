@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import React, { useEffect } from "react";
 import "../../Style/citys/night.css";
 import "../../Style/citys/style.css";
-import { Chat } from "../Home/HomePage";
+import Chat from "../../components/chatbot/MainChat";
 import vid1 from "../../assets/videos/vid-1.mp4"
 import vid2 from "../../assets/videos/vid-2.mp4"
 import vid3 from "../../assets/videos/vid-3.mp4"
@@ -68,7 +68,7 @@ class Bookform extends React.Component {
     this.state = {
       error: null,
       isLoaded: false,
-      Book: [],
+      Book: {},
     };
   }
   componentDidMount() {

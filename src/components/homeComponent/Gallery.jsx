@@ -1,26 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
-class Tokyo extends React.Component {
+
+export default class Gallery extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       error: null,
       isLoaded: false,
-      TokyoHeading: [],
-      TokyoBox: [],
-      Tokyolink: "",
+      galleryHeading: [],
+      galleryBox: [],
     };
   }
+
   componentDidMount() {
-    fetch("https://apiforstravel.herokuapp.com/gallery")
+    fetch("https://apiforstravel.herokuapp.com/home")
       .then((res) => res.json())
       .then(
         (result) => {
           this.setState({
             isLoaded: true,
-            TokyoHeading: result.TokyoHeading,
-            TokyoBox: result.TokyoBox,
-            Tokyolink: result.Tokyolink,
+            galleryHeading: result.galleryHeading,
+            galleryBox: result.galleryBox,
           });
         },
         (error) => {
@@ -35,24 +35,27 @@ class Tokyo extends React.Component {
     return (
       <section className="gallery" id="gallery">
         <h1 className="heading">
-          {this.state.TokyoHeading.map((TokyoHeading) => {
+          {this.state.galleryHeading.map((galleryHeading) => {
             return (
-              <span key={TokyoHeading.id} className={TokyoHeading.className}>
-                {TokyoHeading.text}
+              <span
+                key={galleryHeading.id}
+                className={galleryHeading.className}
+              >
+                {galleryHeading.text}
               </span>
             );
           })}
         </h1>
         <div className="box-container">
-          {this.state.TokyoBox.map((TokyoBox) => {
+          {this.state.galleryBox.map((galleryBox) => {
             return (
-              <div className="box" key={TokyoBox.id}>
-                <img src={TokyoBox.src} alt={TokyoBox.h3} />
+              <div className="box" key={galleryBox.id}>
+                <img src={galleryBox.src} alt={galleryBox.h3} />
                 <div className="content">
-                  <h3>Tokyo</h3>
-                  <p>Truyền Thống Và Tương Lai</p>
-                  <Link to={this.state.Tokyolink} className="btn">
-                    Đặt Ngay
+                  <h3>{galleryBox.h3}</h3>
+                  <p>{galleryBox.p}</p>
+                  <Link to="/images" className="btn">
+                    Xem thêm
                   </Link>
                 </div>
               </div>
@@ -63,4 +66,3 @@ class Tokyo extends React.Component {
     );
   }
 }
-export default Tokyo;

@@ -33,7 +33,7 @@ class Hawaii extends React.Component {
   }
   render() {
     return (
-      <section className="gallery" id="gallery">
+      <section className="gallery" id="hawaii">
         <h1 className="heading">
           {this.state.HawaiiHeading.map((HawaiiHeading) => {
             return (

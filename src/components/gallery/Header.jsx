@@ -5,45 +5,45 @@ import Login from "../login/Login";
 const navbarItems = [
   {
     id: 1,
-    text: "Trang chủ",
+    text: "Tổng Hợp",
 
     href: "#home",
   },
   {
     id: 2,
-    text: "Đặt Lịch",
+    text: "Egypt",
 
-    href: "#book",
+    href: "#egypt",
   },
   {
     id: 3,
-    text: "Ưu Đãi",
+    text: "Tokyo",
 
-    href: "#packages",
+    href: "#tokyo",
   },
   {
     id: 4,
-    text: "Dịch Vụ",
+    text: "Paris",
 
-    href: "#services",
+    href: "#paris",
   },
   {
     id: 5,
-    text: "Thư viện",
+    text: "Sydney",
 
-    href: "#gallery",
+    href: "#sydney",
   },
   {
     id: 6,
-    text: "Đánh Giá",
+    text: "Hawaii",
 
-    href: "#review",
+    href: "#hawaii",
   },
   {
     id: 7,
-    text: "Liên hệ",
+    text: "Mumbai",
 
-    href: "#contact",
+    href: "#mumbai",
   },
 ];
 
@@ -91,10 +91,10 @@ function Header(props) {
 
   const handleSearch = (e) => {
     let searchBtn = document.getElementById("search-btn");
-    let formchat = document.querySelector(".formchat");
+    let searchBar = document.querySelector(".search-bar-container");
 
     searchBtn.classList.toggle("fa-times");
-    formchat.classList.toggle("active");
+    searchBar.classList.toggle("active");
   };
   const handleMenu = (e) => {
     let navbar = document.querySelector(".navbar");
@@ -138,6 +138,15 @@ function Header(props) {
         <i className="fas fa-search" id="search-btn" onClick={handleSearch} />
         <i className="fas fa-user" id="login-btn" onClick={handleLogin} />
       </div>
+      <form action="" className="search-bar-container">
+        <input
+          type="text"
+          name="search"
+          id="search-bar"
+          placeholder="Tìm kiếm..."
+        />
+        <label htmlFor="search-bar" id="search-btn" />
+      </form>
     </header>
   );
 }

@@ -33,7 +33,7 @@ import { Link } from "react-router-dom";
    }
    render() {
      return (
-       <section className="gallery" id="gallery">
+       <section className="gallery" id="home">
          <h1 className="heading">
            {this.state.HomeHeading.map((HomeHeading) => {
              return (

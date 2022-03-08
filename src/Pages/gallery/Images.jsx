@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import Header from "../../components/homeComponent/Header";
-import Footer from "../../components/homeComponent/Footer";
+import Header from "../../components/gallery/Header";
+import Footer from "../../components/gallery/Footer";
 import Egypt from "../../components/gallery/Egypt";
 import Tokyo from "../../components/gallery/Tokyo";
 import Paris from "../../components/gallery/Paris";

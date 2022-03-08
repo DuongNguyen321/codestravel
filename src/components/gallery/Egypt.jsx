@@ -33,7 +33,7 @@ class Egypt extends React.Component {
   }
   render() {
     return (
-      <section className="gallery" id="gallery">
+      <section className="gallery" id="egypt">
         <h1 className="heading">
           {this.state.EgyptHeading.map((EgyptHeading) => {
             return (

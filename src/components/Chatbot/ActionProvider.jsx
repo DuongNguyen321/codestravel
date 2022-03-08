@@ -74,6 +74,66 @@ class ActionProvider {
 
     this.updateChatbotState(message);
   };
+  handleEgypt = () => {
+    const message = this.createChatBotMessage(
+      "Bạn muốn tìm hiểu thêm về Egypt ?",
+      {
+        widget: "egyptLinks",
+      }
+    );
+
+    this.updateChatbotState(message);
+  };
+  handleHawaii = () => {
+    const message = this.createChatBotMessage(
+      "Bạn muốn tìm hiểu thêm về Hawaii ?",
+      {
+        widget: "hawaiiLinks",
+      }
+    );
+
+    this.updateChatbotState(message);
+  };
+  handleMumbai = () => {
+    const message = this.createChatBotMessage(
+      "Bạn muốn tìm hiểu thêm về Mumbai ?",
+      {
+        widget: "mumbaiLinks",
+      }
+    );
+
+    this.updateChatbotState(message);
+  };
+  handleParis = () => {
+    const message = this.createChatBotMessage(
+      "Bạn muốn tìm hiểu thêm về Paris ?",
+      {
+        widget: "parisLinks",
+      }
+    );
+
+    this.updateChatbotState(message);
+  };
+  handleSydney = () => {
+    const message = this.createChatBotMessage(
+      "Bạn muốn tìm hiểu thêm về Sydney ?",
+      {
+        widget: "sydneyLinks",
+      }
+    );
+
+    this.updateChatbotState(message);
+  };
+  handleTokyo = () => {
+    const message = this.createChatBotMessage(
+      "Bạn muốn tìm hiểu thêm về Tokyo ?",
+      {
+        widget: "tokyoLinks",
+      }
+    );
+
+    this.updateChatbotState(message);
+  };
 
   updateChatbotState(message) {
     this.setState((prevState) => ({

@@ -128,6 +128,144 @@ const config = {
         ],
       },
     },
+    {
+      widgetName: "egyptLinks",
+      widgetFunc: (props) => <LinkList {...props} />,
+      props: {
+        options: [
+          {
+            text: "Xem thêm về các chuyến du lịch tới Egypt",
+            url: "/egypt",
+            id: 1,
+          },
+          {
+            text: "Đặt chuyến du lịch tới Egypt",
+            url: "/egypt/book",
+            id: 2,
+          },
+          {
+            text: "xem thêm các bức ảnh đẹp về Egypt",
+            url: "/images",
+            id: 3,
+          },
+        ],
+      },
+    },
+    {
+      widgetName: "hawaiiLinks",
+      widgetFunc: (props) => <LinkList {...props} />,
+      props: {
+        options: [
+          {
+            text: "Xem thêm về các chuyến du lịch tới Hawaii",
+            url: "/hawaii",
+            id: 1,
+          },
+          {
+            text: "Đặt chuyến du lịch tới Hawaii",
+            url: "/hawaii/book",
+            id: 2,
+          },
+          {
+            text: "xem thêm các bức ảnh đẹp về Hawaii",
+            url: "/images",
+            id: 3,
+          },
+        ],
+      },
+    },
+    {
+      widgetName: "mumbaiLinks",
+      widgetFunc: (props) => <LinkList {...props} />,
+      props: {
+        options: [
+          {
+            text: "Xem thêm về các chuyến du lịch tới Mumbai",
+            url: "/mumbai",
+            id: 1,
+          },
+          {
+            text: "Đặt chuyến du lịch tới Mumbai",
+            url: "/mumbai/book",
+            id: 2,
+          },
+          {
+            text: "xem thêm các bức ảnh đẹp về Mumbai",
+            url: "/images",
+            id: 3,
+          },
+        ],
+      },
+    },
+    {
+      widgetName: "parisLinks",
+      widgetFunc: (props) => <LinkList {...props} />,
+      props: {
+        options: [
+          {
+            text: "Xem thêm về các chuyến du lịch tới Paris",
+            url: "/paris",
+            id: 1,
+          },
+          {
+            text: "Đặt chuyến du lịch tới Paris",
+            url: "/paris/book",
+            id: 2,
+          },
+          {
+            text: "xem thêm các bức ảnh đẹp về Paris",
+            url: "/images",
+            id: 3,
+          },
+        ],
+      },
+    },
+    {
+      widgetName: "sydneyLinks",
+      widgetFunc: (props) => <LinkList {...props} />,
+      props: {
+        options: [
+          {
+            text: "Xem thêm về các chuyến du lịch tới Sydney",
+            url: "/sydney",
+            id: 1,
+          },
+          {
+            text: "Đặt chuyến du lịch tới Sydney",
+            url: "/sydney/book",
+            id: 2,
+          },
+          {
+            text: "xem thêm các bức ảnh đẹp về Sydney",
+            url: "/images",
+            id: 3,
+          },
+        ],
+      },
+    },
+    {
+      widgetName: "tokyoLinks",
+      widgetFunc: (props) => <LinkList {...props} />,
+      props: {
+        options: [
+          {
+            text: "Xem thêm về các chuyến du lịch tới Tokyo",
+            url: "/tokyo",
+            id: 1,
+          },
+          {
+            text: "Đặt chuyến du lịch tới Tokyo",
+            url: "/tokyo/book",
+            id: 2,
+          },
+          {
+            text: "xem thêm các bức ảnh đẹp về Tokyo",
+            url: "/images",
+            id: 3,
+          },
+        ],
+      },
+    },
   ],
 };
 export default config;

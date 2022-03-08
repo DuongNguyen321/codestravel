@@ -79,11 +79,35 @@ class MessageParser {
     if (lowerCaseMessage.includes("cv")) {
       this.actionProvider.handleAbout();
     }
-     if (lowerCaseMessage.includes("bàn phím cơ")) {
+     if (lowerCaseMessage.includes("bàn phím")) {
        this.actionProvider.keyboard();
      }
-     if (lowerCaseMessage.includes("ban phim co")) {
+     if (lowerCaseMessage.includes("ban phim")) {
        this.actionProvider.keyboard();
+     }
+     if (lowerCaseMessage.includes("egypt")) {
+       this.actionProvider.handleEgypt();
+     }
+     if (lowerCaseMessage.includes("hawaii")) {
+       this.actionProvider.handleHawaii();
+     }
+     if (lowerCaseMessage.includes("hawai")) {
+       this.actionProvider.handleHawaii();
+     }
+     if (lowerCaseMessage.includes("mumbai")) {
+       this.actionProvider.handleMumbai();
+     }
+     if (lowerCaseMessage.includes("paris")) {
+       this.actionProvider.handleParis();
+     }
+     if (lowerCaseMessage.includes("sydney")) {
+       this.actionProvider.handleSydney();
+     }
+     if (lowerCaseMessage.includes("tokyo")) {
+       this.actionProvider.handleTokyo();
+     }
+     if (lowerCaseMessage.includes("")) {
+       this.actionProvider.text();
      }
   }
 }

@@ -56,7 +56,6 @@ html {
   font-size: 3.5rem;
   background: rgba(255, 165, 0, 0.2);
   color: var(--orange);
-  border-radius: 0.5rem;
   padding: 0.2rem 1rem;
 }
 .light .HomePages .heading span.space {

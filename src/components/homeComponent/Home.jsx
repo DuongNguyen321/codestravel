@@ -1,5 +1,8 @@
 import { useAuth0 } from "@auth0/auth0-react";
-
+import { useEffect } from "react";
+import vid1 from "../../assets/videos/vid-1.mp4";
+import vid2 from "../../assets/videos/vid-2.mp4";
+import vid3 from "../../assets/videos/vid-3.mp4";
 const homeContent = [
   { id: 1, text: "Khám phá các vùng đất mới cùng Stravel" },
   { id: 2, text: "Đang có ưu đãi mới !!!" },
@@ -8,17 +11,17 @@ const homeControls = [
   {
     id: 1,
     className: "vid-btn active",
-    dataSrc: "https://apiforstravel.herokuapp.com/videos/vid-1.mp4",
+    dataSrc: vid1,
   },
   {
     id: 2,
     className: "vid-btn",
-    dataSrc: "https://apiforstravel.herokuapp.com/videos/vid-2.mp4",
+    dataSrc: vid2,
   },
   {
     id: 3,
     className: "vid-btn",
-    dataSrc: "https://apiforstravel.herokuapp.com/videos/vid-3.mp4",
+    dataSrc: vid3,
   },
 ];
 
@@ -58,7 +61,7 @@ function Homecontent() {
 }
 
 export default function Home(props) {
-  const handleVidbtn = (e) => {
+  useEffect(() => {
     let videoBtn = document.querySelectorAll(".vid-btn");
     videoBtn.forEach((btn) => {
       btn.addEventListener("click", () => {
@@ -68,7 +71,7 @@ export default function Home(props) {
         document.querySelector("#video-slider").src = src;
       });
     });
-  };
+  }, []);
   return (
     <section className="home" id="home">
       <Homecontent />
@@ -76,7 +79,6 @@ export default function Home(props) {
         {homeControls.map((homeControls) => {
           return (
             <span
-              onClick={handleVidbtn}
               key={homeControls.id}
               className={homeControls.className}
               data-src={homeControls.dataSrc}
@@ -85,13 +87,7 @@ export default function Home(props) {
         })}
       </div>
       <div className="video-container">
-        <video
-          src="https://apiforstravel.herokuapp.com/videos/vid-3.mp4"
-          id="video-slider"
-          loop
-          autoPlay
-          muted
-        ></video>
+        <video src={vid3} id="video-slider" loop autoPlay muted></video>
       </div>
     </section>
   );

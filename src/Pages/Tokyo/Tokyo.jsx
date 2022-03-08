@@ -5,9 +5,9 @@ import React, { useEffect } from "react";
 import "../../Style/citys/night.css";
 import "../../Style/citys/style.css";
 import Chat from "../../components/chatbot/MainChat";
-let vid1 = "https://apiforstravel.herokuapp.com/videos/vid-1.mp4";
-let vid2 = "https://apiforstravel.herokuapp.com/videos/vid-2.mp4";
-let vid3 = "https://apiforstravel.herokuapp.com/videos/vid-3.mp4";
+import vid1 from "../../assets/videos/vid-1.mp4";
+import vid2 from "../../assets/videos/vid-2.mp4";
+import vid3 from "../../assets/videos/vid-3.mp4";
 class Home extends React.Component {
   constructor(props) {
     super(props);

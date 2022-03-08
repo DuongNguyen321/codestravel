@@ -3,6 +3,8 @@ import "./mainchat.css"
 export default function Chat() {
   function handleClick() {
     let formchat = document.querySelector(".formchat");
+    let searchactive = document.querySelector(".fas.fa-search");
+    searchactive.classList.toggle("fa-times");
     formchat.classList.toggle("active");
   }
   return (

@@ -16,7 +16,6 @@ import Contact from "../../components/homeComponent/Contact";
 import Brand from "../../components/homeComponent/Brand";
 import Chat from "../../components/chatbot/MainChat";
 // https://apiforstravel.herokuapp.com/home/
-
 function HomePage(props) {
   useEffect(() => {
     window.scroll({

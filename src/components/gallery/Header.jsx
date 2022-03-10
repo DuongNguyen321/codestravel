@@ -91,10 +91,10 @@ function Header(props) {
 
   const handleSearch = (e) => {
     let searchBtn = document.getElementById("search-btn");
-    let searchBar = document.querySelector(".search-bar-container");
+    let formchat = document.querySelector(".formchat");
 
     searchBtn.classList.toggle("fa-times");
-    searchBar.classList.toggle("active");
+    formchat.classList.toggle("active");
   };
   const handleMenu = (e) => {
     let navbar = document.querySelector(".navbar");
@@ -138,15 +138,6 @@ function Header(props) {
         <i className="fas fa-search" id="search-btn" onClick={handleSearch} />
         <i className="fas fa-user" id="login-btn" onClick={handleLogin} />
       </div>
-      <form action="" className="search-bar-container">
-        <input
-          type="text"
-          name="search"
-          id="search-bar"
-          placeholder="Tìm kiếm..."
-        />
-        <label htmlFor="search-bar" id="search-btn" />
-      </form>
     </header>
   );
 }

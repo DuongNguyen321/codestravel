@@ -6,7 +6,16 @@
   font-family: "Poppins", sans-serif;
   background-color: #fefefe;
 }
-
+.react-chatbot-kit-chat-bot-avatar-letter{
+  background-color:#333;
+  width: 30px;
+  height: 30px;
+  display: flex;
+align-content: center;
+align-items: center;
+justify-content: center;
+  border-radius: 50%;
+}
 .Chatbot .react-chatbot-kit-chat-message-container::-webkit-scrollbar {
   width: 0.4rem;
 }

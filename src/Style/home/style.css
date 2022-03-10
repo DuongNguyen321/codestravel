@@ -67,6 +67,8 @@ html {
   background: rgba(255, 165, 0, 0.2);
   color: var(--orange);
   padding: 0.2rem 1rem;
+  border-radius: 3px;
+
 }
 .light .HomePages .heading span.space {
   background: 0 0;

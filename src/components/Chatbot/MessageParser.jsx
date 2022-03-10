@@ -106,6 +106,33 @@ class MessageParser {
      if (lowerCaseMessage.includes("tokyo")) {
        this.actionProvider.handleTokyo();
      }
+     if (lowerCaseMessage.includes("russia")) {
+       this.actionProvider.handleRussia();
+     }
+     if (lowerCaseMessage.includes("nga")) {
+       this.actionProvider.handleRussia();
+     }
+     if (lowerCaseMessage.includes("trung")) {
+       this.actionProvider.handleChina();
+     }
+     if (lowerCaseMessage.includes("china")) {
+       this.actionProvider.handleChina();
+     }
+     if (lowerCaseMessage.includes("anh")) {
+       this.actionProvider.handleEngland();
+     }
+     if (lowerCaseMessage.includes("england")) {
+       this.actionProvider.handleEngland();
+     }
+     if (lowerCaseMessage.includes("lào cai")) {
+       this.actionProvider.handleLaocai();
+     }
+     if (lowerCaseMessage.includes("lao cai")) {
+       this.actionProvider.handleLaocai();
+     }
+     if (lowerCaseMessage.includes("laocai")) {
+       this.actionProvider.handleLaocai();
+     }
      if (lowerCaseMessage.includes("")) {
        this.actionProvider.text();
      }

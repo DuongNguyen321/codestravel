@@ -7,6 +7,10 @@ import Paris from "../../components/gallery/Paris";
 import Sydney from "../../components/gallery/Sydney";
 import Hawaii from "../../components/gallery/Hawaii";
 import Mumbai from "../../components/gallery/Mumbai";
+import Russia from "../../components/gallery/Russia";
+import China from "../../components/gallery/China"
+import England from "../../components/gallery/England";
+import Laocai from "../../components/gallery/Laocai";
 import Chat from "../../components/chatbot/MainChat";
 import Home from "../../components/gallery/Home";
 // https://apiforstravel.herokuapp.com/images/
@@ -24,11 +28,15 @@ export default function Images() {
       <Header />
       <div className="container" style={{ marginTop: 50 }}>
       <Home/>
+      <Laocai/>
       <Egypt/>
+      <Russia/>
       <Tokyo/>
       <Paris/>
+      <China/>
       <Sydney/>
       <Hawaii/>
+      <England/>
       <Mumbai/>
       <Chat/>
       </div>

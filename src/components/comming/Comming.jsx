@@ -41,7 +41,11 @@ const Section = () => {
   }
   return (
     <section>
-      <img alt="img" src="./images/Home/curve.png" className="wave" />
+      <img
+        alt="img"
+        src="https://apiforstravel.herokuapp.com/images/Home/curve.png"
+        className="wave"
+      />
       <div className="contentBx">
         <h2>Comming Soon...</h2>
         <p>
@@ -70,22 +74,22 @@ const Section = () => {
         <button onClick={handleAdd}>Thông báo cho tôi</button>
       </div>
       <div className="imgBx">
-        <img alt="img" src="./images/Home/man.png" />
+        <img alt="img" src="https://apiforstravel.herokuapp.com/images/Home/man.png" />
       </div>
       <ul className="sci">
         <li>
           <Link to="/">
-            <img alt="img" src="./images/Home/facebook.png" />
+            <img alt="img" src="https://apiforstravel.herokuapp.com/images/Home/facebook.png" />
           </Link>
         </li>
         <li>
           <Link to="/">
-            <img alt="img" src="./images/Home/instagram.png" />
+            <img alt="img" src="https://apiforstravel.herokuapp.com/images/Home/instagram.png" />
           </Link>
         </li>
         <li>
           <Link to="/">
-            <img alt="img" src="./images/Home/twitter.png" />
+            <img alt="img" src="https://apiforstravel.herokuapp.com/images/Home/twitter.png" />
           </Link>
         </li>
       </ul>
@@ -99,7 +103,7 @@ const Newsletter = () => {
   }
   return (
     <div className="newsletter">
-      <img alt="img" src="./images/Home/close.png" onClick={handleRemove} />
+      <img alt="img" src="https://apiforstravel.herokuapp.com/images/Home/close.png" onClick={handleRemove} />
       <h2>thông báo cho tôi</h2>
       <p>Nhập email của bạn</p>
       <div className="inputBox">
@@ -116,7 +120,7 @@ export default function CommingSoon() {
     let newsletter = document.querySelector(".newsletter");
     newsletter.classList.remove("active");
   };
-  let countDate = new Date("March 8,2022 00:00:00").getTime();
+  let countDate = new Date("December 31,2022 00:00:00").getTime();
   useEffect(() => {
     function newYear() {
       let now = new Date().getTime();

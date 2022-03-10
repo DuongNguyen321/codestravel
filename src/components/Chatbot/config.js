@@ -266,6 +266,98 @@ const config = {
         ],
       },
     },
+    {
+      widgetName: "russiaLinks",
+      widgetFunc: (props) => <LinkList {...props} />,
+      props: {
+        options: [
+          {
+            text: "Xem thêm về các chuyến du lịch tới Nước Nga",
+            url: "/russia",
+            id: 1,
+          },
+          {
+            text: "Đặt chuyến du lịch tới Nước Nga",
+            url: "/russia/book",
+            id: 2,
+          },
+          {
+            text: "xem thêm các bức ảnh đẹp về Nước Nga",
+            url: "/images",
+            id: 3,
+          },
+        ],
+      },
+    },
+    {
+      widgetName: "chinaLinks",
+      widgetFunc: (props) => <LinkList {...props} />,
+      props: {
+        options: [
+          {
+            text: "Xem thêm về các chuyến du lịch tới Trung Quốc",
+            url: "/china",
+            id: 1,
+          },
+          {
+            text: "Đặt chuyến du lịch tới Trung Quốc",
+            url: "/china/book",
+            id: 2,
+          },
+          {
+            text: "xem thêm các bức ảnh đẹp về Trung Quốc",
+            url: "/images",
+            id: 3,
+          },
+        ],
+      },
+    },
+    {
+      widgetName: "englandLinks",
+      widgetFunc: (props) => <LinkList {...props} />,
+      props: {
+        options: [
+          {
+            text: "Xem thêm về các chuyến du lịch tới Nước Anh",
+            url: "/england",
+            id: 1,
+          },
+          {
+            text: "Đặt chuyến du lịch tới Nước Anh",
+            url: "/england/book",
+            id: 2,
+          },
+          {
+            text: "xem thêm các bức ảnh đẹp về Nước Anh",
+            url: "/images",
+            id: 3,
+          },
+        ],
+      },
+    },
+    {
+      widgetName: "laocaiLinks",
+      widgetFunc: (props) => <LinkList {...props} />,
+      props: {
+        options: [
+          {
+            text: "Xem thêm về các chuyến du lịch tới Tp.Lào Cai",
+            url: "/laocai",
+            id: 1,
+          },
+          {
+            text: "Đặt chuyến du lịch tới Tp.Lào Cai",
+            url: "/laocai/book",
+            id: 2,
+          },
+          {
+            text: "xem thêm các bức ảnh đẹp về Tp.Lào Cai",
+            url: "/images",
+            id: 3,
+          },
+        ],
+      },
+    },
   ],
 };
 export default config;

@@ -134,6 +134,46 @@ class ActionProvider {
 
     this.updateChatbotState(message);
   };
+  handleRussia = () => {
+    const message = this.createChatBotMessage(
+      "Bạn muốn tìm hiểu thêm về Nước Nga ?",
+      {
+        widget: "russiaLinks",
+      }
+    );
+
+    this.updateChatbotState(message);
+  };
+  handleChina = () => {
+    const message = this.createChatBotMessage(
+      "Bạn muốn tìm hiểu thêm về Trung Quốc ?",
+      {
+        widget: "chinaLinks",
+      }
+    );
+
+    this.updateChatbotState(message);
+  };
+  handleEngland = () => {
+    const message = this.createChatBotMessage(
+      "Bạn muốn tìm hiểu thêm về Nước Anh ?",
+      {
+        widget: "englandLinks",
+      }
+    );
+
+    this.updateChatbotState(message);
+  };
+  handleLaocai = () => {
+    const message = this.createChatBotMessage(
+      "Bạn muốn tìm hiểu thêm về Tp.Lào Cai ?",
+      {
+        widget: "laocaiLinks",
+      }
+    );
+
+    this.updateChatbotState(message);
+  };
 
   updateChatbotState(message) {
     this.setState((prevState) => ({

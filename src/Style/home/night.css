@@ -417,9 +417,6 @@ html::-webkit-scrollbar-thumb {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  min-height: 900px;
-  max-height: 1300px;
-  overflow-y: scroll;
 }
 .dark .HomePages .packages .box-container .box {
   flex: 1 1 30rem;

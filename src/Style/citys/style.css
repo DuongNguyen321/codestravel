@@ -725,6 +725,471 @@ html::-webkit-scrollbar-thumb {
 .light .Pages .credit span {
   color: var(--orange);
 }
+
+.light .Pages.Tokyo .home {
+  margin: 0 auto;
+  margin-top: 9rem;
+  width: 90%;
+  border-radius: 1rem;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(17, 17, 17, 0.7)),
+      to(rgba(17, 17, 17, 0.7))
+    ),
+    url( ../../assets/images/Tokyo/home-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+    url( ../../assets/images/Tokyo/home-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 80vh;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+.light .Pages.Tokyo .banner {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(17, 17, 17, 0.7)),
+      to(rgba(17, 17, 17, 0.7))
+    ),
+    url( ../../assets/images/Tokyo/banner-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+    url( ../../assets/images/Tokyo/banner-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 2rem;
+  background-attachment: fixed;
+  text-align: center;
+}
+.light .Pages.Sydney .home {
+  margin: 0 auto;
+  margin-top: 9rem;
+  width: 90%;
+  border-radius: 1rem;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(17, 17, 17, 0.7)),
+      to(rgba(17, 17, 17, 0.7))
+    ),
+    url( ../../assets/images/Sydney/home-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+    url( ../../assets/images/Sydney/home-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 80vh;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+.light .Pages.Sydney .banner {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(17, 17, 17, 0.7)),
+      to(rgba(17, 17, 17, 0.7))
+    ),
+    url( ../../assets/images/Sydney/banner-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+    url( ../../assets/images/Sydney/banner-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 2rem;
+  background-attachment: fixed;
+  text-align: center;
+}
+.light .Pages.Paris .home {
+  margin: 0 auto;
+  margin-top: 9rem;
+  width: 90%;
+  border-radius: 1rem;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(17, 17, 17, 0.7)),
+      to(rgba(17, 17, 17, 0.7))
+    ),
+    url( ../../assets/images/Paris/home-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+    url( ../../assets/images/Paris/home-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 80vh;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+.light .Pages.Paris .banner {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(17, 17, 17, 0.7)),
+      to(rgba(17, 17, 17, 0.7))
+    ),
+    url( ../../assets/images/Paris/banner-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+    url( ../../assets/images/Paris/banner-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 2rem;
+  background-attachment: fixed;
+  text-align: center;
+}
+.light .Pages.Mumbai .home {
+  margin: 0 auto;
+  margin-top: 9rem;
+  width: 90%;
+  border-radius: 1rem;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(17, 17, 17, 0.7)),
+      to(rgba(17, 17, 17, 0.7))
+    ),
+    url( ../../assets/images/Mumbai/home-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+    url( ../../assets/images/Mumbai/home-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 80vh;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}.light .Pages.Mumbai .banner {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(17, 17, 17, 0.7)),
+      to(rgba(17, 17, 17, 0.7))
+    ),
+    url( ../../assets/images/Mumbai/banner-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+    url( ../../assets/images/Mumbai/banner-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 2rem;
+  background-attachment: fixed;
+  text-align: center;
+}
+.light .Pages.Egypt .home {
+  margin: 0 auto;
+  margin-top: 9rem;
+  width: 90%;
+  border-radius: 1rem;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(17, 17, 17, 0.7)),
+      to(rgba(17, 17, 17, 0.7))
+    ),
+    url(../../assets/images/Egypt/home-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+    url(../../assets/images/Egypt/home-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 80vh;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+.light .Pages.Egypt .banner {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(17, 17, 17, 0.7)),
+      to(rgba(17, 17, 17, 0.7))
+    ),
+    url( ../../assets/images/Egypt/banner-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+    url( ../../assets/images/Egypt/banner-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 2rem;
+  background-attachment: fixed;
+  text-align: center;
+}
+.light .Pages.Hawaii .home {
+  margin: 0 auto;
+  margin-top: 9rem;
+  width: 90%;
+  border-radius: 1rem;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(17, 17, 17, 0.7)),
+      to(rgba(17, 17, 17, 0.7))
+    ),
+    url( ../../assets/images/Hawaii/home-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+    url( ../../assets/images/Hawaii/home-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 80vh;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}.light .Pages.Hawaii .banner {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(17, 17, 17, 0.7)),
+      to(rgba(17, 17, 17, 0.7))
+    ),
+    url( ../../assets/images/Hawaii/banner-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+    url( ../../assets/images/Hawaii/banner-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 2rem;
+  background-attachment: fixed;
+  text-align: center;
+}
+.light .Pages.Russia .home {
+  margin: 0 auto;
+  margin-top: 9rem;
+  width: 90%;
+  border-radius: 1rem;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(17, 17, 17, 0.7)),
+      to(rgba(17, 17, 17, 0.7))
+    ),
+    url( ../../assets/images/Russia/home-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+    url( ../../assets/images/Russia/home-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 80vh;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}.light .Pages.Russia .banner {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(17, 17, 17, 0.7)),
+      to(rgba(17, 17, 17, 0.7))
+    ),
+    url( ../../assets/images/Russia/banner-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+    url( ../../assets/images/Russia/banner-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 2rem;
+  background-attachment: fixed;
+  text-align: center;
+}
+.light .Pages.China .home {
+  margin: 0 auto;
+  margin-top: 9rem;
+  width: 90%;
+  border-radius: 1rem;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(17, 17, 17, 0.7)),
+      to(rgba(17, 17, 17, 0.7))
+    ),
+    url( ../../assets/images/China/home-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+    url( ../../assets/images/China/home-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 80vh;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}.light .Pages.China .banner {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(17, 17, 17, 0.7)),
+      to(rgba(17, 17, 17, 0.7))
+    ),
+    url( ../../assets/images/China/banner-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+    url( ../../assets/images/China/banner-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 2rem;
+  background-attachment: fixed;
+  text-align: center;
+}
+.light .Pages.England .home {
+  margin: 0 auto;
+  margin-top: 9rem;
+  width: 90%;
+  border-radius: 1rem;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(17, 17, 17, 0.7)),
+      to(rgba(17, 17, 17, 0.7))
+    ),
+    url( ../../assets/images/England/home-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+    url( ../../assets/images/England/home-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 80vh;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}.light .Pages.England .banner {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(17, 17, 17, 0.7)),
+      to(rgba(17, 17, 17, 0.7))
+    ),
+    url( ../../assets/images/England/banner-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+    url( ../../assets/images/England/banner-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 2rem;
+  background-attachment: fixed;
+  text-align: center;
+}
+.light .Pages.Laocai .home {
+  margin: 0 auto;
+  margin-top: 9rem;
+  width: 90%;
+  border-radius: 1rem;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(17, 17, 17, 0.7)),
+      to(rgba(17, 17, 17, 0.7))
+    ),
+    url( ../../assets/images/Laocai/home-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+    url( ../../assets/images/Laocai/home-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 80vh;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+}.light .Pages.Laocai .banner {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(17, 17, 17, 0.7)),
+      to(rgba(17, 17, 17, 0.7))
+    ),
+    url( ../../assets/images/Laocai/banner-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+    url( ../../assets/images/Laocai/banner-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 2rem;
+  background-attachment: fixed;
+  text-align: center;
+}
 @media (max-width: 1030px) {
   .light .Pages .btn-toggle {
     right: 22%;

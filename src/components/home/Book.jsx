@@ -71,7 +71,6 @@ export default class Book extends React.Component {
                   );
                 })}
               </select>
-              <input type="text" placeholder="Địa điểm chính xác" />
             </div>
 
             <div className="inputBox">
@@ -82,11 +81,7 @@ export default class Book extends React.Component {
               <h3>bắt đầu từ :</h3>
               <input type="date" />
             </div>
-            <div className="inputBox">
-              <h3>Kết thúc vào :</h3>
-              <input type="date" />
-            </div>
-            <Link to={"/commingsoon"} className="btn">
+            <Link to="/commingsoon" className="btn">
               Tìm Ngay
             </Link>
           </form>

@@ -353,9 +353,6 @@ padding: 3px;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  min-height: 900px;
-  max-height: 1300px;
-  overflow-y: scroll;
 }
 .light .HomePages .packages .box-container .box {
   flex: 1 1 30rem;
@@ -593,6 +590,9 @@ padding: 3px;
 .light .HomePages .review-slider {
   width: 100%;
 }
+
+
+
 @media (max-width: 1450px) {
   html {
     font-size: 60%;

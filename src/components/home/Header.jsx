@@ -10,12 +10,6 @@ const navbarItems = [
     href: "#home",
   },
   {
-    id: 2,
-    text: "Đặt Lịch",
-
-    href: "#book",
-  },
-  {
     id: 3,
     text: "Ưu Đãi",
 

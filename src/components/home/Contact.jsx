@@ -1,4 +1,5 @@
 import React from "react";
+import emailjs from "emailjs-com";
 export default class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -27,6 +28,22 @@ export default class Contact extends React.Component {
         }
       );
   }
+
+  sendEmail(e) {
+    e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
+
+    emailjs
+      .sendForm("service_es5f8da", "template_gs4wdku", e.target, "KclByHfCL2ncJinR1")
+      .then(
+        (result) => {
+          window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  }
+
   render() {
     return (
       <section className="contact" id="contact">
@@ -51,10 +68,14 @@ export default class Contact extends React.Component {
               height="350vh"
             ></iframe>
           </div>
-          <form action="">
+          <form action="" onSubmit={this.sendEmail}>
             <div className="inputBox">
-              <input type="text" placeholder="Tên của bạn" />
-              <input type="email" placeholder="Email liên hệ" />
+              <input type="text" placeholder="Tên của bạn" name="to_name" />
+              <input
+                type="email"
+                placeholder="Email liên hệ"
+                name="to_email"
+              />
             </div>
             <div className="inputBox">
               <input
@@ -62,12 +83,17 @@ export default class Contact extends React.Component {
                 placeholder="Số điện thoại"
                 minLength={9}
                 maxLength={11}
+                name="contact_number"
               />
-              <input type="text" placeholder="Vấn đề bạn cần trao đổi" />
+              <input
+                type="text"
+                placeholder="Vấn đề bạn cần trao đổi"
+                name="subject"
+              />
             </div>
             <textarea
+              name="html_message"
               placeholder="Viết lời nhắn của bạn"
-              name="contact"
               cols="30"
               rows="10"
             ></textarea>

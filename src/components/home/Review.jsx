@@ -1,5 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import emailjs from "emailjs-com";
 
 const ReviewBoxStar = () => {
   return (
@@ -41,6 +42,25 @@ class ReviewRate extends React.Component {
         }
       );
   }
+  sendEmail(e) {
+    e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
+
+    emailjs
+      .sendForm(
+        "service_es5f8da",
+        "template_fe0xrnr",
+        e.target,
+        "KclByHfCL2ncJinR1"
+      )
+      .then(
+        (result) => {
+          window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  }
 
   render() {
     return (
@@ -60,12 +80,13 @@ class ReviewRate extends React.Component {
               })}
             </div>
           </div>
+            <input className="email" type="email" placeholder="email của bạn" name="to_email" />
         </div>
-        <form>
+        <form onSubmit={this.sendEmail}>
           <div className="inputBox">
             <textarea
+              name="html_message"
               placeholder="viết đánh giá của bạn"
-              name="rate"
               cols="30"
               rows="15"
             ></textarea>

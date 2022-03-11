@@ -27,7 +27,6 @@ const Footer = () => {
         <div className="box">
           <h3>chuyển hướng</h3>
           <a href="#home">Trang Chủ</a>
-          <a href="#book">Đặt lịch</a>
           <a href="#packages">Ưu Đãi</a>
           <a href="#services">Dịch Vụ</a>
           <a href="#gallery">Thư Viện</a>

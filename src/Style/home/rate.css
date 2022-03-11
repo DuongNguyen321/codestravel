@@ -95,12 +95,36 @@
   padding: 0.5rem 0;
 }
 .rate .row form .inputBox textarea {
+  color: #333;
+  background: #fefefe;
+  border: 0.1rem solid var(--orange);
+  text-transform: none;
   font-size: 2em;
-  padding: 1em;
-  font-weight: 500;
-  height: 15rem;
-  resize: none;
-  width: 100%;
+    padding: 1em;
+    font-weight: 500;
+    height: 15rem;
+    resize: none;
+    width: 100%;
+}
+.dark .ratestar .email {
+      color: #efefef;
+    background: #333;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 1.7rem;
+    text-transform: none;
+    border: 0.1rem solid var(--orange);
+}
+.light .ratestar .email {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    background: #fefefe;
+    text-transform: none;
+    border: 0.1rem solid var(--orange);
 }
 @media (max-width: 430px) {
   .rate {

@@ -197,6 +197,12 @@ html::-webkit-scrollbar-thumb {
   background: #333;
   border: 0.1rem solid var(--orange);
   text-transform: none;
+  font-size: 2em;
+    padding: 1em;
+    font-weight: 500;
+    height: 15rem;
+    resize: none;
+    width: 100%;
 }
 .dark .HomePages section {
   padding: 2rem 9%;

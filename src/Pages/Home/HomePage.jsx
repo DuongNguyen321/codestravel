@@ -7,7 +7,6 @@ import "../../Style/home/rate.css";
 import Header from "../../components/home/Header";
 import Footer from "../../components/home/Footer";
 import Home from "../../components/home/Home";
-import Book from "../../components/home/Book";
 import Packages from "../../components/home/Packages";
 import Services from "../../components/home/Services";
 import Gallery from "../../components/home/Gallery";
@@ -39,7 +38,6 @@ function HomePage(props) {
       <div className="container">
         <Home />
         <Chat />
-        <Book />
         <Packages />
         <Services />
         <Gallery />

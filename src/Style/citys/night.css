@@ -9,8 +9,8 @@
   border: none;
   text-decoration: none;
   text-transform: capitalize;
+ transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
 }
 :root {
   --orange: #ffa500;

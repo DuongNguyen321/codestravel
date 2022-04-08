@@ -42,8 +42,8 @@ select::-webkit-scrollbar-thumb {
   border: none;
   text-decoration: none;
   text-transform: capitalize;
-  -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
 }
 ::selection {
   background: var(--orange);
@@ -365,7 +365,11 @@ padding: 3px;
 .light .HomePages .packages .box-container .box img {
   height: 25rem;
   width: 100%;
+  overflow: hidden;
   object-fit: cover;
+}
+.light .HomePages .packages .box-container .box:hover img {
+transform: scale(1.15,1.15);
 }
 .light .HomePages .packages .box-container .box .content {
   padding: 2rem;

@@ -1,5 +1,5 @@
-import Header from "../../components/laocai/Header2";
-import Footer from "../../components/laocai/Footer2";
+import Header from "../../components/england/Header2";
+import Footer from "../../components/england/Footer2";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import React from "react";
@@ -49,7 +49,7 @@ class Home extends React.Component {
           <Link
             data-aos="fade-up"
             data-aos-delay="500"
-            to="/laocai"
+            to="/england"
             className="btn"
           >
             Tìm hiểu thêm

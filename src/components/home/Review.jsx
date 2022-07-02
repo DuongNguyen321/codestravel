@@ -48,13 +48,13 @@ class ReviewRate extends React.Component {
     emailjs
       .sendForm(
         "service_es5f8da",
-        "template_fe0xrnr",
+        "template_je7pxnp",
         e.target,
         "KclByHfCL2ncJinR1"
       )
       .then(
         (result) => {
-          window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
+         e.preventDefault(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
         },
         (error) => {
           console.log(error.text);
@@ -80,12 +80,25 @@ class ReviewRate extends React.Component {
               })}
             </div>
           </div>
-            <input className="email" type="email" placeholder="email của bạn" name="to_email" />
         </div>
         <form onSubmit={this.sendEmail}>
           <div className="inputBox">
+            <div className="information">
+              <input
+                className="name"
+                type="name"
+                placeholder="Tên của bạn"
+                name="to_name"
+              />
+              <input
+                className="email"
+                type="email"
+                placeholder="Email của bạn"
+                name="to_email"
+              />
+            </div>
             <textarea
-              name="html_message"
+              name="reply_to"
               placeholder="viết đánh giá của bạn"
               cols="30"
               rows="15"

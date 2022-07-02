@@ -198,11 +198,21 @@ html::-webkit-scrollbar-thumb {
   border: 0.1rem solid var(--orange);
   text-transform: none;
   font-size: 2em;
-    padding: 1em;
-    font-weight: 500;
-    height: 15rem;
-    resize: none;
-    width: 100%;
+  padding: 1em;
+  font-weight: 500;
+  height: 12rem;
+  resize: none;
+  width: 100%;
+}
+.dark .HomePages .rate .row form .inputBox .information input {
+  border: 0.1rem solid var(--orange);
+width: 100%;
+   color: #efefef;
+  background: #333;
+  text-transform: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 0.7rem;
 }
 .dark .HomePages section {
   padding: 2rem 9%;

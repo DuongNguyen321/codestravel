@@ -33,10 +33,15 @@ export default class Contact extends React.Component {
     e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
 
     emailjs
-      .sendForm("service_es5f8da", "template_gs4wdku", e.target, "KclByHfCL2ncJinR1")
+      .sendForm(
+        "service_es5f8da",
+        "template_gs4wdku",
+        e.target,
+        "KclByHfCL2ncJinR1"
+      )
       .then(
         (result) => {
-          window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
+         e.preventDefault(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
         },
         (error) => {
           console.log(error.text);
@@ -71,11 +76,7 @@ export default class Contact extends React.Component {
           <form action="" onSubmit={this.sendEmail}>
             <div className="inputBox">
               <input type="text" placeholder="Tên của bạn" name="to_name" />
-              <input
-                type="email"
-                placeholder="Email liên hệ"
-                name="to_email"
-              />
+              <input type="email" placeholder="Email liên hệ" name="to_email" />
             </div>
             <div className="inputBox">
               <input
@@ -92,10 +93,10 @@ export default class Contact extends React.Component {
               />
             </div>
             <textarea
-              name="html_message"
               placeholder="Viết lời nhắn của bạn"
               cols="30"
               rows="10"
+              name="reply_to"
             ></textarea>
             <input
               type="submit"

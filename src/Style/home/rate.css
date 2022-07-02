@@ -1,5 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
-  root {
+root {
   --orange: #ffa500;
 }
 .rate {
@@ -93,6 +93,22 @@
 }
 .rate .row form .inputBox {
   padding: 0.5rem 0;
+  display: grid;
+  grid-row: inherit;
+}
+.rate .row form .inputBox .information {
+  display: flex;
+  height: 3rem;
+  width: 100%;
+}
+.rate .row form .inputBox .information input {
+  border: 0.1rem solid var(--orange);
+width: 100%;
+  background: #fefefe;
+  text-transform: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 0.7rem;
 }
 .rate .row form .inputBox textarea {
   color: #333;
@@ -100,31 +116,31 @@
   border: 0.1rem solid var(--orange);
   text-transform: none;
   font-size: 2em;
-    padding: 1em;
-    font-weight: 500;
-    height: 15rem;
-    resize: none;
-    width: 100%;
+  padding: 1em;
+  font-weight: 500;
+  height: 12rem;
+  resize: none;
+  width: 100%;
 }
 .dark .ratestar .email {
-      color: #efefef;
-    background: #333;
-    width: 100%;
-    margin: 1rem 0;
-    padding: 1rem;
-    font-size: 1.7rem;
-    text-transform: none;
-    border: 0.1rem solid var(--orange);
+  color: #efefef;
+  background: #333;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-size: 1.7rem;
+  text-transform: none;
+  border: 0.1rem solid var(--orange);
 }
 .light .ratestar .email {
-    width: 100%;
-    margin: 1rem 0;
-    padding: 1rem;
-    font-size: 1.7rem;
-    color: #333;
-    background: #fefefe;
-    text-transform: none;
-    border: 0.1rem solid var(--orange);
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: #333;
+  background: #fefefe;
+  text-transform: none;
+  border: 0.1rem solid var(--orange);
 }
 @media (max-width: 430px) {
   .rate {

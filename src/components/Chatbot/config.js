@@ -93,8 +93,8 @@ const config = {
             id: 1,
           },
           {
-            text: "Watch my CV",
-            url: "https://nguyeduongcv.w3spaces.com/index.html",
+            text: "Contact me !",
+            url: "https://duongcontact.vercel.app/",
             id: 2,
           },
           {

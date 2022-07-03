@@ -99,6 +99,7 @@ export default class Footer extends React.Component {
                   name="to_email"
                   placeholder="Email của bạn"
                   className="email"
+                  required
                 />
                 <input type="submit" value="Đăng ký" className="btn" />
               </form>

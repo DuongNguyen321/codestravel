@@ -41,6 +41,9 @@ export default class Contact extends React.Component {
       )
       .then(
         (result) => {
+          alert(
+            "Stravel đã ghi nhận lời liên hệ của bạn. Chúng tôi sẽ liên hệ lại với bạn sớm nhất có thể"
+          );
          e.preventDefault(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
         },
         (error) => {
@@ -75,8 +78,18 @@ export default class Contact extends React.Component {
           </div>
           <form action="" onSubmit={this.sendEmail}>
             <div className="inputBox">
-              <input type="text" placeholder="Tên của bạn" name="to_name" />
-              <input type="email" placeholder="Email liên hệ" name="to_email" />
+              <input
+                type="text"
+                placeholder="Tên của bạn"
+                name="to_name"
+                required
+              />
+              <input
+                type="email"
+                placeholder="Email liên hệ"
+                name="to_email"
+                required
+              />
             </div>
             <div className="inputBox">
               <input
@@ -90,6 +103,7 @@ export default class Contact extends React.Component {
                 type="text"
                 placeholder="Vấn đề bạn cần trao đổi"
                 name="subject"
+                required
               />
             </div>
             <textarea
@@ -97,6 +111,7 @@ export default class Contact extends React.Component {
               cols="30"
               rows="10"
               name="reply_to"
+              required
             ></textarea>
             <input
               type="submit"

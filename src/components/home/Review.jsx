@@ -54,6 +54,9 @@ class ReviewRate extends React.Component {
       )
       .then(
         (result) => {
+            alert(
+              "Stravel đã ghi nhận lời đánh giá của bạn. Chúng tôi sẽ cố gắng để làm tốt hơn những gì có thể!"
+            );
          e.preventDefault(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
         },
         (error) => {
@@ -81,7 +84,7 @@ class ReviewRate extends React.Component {
             </div>
           </div>
         </div>
-        <form onSubmit={this.sendEmail}>
+        <form action="" onSubmit={this.sendEmail}>
           <div className="inputBox">
             <div className="information">
               <input
@@ -89,12 +92,14 @@ class ReviewRate extends React.Component {
                 type="name"
                 placeholder="Tên của bạn"
                 name="to_name"
+                required
               />
               <input
                 className="email"
                 type="email"
                 placeholder="Email của bạn"
                 name="to_email"
+                required
               />
             </div>
             <textarea
@@ -102,6 +107,7 @@ class ReviewRate extends React.Component {
               placeholder="viết đánh giá của bạn"
               cols="30"
               rows="15"
+              required
             ></textarea>
           </div>
           <input type="submit" className="btn" value="gửi tới chúng tôi" />

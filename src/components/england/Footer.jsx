@@ -16,6 +16,9 @@ export default class Footer extends React.Component {
       )
       .then(
         (result) => {
+         alert(
+            "Stravel đã ghi nhận email của bạn. Chúng tôi sẽ liên hệ lại với bạn sớm nhất có thể"
+          );
          e.preventDefault(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
         },
         (error) => {
